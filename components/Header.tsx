@@ -139,11 +139,11 @@ export default function Header() {
                             <div className="mt-6 pt-6 border-t border-gray-200">
                               <h4 className="text-sm font-medium text-gray-700 mb-3">Quick Actions</h4>
                               <div className="space-y-2">
-                                <Link href="/services" className="flex items-center space-x-2 text-sm text-gray-600 hover:text-green-600 transition-colors duration-300">
+                                <Link href="/services" className="flex items-center space-x-2 text-sm text-gray-600 hover:text-mustard-600 transition-colors duration-300">
                                   <Calendar className="w-4 h-4" />
                                   <span>All Services</span>
                                 </Link>
-                                <a href="https://wa.me/1234567890" className="flex items-center space-x-2 text-sm text-gray-600 hover:text-green-600 transition-colors duration-300">
+                                <a href="https://wa.me/1234567890" className="flex items-center space-x-2 text-sm text-gray-600 hover:text-mustard-600 transition-colors duration-300">
                                   <Phone className="w-4 h-4" />
                                   <span>WhatsApp Support</span>
                                 </a>
