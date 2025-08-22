@@ -130,7 +130,7 @@ export default function CountryPage({ params }: PageProps) {
             {VISA_TYPES.map((visaType, index) => (
               <Link
                 key={visaType.id}
-                href={`/${params.country}/${visaType.slug}-visa-appointment`}
+                href={`/${params.country}/appointment/${visaType.slug}`}
                 className="group animate-fade-in"
                 style={{animationDelay: `${index * 0.2}s`}}
               >
