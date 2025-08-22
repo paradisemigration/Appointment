@@ -278,7 +278,7 @@ export default function CountryPage({ params }: PageProps) {
                 icon: <Globe className="w-8 h-8" />,
                 title: 'All Cities Covered',
                 description: 'Service available from 50+ major cities across India and Gulf',
-                gradient: 'from-purple-500 to-pink-600'
+                gradient: 'from-mustard-600 to-mustard-700'
               }
             ].map((feature, index) => (
               <div 
@@ -301,11 +301,11 @@ export default function CountryPage({ params }: PageProps) {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-center text-white animate-fade-in">
+        <section className="bg-gradient-charcoal rounded-3xl p-12 text-center text-white animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Book Your {country.name} Visa Appointment?
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             Get started with our professional visa appointment booking service today
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
