@@ -36,15 +36,23 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default function VisaAppointmentPage({ params }: PageProps) {
+  console.log('Visa appointment page params:', params);
+
   const countryName = params.country.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-  
-  const country = ALL_COUNTRIES.find(c => 
+  console.log('Parsed country name:', countryName);
+  console.log('Visa slug:', params.visa);
+
+  const country = ALL_COUNTRIES.find(c =>
     c.name.toLowerCase() === countryName.toLowerCase()
   );
-  
+
   const visaType = VISA_TYPES.find(v => v.slug === params.visa);
-  
+
+  console.log('Found country:', country?.name);
+  console.log('Found visa type:', visaType?.name);
+
   if (!country || !visaType) {
+    console.log('Country or visa type not found, triggering 404');
     notFound();
   }
 
