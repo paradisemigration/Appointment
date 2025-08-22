@@ -34,10 +34,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans`}>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans overflow-x-hidden`}>
         <Header />
-        <main className="min-h-screen">
+        <main className="min-h-screen w-full">
           {children}
         </main>
         <Footer />
