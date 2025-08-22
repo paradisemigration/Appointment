@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { Search, MapPin, Calendar, Globe, Clock, Users, Star, ArrowRight, CheckCircle, Phone, Play, Shield, Award, Zap, TrendingUp } from 'lucide-react';
 import { ALL_COUNTRIES, ALL_CITIES, VISA_TYPES } from '@/data/constants';
 
@@ -9,15 +10,35 @@ export default function Home() {
   const [selectedCountry, setSelectedCountry] = useState('');
   const [selectedCity, setSelectedCity] = useState('');
   const [selectedVisa, setSelectedVisa] = useState('');
+  const [isSearching, setIsSearching] = useState(false);
+  const router = useRouter();
 
   const handleSearch = () => {
     if (selectedCountry && selectedVisa && selectedCity) {
-      const countrySlug = selectedCountry.toLowerCase().replace(/\s+/g, '-');
-      const visaSlug = VISA_TYPES.find(v => v.name === selectedVisa)?.slug || 'visit';
-      const citySlug = ALL_CITIES.find(c => c.name === selectedCity)?.slug || 'delhi';
+      setIsSearching(true);
 
-      // Use new route structure: /[country]/appointment/[visa]/[city]
-      window.location.href = `/${countrySlug}/appointment/${visaSlug}/${citySlug}`;
+      try {
+        const countrySlug = selectedCountry.toLowerCase().replace(/\s+/g, '-');
+        const visaType = VISA_TYPES.find(v => v.name === selectedVisa);
+        const city = ALL_CITIES.find(c => c.name === selectedCity);
+
+        if (!visaType || !city) {
+          console.error('Invalid visa type or city selected');
+          setIsSearching(false);
+          return;
+        }
+
+        const visaSlug = visaType.slug;
+        const citySlug = city.slug;
+
+        // Use Next.js router for navigation
+        const appointmentUrl = `/${countrySlug}/appointment/${visaSlug}/${citySlug}`;
+        console.log('Navigating to:', appointmentUrl);
+        router.push(appointmentUrl);
+      } catch (error) {
+        console.error('Error during navigation:', error);
+        setIsSearching(false);
+      }
     }
   };
 
@@ -107,6 +128,15 @@ export default function Home() {
             <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
               Find Your Perfect Appointment
             </h3>
+
+            {/* Form Validation Message */}
+            {(!selectedCountry || !selectedVisa || !selectedCity) && (
+              <div className="mb-4 p-3 bg-mustard-50 border border-mustard-200 rounded-lg">
+                <p className="text-sm text-mustard-700 text-center">
+                  Please select all fields to search for appointments
+                </p>
+              </div>
+            )}
             
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <div className="space-y-2">
@@ -169,13 +199,22 @@ export default function Home() {
               <div className="flex items-end">
                 <button
                   type="button"
-                  className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                  className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center"
                   onClick={handleSearch}
-                  disabled={!selectedCountry || !selectedVisa || !selectedCity}
+                  disabled={!selectedCountry || !selectedVisa || !selectedCity || isSearching}
                   aria-label="Search visa appointments"
                 >
-                  <Search className="w-5 h-5 mx-auto" />
-                  <span className="sr-only">Search</span>
+                  {isSearching ? (
+                    <>
+                      <div className="w-5 h-5 border-2 border-charcoal-900 border-t-transparent rounded-full animate-spin mr-2"></div>
+                      <span className="text-sm font-medium">Searching...</span>
+                    </>
+                  ) : (
+                    <>
+                      <Search className="w-5 h-5 mr-2" />
+                      <span className="text-sm font-medium">Search</span>
+                    </>
+                  )}
                 </button>
               </div>
             </div>
