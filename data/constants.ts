@@ -365,12 +365,65 @@ export const PAKISTAN_CITIES: City[] = [
   { id: 'quetta', name: 'Quetta', slug: 'quetta', country: 'PK', region: 'Pakistan', isActive: true }
 ];
 
-export const OTHER_CITIES: City[] = [
+export const SOUTH_ASIAN_CITIES: City[] = [
   { id: 'kathmandu', name: 'Kathmandu', slug: 'kathmandu', country: 'NP', region: 'Nepal', isActive: true },
+  { id: 'pokhara', name: 'Pokhara', slug: 'pokhara', country: 'NP', region: 'Nepal', isActive: true },
   { id: 'dhaka', name: 'Dhaka', slug: 'dhaka', country: 'BD', region: 'Bangladesh', isActive: true },
   { id: 'chittagong', name: 'Chittagong', slug: 'chittagong', country: 'BD', region: 'Bangladesh', isActive: true },
-  { id: 'colombo', name: 'Colombo', slug: 'colombo', country: 'LK', region: 'Sri Lanka', isActive: true }
+  { id: 'sylhet', name: 'Sylhet', slug: 'sylhet', country: 'BD', region: 'Bangladesh', isActive: true },
+  { id: 'colombo', name: 'Colombo', slug: 'colombo', country: 'LK', region: 'Sri Lanka', isActive: true },
+  { id: 'kandy', name: 'Kandy', slug: 'kandy', country: 'LK', region: 'Sri Lanka', isActive: true },
+  { id: 'galle', name: 'Galle', slug: 'galle', country: 'LK', region: 'Sri Lanka', isActive: true }
 ];
 
-export const ALL_CITIES = [...INDIAN_CITIES, ...GULF_CITIES, ...PAKISTAN_CITIES, ...OTHER_CITIES];
+export const SOUTHEAST_ASIAN_CITIES: City[] = [
+  { id: 'bangkok', name: 'Bangkok', slug: 'bangkok', country: 'TH', region: 'Thailand', isActive: true },
+  { id: 'phuket', name: 'Phuket', slug: 'phuket', country: 'TH', region: 'Thailand', isActive: true },
+  { id: 'chiang-mai', name: 'Chiang Mai', slug: 'chiang-mai', country: 'TH', region: 'Thailand', isActive: true },
+  { id: 'kuala-lumpur', name: 'Kuala Lumpur', slug: 'kuala-lumpur', country: 'MY', region: 'Malaysia', isActive: true },
+  { id: 'penang', name: 'Penang', slug: 'penang', country: 'MY', region: 'Malaysia', isActive: true },
+  { id: 'johor-bahru', name: 'Johor Bahru', slug: 'johor-bahru', country: 'MY', region: 'Malaysia', isActive: true },
+  { id: 'singapore', name: 'Singapore', slug: 'singapore', country: 'SG', region: 'Singapore', isActive: true },
+  { id: 'jakarta', name: 'Jakarta', slug: 'jakarta', country: 'ID', region: 'Indonesia', isActive: true },
+  { id: 'bali', name: 'Bali', slug: 'bali', country: 'ID', region: 'Indonesia', isActive: true },
+  { id: 'surabaya', name: 'Surabaya', slug: 'surabaya', country: 'ID', region: 'Indonesia', isActive: true },
+  { id: 'manila', name: 'Manila', slug: 'manila', country: 'PH', region: 'Philippines', isActive: true },
+  { id: 'cebu', name: 'Cebu', slug: 'cebu', country: 'PH', region: 'Philippines', isActive: true },
+  { id: 'davao', name: 'Davao', slug: 'davao', country: 'PH', region: 'Philippines', isActive: true },
+  { id: 'ho-chi-minh', name: 'Ho Chi Minh City', slug: 'ho-chi-minh', country: 'VN', region: 'Vietnam', isActive: true },
+  { id: 'hanoi', name: 'Hanoi', slug: 'hanoi', country: 'VN', region: 'Vietnam', isActive: true },
+  { id: 'da-nang', name: 'Da Nang', slug: 'da-nang', country: 'VN', region: 'Vietnam', isActive: true }
+];
+
+export const EAST_ASIAN_CITIES: City[] = [
+  { id: 'beijing', name: 'Beijing', slug: 'beijing', country: 'CN', region: 'China', isActive: true },
+  { id: 'shanghai', name: 'Shanghai', slug: 'shanghai', country: 'CN', region: 'China', isActive: true },
+  { id: 'guangzhou', name: 'Guangzhou', slug: 'guangzhou', country: 'CN', region: 'China', isActive: true },
+  { id: 'shenzhen', name: 'Shenzhen', slug: 'shenzhen', country: 'CN', region: 'China', isActive: true },
+  { id: 'hong-kong', name: 'Hong Kong', slug: 'hong-kong', country: 'HK', region: 'Hong Kong', isActive: true },
+  { id: 'tokyo', name: 'Tokyo', slug: 'tokyo', country: 'JP', region: 'Japan', isActive: true },
+  { id: 'osaka', name: 'Osaka', slug: 'osaka', country: 'JP', region: 'Japan', isActive: true },
+  { id: 'kyoto', name: 'Kyoto', slug: 'kyoto', country: 'JP', region: 'Japan', isActive: true },
+  { id: 'seoul', name: 'Seoul', slug: 'seoul', country: 'KR', region: 'South Korea', isActive: true },
+  { id: 'busan', name: 'Busan', slug: 'busan', country: 'KR', region: 'South Korea', isActive: true },
+  { id: 'incheon', name: 'Incheon', slug: 'incheon', country: 'KR', region: 'South Korea', isActive: true }
+];
+
+export const OTHER_GLOBAL_CITIES: City[] = [
+  { id: 'new-york', name: 'New York', slug: 'new-york', country: 'US', region: 'USA', isActive: true },
+  { id: 'los-angeles', name: 'Los Angeles', slug: 'los-angeles', country: 'US', region: 'USA', isActive: true },
+  { id: 'chicago', name: 'Chicago', slug: 'chicago', country: 'US', region: 'USA', isActive: true },
+  { id: 'london', name: 'London', slug: 'london', country: 'GB', region: 'UK', isActive: true },
+  { id: 'manchester', name: 'Manchester', slug: 'manchester', country: 'GB', region: 'UK', isActive: true },
+  { id: 'birmingham', name: 'Birmingham', slug: 'birmingham', country: 'GB', region: 'UK', isActive: true },
+  { id: 'toronto', name: 'Toronto', slug: 'toronto', country: 'CA', region: 'Canada', isActive: true },
+  { id: 'vancouver', name: 'Vancouver', slug: 'vancouver', country: 'CA', region: 'Canada', isActive: true },
+  { id: 'montreal', name: 'Montreal', slug: 'montreal', country: 'CA', region: 'Canada', isActive: true },
+  { id: 'sydney', name: 'Sydney', slug: 'sydney', country: 'AU', region: 'Australia', isActive: true },
+  { id: 'melbourne', name: 'Melbourne', slug: 'melbourne', country: 'AU', region: 'Australia', isActive: true },
+  { id: 'brisbane', name: 'Brisbane', slug: 'brisbane', country: 'AU', region: 'Australia', isActive: true },
+  { id: 'auckland', name: 'Auckland', slug: 'auckland', country: 'NZ', region: 'New Zealand', isActive: true }
+];
+
+export const ALL_CITIES = [...INDIAN_CITIES, ...GULF_CITIES, ...PAKISTAN_CITIES, ...SOUTH_ASIAN_CITIES, ...SOUTHEAST_ASIAN_CITIES, ...EAST_ASIAN_CITIES, ...OTHER_GLOBAL_CITIES];
 export const ALL_COUNTRIES = [...EUROPEAN_COUNTRIES, ...OTHER_COUNTRIES];
