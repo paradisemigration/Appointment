@@ -199,7 +199,7 @@ export default function Header() {
         <div className={`lg:hidden transition-all duration-300 overflow-hidden ${
           isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}>
-          <div className="py-4 border-t border-gray-200">
+          <div className="py-4 border-t border-white/20">
             <nav className="space-y-2">
               {navigation.map((item) => (
                 <div key={item.name}>
@@ -207,7 +207,7 @@ export default function Header() {
                     <div>
                       <button
                         onClick={() => setIsCountriesOpen(!isCountriesOpen)}
-                        className="w-full flex items-center justify-between p-3 text-left text-gray-700 hover:bg-gray-50 hover:text-green-600 rounded-lg transition-colors duration-300"
+                        className="w-full flex items-center justify-between p-3 text-left text-white hover:bg-white/10 hover:text-orange-300 rounded-lg transition-colors duration-300"
                       >
                         <span className="font-medium">{item.name}</span>
                         <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${
@@ -218,12 +218,12 @@ export default function Header() {
                       {isCountriesOpen && (
                         <div className="mt-2 ml-4 space-y-2 animate-fade-in">
                           <div className="space-y-1">
-                            <p className="text-sm font-medium text-gray-500 px-3 py-1">European Countries</p>
+                            <p className="text-sm font-medium text-sky-200 px-3 py-1">European Countries</p>
                             {europeanCountries.slice(0, 6).map((country) => (
                               <Link
                                 key={country.code}
                                 href={`/${country.name.toLowerCase().replace(/\s+/g, '-')}`}
-                                className="flex items-center space-x-2 p-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-600 rounded-lg transition-colors duration-300"
+                                className="flex items-center space-x-2 p-2 text-sm text-white hover:bg-white/10 hover:text-orange-300 rounded-lg transition-colors duration-300"
                                 onClick={() => setIsMenuOpen(false)}
                               >
                                 <span>{country.flag}</span>
@@ -233,12 +233,12 @@ export default function Header() {
                           </div>
                           
                           <div className="space-y-1">
-                            <p className="text-sm font-medium text-gray-500 px-3 py-1">Other Countries</p>
+                            <p className="text-sm font-medium text-sky-200 px-3 py-1">Other Countries</p>
                             {otherCountries.map((country) => (
                               <Link
                                 key={country.code}
                                 href={`/${country.name.toLowerCase().replace(/\s+/g, '-')}`}
-                                className="flex items-center space-x-2 p-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-700 rounded-lg transition-colors duration-300"
+                                className="flex items-center space-x-2 p-2 text-sm text-white hover:bg-white/10 hover:text-orange-300 rounded-lg transition-colors duration-300"
                                 onClick={() => setIsMenuOpen(false)}
                               >
                                 <span>{country.flag}</span>
@@ -249,7 +249,7 @@ export default function Header() {
                           
                           <Link
                             href="/countries"
-                            className="block p-2 text-sm text-green-600 hover:bg-green-50 rounded-lg transition-colors duration-300"
+                            className="block p-2 text-sm text-orange-400 hover:bg-white/10 hover:text-orange-300 rounded-lg transition-colors duration-300"
                             onClick={() => setIsMenuOpen(false)}
                           >
                             View All Countries →
@@ -260,8 +260,8 @@ export default function Header() {
                   ) : (
                     <Link
                       href={item.href}
-                      className={`block p-3 text-gray-700 hover:bg-gray-50 hover:text-green-600 rounded-lg transition-colors duration-300 font-medium ${
-                        pathname === item.href ? 'bg-green-50 text-green-600' : ''
+                      className={`block p-3 text-white hover:bg-white/10 hover:text-orange-300 rounded-lg transition-colors duration-300 font-medium ${
+                        pathname === item.href ? 'bg-white/10 text-orange-300' : ''
                       }`}
                       onClick={() => setIsMenuOpen(false)}
                     >
@@ -273,7 +273,7 @@ export default function Header() {
             </nav>
 
             {/* Mobile CTA Buttons */}
-            <div className="mt-6 pt-6 border-t border-gray-200 space-y-3">
+            <div className="mt-6 pt-6 border-t border-white/20 space-y-3">
               <a 
                 href="https://wa.me/1234567890"
                 className="w-full btn-secondary flex items-center justify-center"
