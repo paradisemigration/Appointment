@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import { Clock, Users, Star } from 'lucide-react';
 import { ALL_COUNTRIES } from '@/data/constants';
@@ -21,7 +19,7 @@ export default function CountryGrid() {
         {/* European Countries */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-            🇪🇺 European Countries (Schengen & Others)
+            🇪�� European Countries (Schengen & Others)
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {ALL_COUNTRIES.filter(country => country.continent === 'Europe').map((country) => (
