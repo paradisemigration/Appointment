@@ -197,7 +197,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="group text-center">
-              <div className="w-16 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br from-green-500 to-green-600 text-white shadow-lg mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br from-orange-500 to-orange-600 text-white shadow-lg mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Zap className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Lightning Fast</h3>
@@ -205,7 +205,7 @@ export default function Home() {
             </div>
 
             <div className="group text-center">
-              <div className="w-16 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900 text-white shadow-lg mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br from-royal-500 to-navy-500 text-white shadow-lg mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Shield className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">98% Success Rate</h3>
@@ -213,7 +213,7 @@ export default function Home() {
             </div>
 
             <div className="group text-center">
-              <div className="w-16 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br from-green-600 to-green-700 text-white shadow-lg mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br from-teal-500 to-green-500 text-white shadow-lg mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Award className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Expert Support</h3>
@@ -221,7 +221,7 @@ export default function Home() {
             </div>
 
             <div className="group text-center">
-              <div className="w-16 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br from-gray-700 to-green-600 text-white shadow-lg mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-16 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br from-sky-500 to-royal-500 text-white shadow-lg mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <TrendingUp className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Global Coverage</h3>
