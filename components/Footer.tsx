@@ -116,14 +116,14 @@ export default function Footer() {
                   <Link
                     key={country.code}
                     href={`/${country.name.toLowerCase().replace(/\s+/g, '-')}`}
-                    className="block text-blue-200 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group"
+                    className="block text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group"
                   >
                     <span className="text-lg mr-2 group-hover:scale-110 transition-transform duration-300">
                       {country.flag}
                     </span>
                     <span>{country.name}</span>
                     {country.isSchengen && (
-                      <span className="ml-2 text-xs bg-blue-500/30 px-2 py-1 rounded">
+                      <span className="ml-2 text-xs bg-mustard-500/30 px-2 py-1 rounded">
                         Schengen
                       </span>
                     )}
@@ -132,7 +132,7 @@ export default function Footer() {
               </div>
               <Link
                 href="/countries"
-                className="inline-flex items-center text-blue-300 hover:text-white font-medium mt-4 group"
+                className="inline-flex items-center text-mustard-300 hover:text-white font-medium mt-4 group"
               >
                 View All Countries
                 <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
