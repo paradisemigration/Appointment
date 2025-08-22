@@ -163,11 +163,11 @@
 
   /* Modern Navigation */
   .nav-link {
-    @apply text-gray-600 hover:text-green-600 font-medium px-4 py-2 rounded-lg hover:bg-green-50 transition-all duration-300;
+    @apply text-white hover:text-orange-300 font-medium px-4 py-2 rounded-lg hover:bg-white/10 transition-all duration-300;
   }
 
   .nav-link.active {
-    @apply text-green-600 bg-green-50;
+    @apply text-orange-300 bg-white/10;
   }
 
   /* Hero Gradient Styles */
