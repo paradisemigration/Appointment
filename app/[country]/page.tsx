@@ -99,11 +99,11 @@ export default function CountryPage({ params }: PageProps) {
               </div>
               <div className="stat-card">
                 <div className="text-3xl font-bold text-white mb-2">50+</div>
-                <div className="text-blue-100 text-sm">Cities Covered</div>
+                <div className="text-gray-200 text-sm">Cities Covered</div>
               </div>
               <div className="stat-card">
                 <div className="text-3xl font-bold text-white mb-2">24/7</div>
-                <div className="text-blue-100 text-sm">Support</div>
+                <div className="text-gray-200 text-sm">Support</div>
               </div>
             </div>
           </div>
@@ -113,7 +113,7 @@ export default function CountryPage({ params }: PageProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Breadcrumb */}
         <nav className="breadcrumb animate-fade-in">
-          <Link href="/" className="breadcrumb-item hover:text-blue-600">Home</Link>
+          <Link href="/" className="breadcrumb-item hover:text-mustard-600">Home</Link>
           <span className="breadcrumb-separator">/</span>
           <span className="text-gray-900 font-medium">{country.name}</span>
         </nav>
