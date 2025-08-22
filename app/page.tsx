@@ -26,21 +26,21 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* Professional Hero Section */}
-      <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-green-700">
+      <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-hero">
         {/* Animated Background */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-green-600/20"></div>
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-green-900/30"></div>
-          <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-green-400/20 to-green-600/20 rounded-full blur-xl animate-float"></div>
-          <div className="absolute top-32 right-20 w-40 h-40 bg-gradient-to-r from-green-500/15 to-green-700/15 rounded-full blur-2xl animate-float"></div>
-          <div className="absolute bottom-32 left-1/4 w-48 h-48 bg-gradient-to-r from-gray-600/10 to-green-600/10 rounded-full blur-2xl animate-float"></div>
+          <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-orange-400/20 to-orange-600/20 rounded-full blur-xl animate-float"></div>
+          <div className="absolute top-32 right-20 w-40 h-40 bg-gradient-to-r from-sky-500/15 to-sky-700/15 rounded-full blur-2xl animate-float"></div>
+          <div className="absolute bottom-32 left-1/4 w-48 h-48 bg-gradient-to-r from-royal-600/10 to-orange-600/10 rounded-full blur-2xl animate-float"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex-1 flex flex-col justify-center">
           <div className="mb-12">
             {/* Trust Badge */}
-            <div className="inline-flex items-center bg-green-500/10 backdrop-blur-md border border-green-500/20 rounded-full px-6 py-3 mb-8">
-              <Shield className="w-5 h-5 text-green-400 mr-2" />
+            <div className="inline-flex items-center bg-orange-500/10 backdrop-blur-md border border-orange-500/20 rounded-full px-6 py-3 mb-8">
+              <Shield className="w-5 h-5 text-orange-400 mr-2" />
               <span className="text-white font-medium">Trusted by 10,000+ customers worldwide</span>
             </div>
 
