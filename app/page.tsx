@@ -363,33 +363,33 @@ export default function Home() {
       </section>
 
       {/* Statistics Section */}
-      <section className="py-20 bg-gradient-navy">
+      <section className="py-20 bg-gradient-charcoal">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Trusted by Thousands
             </h2>
-            <p className="text-sky-200 text-lg max-w-2xl mx-auto">
+            <p className="text-gray-200 text-lg max-w-2xl mx-auto">
               Our track record speaks for itself
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-orange-400 mb-2">10,000+</div>
-              <div className="text-sky-200">Happy Customers</div>
+              <div className="text-4xl md:text-5xl font-bold text-mustard-400 mb-2">10,000+</div>
+              <div className="text-gray-200">Happy Customers</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-orange-400 mb-2">35+</div>
-              <div className="text-sky-200">Countries Covered</div>
+              <div className="text-4xl md:text-5xl font-bold text-mustard-400 mb-2">35+</div>
+              <div className="text-gray-200">Countries Covered</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-orange-400 mb-2">98%</div>
-              <div className="text-sky-200">Success Rate</div>
+              <div className="text-4xl md:text-5xl font-bold text-mustard-400 mb-2">98%</div>
+              <div className="text-gray-200">Success Rate</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-orange-400 mb-2">24h</div>
-              <div className="text-sky-200">Average Response</div>
+              <div className="text-4xl md:text-5xl font-bold text-mustard-400 mb-2">24h</div>
+              <div className="text-gray-200">Average Response</div>
             </div>
           </div>
         </div>
