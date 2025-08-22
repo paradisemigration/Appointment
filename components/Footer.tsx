@@ -99,7 +99,7 @@ export default function Footer() {
                   <Link
                     key={link.name}
                     href={link.href}
-                    className="block text-blue-200 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group"
+                    className="block text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group"
                   >
                     <span>{link.name}</span>
                     <ArrowRight className="w-4 h-4 ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
