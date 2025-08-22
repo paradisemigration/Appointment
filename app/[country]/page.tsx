@@ -233,8 +233,8 @@ export default function CountryPage({ params }: PageProps) {
 
           <div className="text-center mt-12 animate-fade-in">
             <p className="text-gray-600 mb-6">Need appointments from other cities?</p>
-            <Link 
-              href={`/${params.country}/visit-visa-appointment`}
+            <Link
+              href={`/${params.country}/appointment/visit`}
               className="btn-outline"
             >
               <MapPin className="w-5 h-5 mr-2" />
@@ -260,19 +260,19 @@ export default function CountryPage({ params }: PageProps) {
                 icon: <Clock className="w-8 h-8" />,
                 title: 'Quick Processing',
                 description: 'Appointments booked within 24 hours with minimal waiting time',
-                gradient: 'from-blue-500 to-purple-600'
+                gradient: 'from-mustard-500 to-mustard-600'
               },
               {
                 icon: <CheckCircle className="w-8 h-8" />,
                 title: '98% Success Rate',
                 description: 'Proven track record with expert document review and guidance',
-                gradient: 'from-green-500 to-teal-600'
+                gradient: 'from-green-500 to-green-600'
               },
               {
                 icon: <Users className="w-8 h-8" />,
                 title: 'Expert Support',
                 description: '24/7 WhatsApp support from visa experts and consultants',
-                gradient: 'from-orange-500 to-red-600'
+                gradient: 'from-charcoal-500 to-charcoal-600'
               },
               {
                 icon: <Globe className="w-8 h-8" />,
