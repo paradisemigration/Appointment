@@ -348,10 +348,10 @@ export default function Home() {
 
             <div className="text-center">
               <div className="relative mb-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-navy-500 to-royal-500 text-white rounded-2xl flex items-center justify-center mx-auto shadow-lg">
+                <div className="w-16 h-16 bg-gradient-to-br from-charcoal-700 to-charcoal-800 text-white rounded-2xl flex items-center justify-center mx-auto shadow-lg">
                   <Calendar className="w-8 h-8" />
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-mustard-500 text-charcoal-900 rounded-full flex items-center justify-center text-sm font-bold">
                   4
                 </div>
               </div>
