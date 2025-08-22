@@ -1,5 +1,7 @@
 'use client';
 
+'use client';
+
 import { useState, useEffect } from 'react';
 import { MessageCircle, X, Phone, Send, Clock } from 'lucide-react';
 

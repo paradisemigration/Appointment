@@ -1,5 +1,7 @@
 'use client';
 
+'use client';
+
 import Link from 'next/link';
 import { Globe, Mail, Phone, MapPin, Clock, Star, ArrowRight, ExternalLink } from 'lucide-react';
 import { ALL_COUNTRIES, VISA_TYPES } from '@/data/constants';
