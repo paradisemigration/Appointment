@@ -5,42 +5,9 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Search, MapPin, Calendar, Globe, Clock, Users, Star, ArrowRight, CheckCircle, Phone, Play, Shield, Award, Zap, TrendingUp } from 'lucide-react';
 import { ALL_COUNTRIES, ALL_CITIES, VISA_TYPES } from '@/data/constants';
+import SearchForm from '@/components/SearchForm';
 
 export default function Home() {
-  const [selectedCountry, setSelectedCountry] = useState('');
-  const [selectedCity, setSelectedCity] = useState('');
-  const [selectedVisa, setSelectedVisa] = useState('');
-  const [isSearching, setIsSearching] = useState(false);
-  const router = useRouter();
-
-  const handleSearch = () => {
-    if (selectedCountry && selectedVisa && selectedCity) {
-      setIsSearching(true);
-
-      try {
-        const countrySlug = selectedCountry.toLowerCase().replace(/\s+/g, '-');
-        const visaType = VISA_TYPES.find(v => v.name === selectedVisa);
-        const city = ALL_CITIES.find(c => c.name === selectedCity);
-
-        if (!visaType || !city) {
-          console.error('Invalid visa type or city selected');
-          setIsSearching(false);
-          return;
-        }
-
-        const visaSlug = visaType.slug;
-        const citySlug = city.slug;
-
-        // Use Next.js router for navigation
-        const appointmentUrl = `/${countrySlug}/appointment/${visaSlug}/${citySlug}`;
-        console.log('Navigating to:', appointmentUrl);
-        router.push(appointmentUrl);
-      } catch (error) {
-        console.error('Error during navigation:', error);
-        setIsSearching(false);
-      }
-    }
-  };
 
   const popularCountries = ALL_COUNTRIES.slice(0, 8);
 
@@ -124,100 +91,8 @@ export default function Home() {
 
         {/* Search Form */}
         <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
-          <div id="search" className="bg-white/95 backdrop-blur-md border border-gray-200 rounded-2xl p-8 shadow-2xl">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-              Find Your Perfect Appointment
-            </h3>
-
-            {/* Form Validation Message */}
-            {(!selectedCountry || !selectedVisa || !selectedCity) && (
-              <div className="mb-4 p-3 bg-mustard-50 border border-mustard-200 rounded-lg">
-                <p className="text-sm text-mustard-700 text-center">
-                  Please select all fields to search for appointments
-                </p>
-              </div>
-            )}
-            
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <div className="space-y-2">
-                <label className="block text-sm font-medium text-gray-700">
-                  <MapPin className="inline w-4 h-4 mr-2 text-charcoal-500" />
-                  Destination Country
-                </label>
-                <select 
-                  className="input-field"
-                  value={selectedCountry}
-                  onChange={(e) => setSelectedCountry(e.target.value)}
-                >
-                  <option value="">Select Country</option>
-                  {ALL_COUNTRIES.map((country) => (
-                    <option key={country.code} value={country.name}>
-                      {country.flag} {country.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <div className="space-y-2">
-                <label className="block text-sm font-medium text-gray-700">
-                  <Calendar className="inline w-4 h-4 mr-2 text-charcoal-500" />
-                  Visa Type
-                </label>
-                <select 
-                  className="input-field"
-                  value={selectedVisa}
-                  onChange={(e) => setSelectedVisa(e.target.value)}
-                >
-                  <option value="">Select Visa Type</option>
-                  {VISA_TYPES.map((visa) => (
-                    <option key={visa.id} value={visa.name}>
-                      {visa.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <div className="space-y-2">
-                <label className="block text-sm font-medium text-gray-700">
-                  <Search className="inline w-4 h-4 mr-2 text-charcoal-500" />
-                  Your City
-                </label>
-                <select 
-                  className="input-field"
-                  value={selectedCity}
-                  onChange={(e) => setSelectedCity(e.target.value)}
-                >
-                  <option value="">Select City</option>
-                  {ALL_CITIES.map((city) => (
-                    <option key={city.id} value={city.name}>
-                      {city.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <div className="flex items-end">
-                <button
-                  type="button"
-                  className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center"
-                  onClick={handleSearch}
-                  disabled={!selectedCountry || !selectedVisa || !selectedCity || isSearching}
-                  aria-label="Search visa appointments"
-                >
-                  {isSearching ? (
-                    <>
-                      <div className="w-5 h-5 border-2 border-charcoal-900 border-t-transparent rounded-full animate-spin mr-2"></div>
-                      <span className="text-sm font-medium">Searching...</span>
-                    </>
-                  ) : (
-                    <>
-                      <Search className="w-5 h-5 mr-2" />
-                      <span className="text-sm font-medium">Search</span>
-                    </>
-                  )}
-                </button>
-              </div>
-            </div>
+          <div id="search">
+            <SearchForm />
           </div>
         </div>
       </section>
