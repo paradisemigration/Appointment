@@ -164,7 +164,7 @@ export default function ServicesPage() {
                   </div>
                   <Link 
                     href="/"
-                    className="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center"
+                    className="w-full bg-mustard-600 hover:bg-mustard-700 text-charcoal-900 font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center"
                   >
                     Book Appointment
                     <ArrowRight className="h-5 w-5 ml-2" />
