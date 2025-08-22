@@ -25,7 +25,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 text-white relative overflow-hidden">
+    <footer className="bg-gradient-navy text-white relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-full opacity-5">
@@ -42,12 +42,12 @@ export default function Footer() {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <Link href="/" className="flex items-center space-x-3 mb-6 group">
-                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
                   <Globe className="w-7 h-7 text-white" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold">VFS Portal</h3>
-                  <p className="text-blue-200 text-sm">Professional Visa Services</p>
+                  <p className="text-sky-200 text-sm">Professional Visa Services</p>
                 </div>
               </Link>
               
@@ -59,16 +59,16 @@ export default function Footer() {
               {/* Trust Indicators */}
               <div className="space-y-3 mb-6">
                 <div className="flex items-center space-x-2">
-                  <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                  <span className="text-blue-100">98% Success Rate</span>
+                  <Star className="w-5 h-5 text-orange-400 fill-current" />
+                  <span className="text-sky-100">98% Success Rate</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Clock className="w-5 h-5 text-green-400" />
-                  <span className="text-blue-100">24/7 Support</span>
+                  <span className="text-sky-100">24/7 Support</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Globe className="w-5 h-5 text-blue-400" />
-                  <span className="text-blue-100">35+ Countries</span>
+                  <Globe className="w-5 h-5 text-sky-400" />
+                  <span className="text-sky-100">35+ Countries</span>
                 </div>
               </div>
 
