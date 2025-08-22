@@ -170,7 +170,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center space-x-4">
             <a
               href="https://wa.me/1234567890"
-              className="text-white hover:text-orange-300 hover:bg-white/10 font-medium py-3 px-6 rounded-xl transition-all duration-300"
+              className="text-white hover:text-mustard-300 hover:bg-white/10 font-medium py-3 px-6 rounded-xl transition-all duration-300"
             >
               <Phone className="w-4 h-4 mr-2" />
               Support
