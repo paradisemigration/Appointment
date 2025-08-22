@@ -172,8 +172,10 @@ export default function Home() {
                   className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                   onClick={handleSearch}
                   disabled={!selectedCountry || !selectedVisa || !selectedCity}
+                  aria-label="Search visa appointments"
                 >
                   <Search className="w-5 h-5 mx-auto" />
+                  <span className="sr-only">Search</span>
                 </button>
               </div>
             </div>
