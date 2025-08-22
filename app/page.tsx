@@ -47,7 +47,7 @@ export default function Home() {
             {/* Main Headline */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8">
               <span className="block">Professional</span>
-              <span className="block text-gradient bg-gradient-to-r from-green-400 via-green-500 to-green-600 bg-clip-text text-transparent">
+              <span className="block text-gradient bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
                 Visa Services
               </span>
             </h1>
