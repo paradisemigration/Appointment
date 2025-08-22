@@ -61,9 +61,9 @@ export default function Home() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-              <Link 
+              <Link
                 href="#search"
-                className="group relative overflow-hidden bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-8 rounded-2xl shadow-2xl transform hover:-translate-y-1 transition-all duration-300 hover:shadow-glow inline-flex items-center justify-center"
+                className="group relative overflow-hidden bg-gradient-to-r from-mustard-500 to-mustard-600 hover:from-mustard-600 hover:to-mustard-700 text-charcoal-900 font-bold py-4 px-8 rounded-2xl shadow-2xl transform hover:-translate-y-1 transition-all duration-300 hover:shadow-glow inline-flex items-center justify-center"
               >
                 <Calendar className="w-6 h-6 mr-3" />
                 Book Appointment Now
