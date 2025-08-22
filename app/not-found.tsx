@@ -38,13 +38,13 @@ export default function NotFound() {
         <div className="text-sm text-gray-500">
           <p>Popular searches:</p>
           <div className="flex flex-wrap gap-2 mt-2">
-            <Link href="/france-visit-visa-appointment-delhi" className="text-primary-600 hover:underline">
+            <Link href="/france-visit-visa-appointment-delhi" className="text-mustard-600 hover:underline">
               France Visa Delhi
             </Link>
-            <Link href="/germany-work-visa-appointment-mumbai" className="text-primary-600 hover:underline">
+            <Link href="/germany-work-visa-appointment-mumbai" className="text-mustard-600 hover:underline">
               Germany Work Mumbai
             </Link>
-            <Link href="/usa-visit-visa-appointment-bangalore" className="text-primary-600 hover:underline">
+            <Link href="/usa-visit-visa-appointment-bangalore" className="text-mustard-600 hover:underline">
               USA Visa Bangalore
             </Link>
           </div>
