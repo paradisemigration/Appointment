@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* Professional Hero Section */}
-      <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-hero">
+      <section className="relative min-h-[80vh] flex flex-col items-center justify-center overflow-hidden bg-gradient-hero pt-20">
         {/* Animated Background */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-green-600/20"></div>
@@ -36,7 +36,7 @@ export default function Home() {
           <div className="absolute bottom-32 left-1/4 w-48 h-48 bg-gradient-to-r from-royal-600/10 to-orange-600/10 rounded-full blur-2xl animate-float"></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex-1 flex flex-col justify-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12">
           <div className="mb-12">
             {/* Trust Badge */}
             <div className="inline-flex items-center bg-orange-500/10 backdrop-blur-md border border-orange-500/20 rounded-full px-6 py-3 mb-8">
@@ -45,7 +45,7 @@ export default function Home() {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
               <span className="block">Professional</span>
               <span className="block text-gradient bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
                 Visa Services
@@ -53,14 +53,14 @@ export default function Home() {
             </h1>
 
             {/* Subtitle */}
-            <p className="text-xl md:text-2xl lg:text-3xl text-gray-200 max-w-4xl mx-auto mb-12 leading-relaxed">
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-200 max-w-4xl mx-auto mb-8 leading-relaxed">
               Book appointments for <span className="text-orange-400 font-semibold">35+ countries</span> with
               expert guidance, <span className="text-sky-300 font-semibold">98% success rate</span>, and
               guaranteed slots within <span className="text-orange-400 font-semibold">24 hours</span>
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
               <Link 
                 href="#search"
                 className="group relative overflow-hidden bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-8 rounded-2xl shadow-2xl transform hover:-translate-y-1 transition-all duration-300 hover:shadow-glow inline-flex items-center justify-center"
@@ -80,7 +80,7 @@ export default function Home() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-orange-400 mb-2">98%</div>
                 <div className="text-sky-200 text-sm">Success Rate</div>
@@ -102,7 +102,7 @@ export default function Home() {
         </div>
 
         {/* Search Form */}
-        <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
           <div id="search" className="bg-white/95 backdrop-blur-md border border-gray-200 rounded-2xl p-8 shadow-2xl">
             <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
               Find Your Perfect Appointment
