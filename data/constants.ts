@@ -206,6 +206,110 @@ export const OTHER_COUNTRIES: Country[] = [
     continent: 'Oceania',
     isSchengen: false,
     visaTypes: VISA_TYPES
+  },
+  {
+    code: 'JP',
+    name: 'Japan',
+    flag: '🇯🇵',
+    continent: 'Asia',
+    isSchengen: false,
+    visaTypes: VISA_TYPES
+  },
+  {
+    code: 'KR',
+    name: 'South Korea',
+    flag: '🇰🇷',
+    continent: 'Asia',
+    isSchengen: false,
+    visaTypes: VISA_TYPES
+  },
+  {
+    code: 'SG',
+    name: 'Singapore',
+    flag: '🇸🇬',
+    continent: 'Asia',
+    isSchengen: false,
+    visaTypes: VISA_TYPES
+  },
+  {
+    code: 'CN',
+    name: 'China',
+    flag: '🇨🇳',
+    continent: 'Asia',
+    isSchengen: false,
+    visaTypes: VISA_TYPES
+  },
+  {
+    code: 'HK',
+    name: 'Hong Kong',
+    flag: '🇭🇰',
+    continent: 'Asia',
+    isSchengen: false,
+    visaTypes: VISA_TYPES
+  },
+  {
+    code: 'TH',
+    name: 'Thailand',
+    flag: '🇹🇭',
+    continent: 'Asia',
+    isSchengen: false,
+    visaTypes: VISA_TYPES
+  },
+  {
+    code: 'MY',
+    name: 'Malaysia',
+    flag: '🇲🇾',
+    continent: 'Asia',
+    isSchengen: false,
+    visaTypes: VISA_TYPES
+  },
+  {
+    code: 'ID',
+    name: 'Indonesia',
+    flag: '🇮🇩',
+    continent: 'Asia',
+    isSchengen: false,
+    visaTypes: VISA_TYPES
+  },
+  {
+    code: 'PH',
+    name: 'Philippines',
+    flag: '🇵🇭',
+    continent: 'Asia',
+    isSchengen: false,
+    visaTypes: VISA_TYPES
+  },
+  {
+    code: 'VN',
+    name: 'Vietnam',
+    flag: '🇻🇳',
+    continent: 'Asia',
+    isSchengen: false,
+    visaTypes: VISA_TYPES
+  },
+  {
+    code: 'BR',
+    name: 'Brazil',
+    flag: '🇧🇷',
+    continent: 'South America',
+    isSchengen: false,
+    visaTypes: VISA_TYPES
+  },
+  {
+    code: 'MX',
+    name: 'Mexico',
+    flag: '🇲🇽',
+    continent: 'North America',
+    isSchengen: false,
+    visaTypes: VISA_TYPES
+  },
+  {
+    code: 'ZA',
+    name: 'South Africa',
+    flag: '🇿🇦',
+    continent: 'Africa',
+    isSchengen: false,
+    visaTypes: VISA_TYPES
   }
 ];
 
