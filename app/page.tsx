@@ -54,9 +54,9 @@ export default function Home() {
 
             {/* Subtitle */}
             <p className="text-lg md:text-xl lg:text-2xl text-gray-200 max-w-4xl mx-auto mb-8 leading-relaxed">
-              Book appointments for <span className="text-orange-400 font-semibold">35+ countries</span> with
-              expert guidance, <span className="text-sky-300 font-semibold">98% success rate</span>, and
-              guaranteed slots within <span className="text-orange-400 font-semibold">24 hours</span>
+              Book appointments for <span className="text-mustard-400 font-semibold">35+ countries</span> with
+              expert guidance, <span className="text-mustard-300 font-semibold">98% success rate</span>, and
+              guaranteed slots within <span className="text-mustard-400 font-semibold">24 hours</span>
             </p>
 
             {/* CTA Buttons */}
