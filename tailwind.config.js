@@ -13,42 +13,42 @@ module.exports = {
         'display': ['var(--font-space-grotesk)', 'system-ui', 'sans-serif'],
       },
       colors: {
-        // Primary Colors (Trust & Professionalism)
-        royal: {
-          500: '#1E3A8A',
-          600: '#1d4ed8',
-          700: '#1e40af',
-          800: '#1e3a8a',
-          900: '#1e3a8a',
+        // Primary Color - Charcoal Gray (Header, Footer)
+        charcoal: {
+          50: '#f8f9fa',
+          100: '#e9ecef',
+          200: '#dee2e6',
+          300: '#ced4da',
+          400: '#6c757d',
+          500: '#2C3E50',
+          600: '#253445',
+          700: '#1e2a3a',
+          800: '#17202f',
+          900: '#101624'
         },
-        navy: {
-          500: '#0B2545',
-          600: '#0f172a',
-          700: '#0c1729',
-          800: '#0a1628',
-          900: '#0B2545',
+        // Accent Color - Mustard Yellow (CTAs, Highlights)
+        mustard: {
+          50: '#fdfcf0',
+          100: '#fbf7e0',
+          200: '#f6efb8',
+          300: '#f1e68c',
+          400: '#ebd85e',
+          500: '#F1C40F',
+          600: '#d4a90c',
+          700: '#b38f0a',
+          800: '#927407',
+          900: '#755e06'
         },
-        // Secondary Colors (Fresh & Approachable)
-        sky: {
-          500: '#60A5FA',
-          600: '#3b82f6',
-          700: '#2563eb',
-        },
-        teal: {
-          500: '#14B8A6',
-          600: '#0d9488',
-          700: '#0f766e',
-        },
-        // Accent Colors (Call-to-Action)
+        // Supporting Colors
         orange: {
-          500: '#F97316',
-          600: '#ea580c',
-          700: '#c2410c',
+          500: '#F1C40F',
+          600: '#d4a90c',
+          700: '#b38f0a',
         },
         green: {
-          500: '#22C55E',
-          600: '#16a34a',
-          700: '#15803d',
+          500: '#27AE60',
+          600: '#229954',
+          700: '#1e8449',
         },
         // Neutral Colors
         gray: {
@@ -78,12 +78,12 @@ module.exports = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'gradient-hero': 'linear-gradient(90deg, #1E3A8A, #60A5FA)',
-        'gradient-primary': 'linear-gradient(90deg, #F97316, #ea580c)',
-        'gradient-cta-hover': 'linear-gradient(90deg, #F97316, #22C55E)',
-        'gradient-royal': 'linear-gradient(135deg, #1E3A8A 0%, #60A5FA 100%)',
-        'gradient-navy': 'linear-gradient(135deg, #0B2545 0%, #1E3A8A 100%)',
-        'gradient-orange': 'linear-gradient(135deg, #F97316 0%, #ea580c 100%)',
+        'gradient-hero': 'linear-gradient(135deg, #2C3E50 0%, #34495e 100%)',
+        'gradient-cta': 'linear-gradient(135deg, #F1C40F 0%, #f39c12 100%)',
+        'gradient-cta-hover': 'linear-gradient(135deg, #f39c12 0%, #e67e22 100%)',
+        'gradient-charcoal': 'linear-gradient(135deg, #2C3E50 0%, #34495e 100%)',
+        'gradient-mustard': 'linear-gradient(135deg, #F1C40F 0%, #f39c12 100%)',
+        'gradient-primary': 'linear-gradient(90deg, #F1C40F, #d4a90c)',
       },
       boxShadow: {
         'soft': '0 2px 15px -3px rgba(0, 0, 0, 0.1), 0 10px 20px -2px rgba(0, 0, 0, 0.05)',
