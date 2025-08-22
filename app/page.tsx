@@ -309,10 +309,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="relative mb-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-royal-500 to-sky-500 text-white rounded-2xl flex items-center justify-center mx-auto shadow-lg">
+                <div className="w-16 h-16 bg-gradient-to-br from-charcoal-500 to-charcoal-600 text-white rounded-2xl flex items-center justify-center mx-auto shadow-lg">
                   <Globe className="w-8 h-8" />
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-mustard-500 text-charcoal-900 rounded-full flex items-center justify-center text-sm font-bold">
                   1
                 </div>
               </div>
