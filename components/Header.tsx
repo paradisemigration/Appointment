@@ -83,7 +83,7 @@ export default function Header() {
                           {/* European Countries */}
                           <div>
                             <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
-                              <span className="text-green-600 mr-2">🇪🇺</span>
+                              <span className="text-mustard-600 mr-2">🇪🇺</span>
                               European Countries
                             </h3>
                             <div className="grid grid-cols-2 gap-2">
@@ -91,23 +91,23 @@ export default function Header() {
                                 <Link
                                   key={country.code}
                                   href={`/${country.name.toLowerCase().replace(/\s+/g, '-')}`}
-                                  className="flex items-center space-x-2 p-3 rounded-lg hover:bg-green-50 hover:text-green-600 transition-colors duration-300 group"
+                                  className="flex items-center space-x-2 p-3 rounded-lg hover:bg-mustard-50 hover:text-mustard-600 transition-colors duration-300 group"
                                 >
                                   <span className="text-lg group-hover:scale-110 transition-transform duration-300">
                                     {country.flag}
                                   </span>
                                   <span className="text-sm font-medium">{country.name}</span>
                                   {country.isSchengen && (
-                                    <span className="text-xs bg-green-100 text-green-600 px-1.5 py-0.5 rounded">
+                                    <span className="text-xs bg-mustard-100 text-mustard-700 px-1.5 py-0.5 rounded">
                                       Schengen
                                     </span>
                                   )}
                                 </Link>
                               ))}
                             </div>
-                            <Link 
+                            <Link
                               href="/countries"
-                              className="inline-flex items-center text-green-600 hover:text-green-700 font-medium mt-4 group"
+                              className="inline-flex items-center text-mustard-600 hover:text-mustard-700 font-medium mt-4 group"
                             >
                               View all European countries
                               <ChevronDown className="w-4 h-4 ml-1 rotate-270 group-hover:translate-x-1 transition-transform duration-300" />
