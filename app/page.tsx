@@ -39,8 +39,8 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12">
           <div className="mb-12">
             {/* Trust Badge */}
-            <div className="inline-flex items-center bg-orange-500/10 backdrop-blur-md border border-orange-500/20 rounded-full px-6 py-3 mb-8">
-              <Shield className="w-5 h-5 text-orange-400 mr-2" />
+            <div className="inline-flex items-center bg-mustard-500/10 backdrop-blur-md border border-mustard-500/20 rounded-full px-6 py-3 mb-8">
+              <Shield className="w-5 h-5 text-mustard-400 mr-2" />
               <span className="text-white font-medium">Trusted by 10,000+ customers worldwide</span>
             </div>
 
