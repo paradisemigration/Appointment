@@ -71,7 +71,7 @@ export default function CityAppointmentPage({ params }: PageProps) {
   }
 
   // Generate content for the page
-  const content = generateSEOContent(country.name, city.name, visaType);
+  const content = generateVisaPageContent(country.name, city.name, visaType);
 
   return (
     <VisaAppointmentPage
