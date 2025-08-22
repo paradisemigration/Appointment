@@ -50,7 +50,7 @@ export default function CountryPage({ params }: PageProps) {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Modern Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800">
+      <section className="relative overflow-hidden bg-gradient-charcoal">
         {/* Background Effects */}
         <div className="absolute inset-0">
           <div className={"absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.05\"%3E%3Ccircle cx=\"30\" cy=\"30\" r=\"2\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"}></div>
@@ -70,7 +70,7 @@ export default function CountryPage({ params }: PageProps) {
                 <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 animate-slide-in-right">
                   {country.name}
                 </h1>
-                <p className="text-xl md:text-2xl text-blue-100 animate-slide-in-right" style={{animationDelay: '0.2s'}}>
+                <p className="text-xl md:text-2xl text-gray-200 animate-slide-in-right" style={{animationDelay: '0.2s'}}>
                   Visa Appointment Services
                 </p>
                 {country.isSchengen && (
@@ -82,8 +82,8 @@ export default function CountryPage({ params }: PageProps) {
               </div>
             </div>
 
-            <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto mb-12 animate-slide-up" style={{animationDelay: '0.6s'}}>
-              Professional visa appointment booking for {country.name} with expert guidance, 
+            <p className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto mb-12 animate-slide-up" style={{animationDelay: '0.6s'}}>
+              Professional visa appointment booking for {country.name} with expert guidance,
               minimal cost, and guaranteed slots from all major cities
             </p>
 
@@ -91,11 +91,11 @@ export default function CountryPage({ params }: PageProps) {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto animate-slide-up" style={{animationDelay: '0.8s'}}>
               <div className="stat-card">
                 <div className="text-3xl font-bold text-white mb-2">98%</div>
-                <div className="text-blue-100 text-sm">Success Rate</div>
+                <div className="text-gray-200 text-sm">Success Rate</div>
               </div>
               <div className="stat-card">
                 <div className="text-3xl font-bold text-white mb-2">24h</div>
-                <div className="text-blue-100 text-sm">Booking Time</div>
+                <div className="text-gray-200 text-sm">Booking Time</div>
               </div>
               <div className="stat-card">
                 <div className="text-3xl font-bold text-white mb-2">50+</div>
