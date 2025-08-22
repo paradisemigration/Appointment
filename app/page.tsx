@@ -167,7 +167,8 @@ export default function Home() {
               </div>
 
               <div className="flex items-end">
-                <button 
+                <button
+                  type="button"
                   className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                   onClick={handleSearch}
                   disabled={!selectedCountry || !selectedVisa || !selectedCity}
