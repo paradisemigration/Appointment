@@ -205,7 +205,7 @@ export default function CountryPage({ params }: PageProps) {
                       </h3>
                       <p className="text-gray-600 text-sm">{city.region}</p>
                     </div>
-                    <MapPin className="w-6 h-6 text-blue-500" />
+                    <MapPin className="w-6 h-6 text-mustard-500" />
                   </div>
 
                   <div className="space-y-3 mb-6">
@@ -213,13 +213,13 @@ export default function CountryPage({ params }: PageProps) {
                       <Link
                         key={visa.id}
                         href={`/${params.country}/appointment/${visa.slug}/${city.slug}`}
-                        className="block p-3 bg-gray-50 hover:bg-blue-50 rounded-lg transition-colors duration-300 group"
+                        className="block p-3 bg-gray-50 hover:bg-mustard-50 rounded-lg transition-colors duration-300 group"
                       >
                         <div className="flex items-center justify-between">
-                          <span className="font-medium text-gray-900 group-hover:text-blue-600">
+                          <span className="font-medium text-gray-900 group-hover:text-mustard-600">
                             {visa.name}
                           </span>
-                          <span className="text-xs text-gray-500 group-hover:text-blue-500">
+                          <span className="text-xs text-gray-500 group-hover:text-mustard-500">
                             Book Now →
                           </span>
                         </div>
