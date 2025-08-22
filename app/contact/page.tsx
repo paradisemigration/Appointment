@@ -103,12 +103,12 @@ Message: ${formData.message}`;
       </div>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20">
+      <section className="bg-gradient-charcoal text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Contact Us
           </h1>
-          <p className="text-xl md:text-2xl text-primary-100 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
             Get in touch with our visa experts for personalized assistance
           </p>
         </div>
@@ -120,7 +120,7 @@ Message: ${formData.message}`;
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {contactInfo.map((info, index) => (
               <div key={index} className="bg-white rounded-xl shadow-sm p-6 text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 text-primary-600 rounded-full mb-4">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-mustard-100 text-mustard-600 rounded-full mb-4">
                   <info.icon className="h-8 w-8" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">{info.title}</h3>
@@ -152,7 +152,7 @@ Message: ${formData.message}`;
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mustard-500 focus:border-mustard-500"
                       placeholder="Enter your name"
                     />
                   </div>
@@ -166,7 +166,7 @@ Message: ${formData.message}`;
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mustard-500 focus:border-mustard-500"
                       placeholder="Enter your email"
                     />
                   </div>
@@ -182,7 +182,7 @@ Message: ${formData.message}`;
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mustard-500 focus:border-mustard-500"
                       placeholder="+91 9876543210"
                     />
                   </div>
@@ -195,7 +195,7 @@ Message: ${formData.message}`;
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mustard-500 focus:border-mustard-500"
                     >
                       <option value="">Select Subject</option>
                       <option value="appointment-booking">Appointment Booking</option>
@@ -224,7 +224,7 @@ Message: ${formData.message}`;
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+                  className="w-full bg-mustard-600 hover:bg-mustard-700 text-charcoal-900 font-medium py-3 px-6 rounded-lg transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
                 >
                   {isSubmitting ? (
                     'Sending...'
@@ -247,15 +247,15 @@ Message: ${formData.message}`;
                     <h3 className="text-xl font-semibold text-gray-900 mb-4">{office.city}</h3>
                     <div className="space-y-2 text-gray-600">
                       <div className="flex items-start">
-                        <MapPin className="h-5 w-5 mr-2 mt-0.5 text-primary-600" />
+                        <MapPin className="h-5 w-5 mr-2 mt-0.5 text-mustard-600" />
                         <span>{office.address}</span>
                       </div>
                       <div className="flex items-center">
-                        <Phone className="h-5 w-5 mr-2 text-primary-600" />
+                        <Phone className="h-5 w-5 mr-2 text-mustard-600" />
                         <span>{office.phone}</span>
                       </div>
                       <div className="flex items-center">
-                        <Mail className="h-5 w-5 mr-2 text-primary-600" />
+                        <Mail className="h-5 w-5 mr-2 text-mustard-600" />
                         <span>{office.email}</span>
                       </div>
                     </div>
@@ -264,7 +264,7 @@ Message: ${formData.message}`;
               </div>
 
               {/* Quick Contact */}
-              <div className="mt-8 bg-primary-50 rounded-xl p-6">
+              <div className="mt-8 bg-mustard-50 rounded-xl p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Need Immediate Help?</h3>
                 <p className="text-gray-600 mb-4">
                   For urgent visa appointment queries, contact us directly via WhatsApp for instant support.
