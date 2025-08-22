@@ -90,12 +90,12 @@ export default function Home() {
                 <div className="text-gray-200 text-sm">Countries</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-orange-400 mb-2">50+</div>
-                <div className="text-sky-200 text-sm">Cities</div>
+                <div className="text-3xl md:text-4xl font-bold text-mustard-400 mb-2">50+</div>
+                <div className="text-gray-200 text-sm">Cities</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-orange-400 mb-2">24h</div>
-                <div className="text-sky-200 text-sm">Booking Time</div>
+                <div className="text-3xl md:text-4xl font-bold text-mustard-400 mb-2">24h</div>
+                <div className="text-gray-200 text-sm">Booking Time</div>
               </div>
             </div>
           </div>
