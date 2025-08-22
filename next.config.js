@@ -7,7 +7,7 @@ const nextConfig = {
     return [
       {
         source: '/:country-:visa-visa-appointment-:city',
-        destination: '/appointment/:country/:visa/:city',
+        destination: '/:country/appointment/:visa/:city',
       },
     ];
   },
