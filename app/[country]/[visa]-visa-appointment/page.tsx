@@ -12,8 +12,8 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  const paths: any[] = [];
-  
+  const paths: { country: string; visa: string }[] = [];
+
   ALL_COUNTRIES.forEach(country => {
     VISA_TYPES.forEach(visa => {
       paths.push({
@@ -22,7 +22,8 @@ export async function generateStaticParams() {
       });
     });
   });
-  
+
+  console.log('Generated visa appointment paths:', paths.slice(0, 5)); // Log first 5 for debugging
   return paths;
 }
 
