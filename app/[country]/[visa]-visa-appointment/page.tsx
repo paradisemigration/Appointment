@@ -11,21 +11,8 @@ interface PageProps {
   };
 }
 
-export async function generateStaticParams() {
-  const paths: { country: string; visa: string }[] = [];
-
-  ALL_COUNTRIES.forEach(country => {
-    VISA_TYPES.forEach(visa => {
-      paths.push({
-        country: country.name.toLowerCase().replace(/\s+/g, '-'),
-        visa: visa.slug,
-      });
-    });
-  });
-
-  console.log('Generated visa appointment paths:', paths.slice(0, 5)); // Log first 5 for debugging
-  return paths;
-}
+// Disable static generation for now to ensure dynamic routing works
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const countryName = params.country.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());

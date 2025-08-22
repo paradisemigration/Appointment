@@ -14,27 +14,8 @@ interface PageProps {
   };
 }
 
-export async function generateStaticParams() {
-  const paths: { country: string; visa: string; city: string }[] = [];
-
-  // Generate paths for main cities only to keep build size manageable
-  const mainCities = ALL_CITIES.slice(0, 8); // Top 8 cities
-
-  ALL_COUNTRIES.forEach(country => {
-    VISA_TYPES.forEach(visa => {
-      mainCities.forEach(city => {
-        paths.push({
-          country: country.name.toLowerCase().replace(/\s+/g, '-'),
-          visa: visa.slug,
-          city: city.slug,
-        });
-      });
-    });
-  });
-
-  console.log('Generated city appointment paths:', paths.slice(0, 3)); // Log first 3 for debugging
-  return paths;
-}
+// Disable static generation for now to ensure dynamic routing works
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const countryName = params.country.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
