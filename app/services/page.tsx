@@ -212,7 +212,7 @@ export default function ServicesPage() {
                 className="bg-white rounded-xl p-4 text-center hover:shadow-md transition-shadow group"
               >
                 <div className="text-3xl mb-2">{country.flag}</div>
-                <div className="text-sm font-medium text-gray-900 group-hover:text-primary-600 transition-colors">
+                <div className="text-sm font-medium text-gray-900 group-hover:text-mustard-600 transition-colors">
                   {country.name}
                 </div>
                 {country.isSchengen && (
