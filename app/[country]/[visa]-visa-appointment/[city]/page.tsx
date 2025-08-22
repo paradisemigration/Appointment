@@ -15,12 +15,14 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  const paths: any[] = [];
+  const paths: { country: string; visa: string; city: string }[] = [];
 
-  // Generate paths for all combinations
+  // Generate paths for main cities only to keep build size manageable
+  const mainCities = ALL_CITIES.slice(0, 8); // Top 8 cities
+
   ALL_COUNTRIES.forEach(country => {
     VISA_TYPES.forEach(visa => {
-      ALL_CITIES.forEach(city => {
+      mainCities.forEach(city => {
         paths.push({
           country: country.name.toLowerCase().replace(/\s+/g, '-'),
           visa: visa.slug,
@@ -30,6 +32,7 @@ export async function generateStaticParams() {
     });
   });
 
+  console.log('Generated city appointment paths:', paths.slice(0, 3)); // Log first 3 for debugging
   return paths;
 }
 
