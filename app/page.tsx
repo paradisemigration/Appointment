@@ -396,10 +396,10 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-green-600 to-green-700 relative overflow-hidden">
+      <section className="py-24 bg-gradient-charcoal relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl animate-float"></div>
-          <div className="absolute bottom-10 right-10 w-40 h-40 bg-green-300/20 rounded-full blur-2xl animate-float"></div>
+          <div className="absolute bottom-10 right-10 w-40 h-40 bg-mustard-300/20 rounded-full blur-2xl animate-float"></div>
         </div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -407,14 +407,14 @@ export default function Home() {
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-8">
               Ready to Start Your Journey?
             </h2>
-            <p className="text-xl text-green-100 mb-12 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 mb-12 max-w-3xl mx-auto">
               Join thousands of satisfied customers who have successfully booked their visa appointments with us
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
                 href="#search"
-                className="inline-flex items-center bg-white text-green-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-xl shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                className="inline-flex items-center bg-white text-charcoal-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-xl shadow-xl transition-all duration-300 transform hover:-translate-y-1"
               >
                 <Calendar className="w-5 h-5 mr-2" />
                 Book Your Appointment
