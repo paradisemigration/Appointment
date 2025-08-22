@@ -223,7 +223,7 @@ export default function Header() {
                               <Link
                                 key={country.code}
                                 href={`/${country.name.toLowerCase().replace(/\s+/g, '-')}`}
-                                className="flex items-center space-x-2 p-2 text-sm text-white hover:bg-white/10 hover:text-orange-300 rounded-lg transition-colors duration-300"
+                                className="flex items-center space-x-2 p-2 text-sm text-white hover:bg-white/10 hover:text-mustard-300 rounded-lg transition-colors duration-300"
                                 onClick={() => setIsMenuOpen(false)}
                               >
                                 <span>{country.flag}</span>
@@ -238,7 +238,7 @@ export default function Header() {
                               <Link
                                 key={country.code}
                                 href={`/${country.name.toLowerCase().replace(/\s+/g, '-')}`}
-                                className="flex items-center space-x-2 p-2 text-sm text-white hover:bg-white/10 hover:text-orange-300 rounded-lg transition-colors duration-300"
+                                className="flex items-center space-x-2 p-2 text-sm text-white hover:bg-white/10 hover:text-mustard-300 rounded-lg transition-colors duration-300"
                                 onClick={() => setIsMenuOpen(false)}
                               >
                                 <span>{country.flag}</span>
@@ -249,7 +249,7 @@ export default function Header() {
                           
                           <Link
                             href="/countries"
-                            className="block p-2 text-sm text-orange-400 hover:bg-white/10 hover:text-orange-300 rounded-lg transition-colors duration-300"
+                            className="block p-2 text-sm text-mustard-400 hover:bg-white/10 hover:text-mustard-300 rounded-lg transition-colors duration-300"
                             onClick={() => setIsMenuOpen(false)}
                           >
                             View All Countries →
@@ -260,8 +260,8 @@ export default function Header() {
                   ) : (
                     <Link
                       href={item.href}
-                      className={`block p-3 text-white hover:bg-white/10 hover:text-orange-300 rounded-lg transition-colors duration-300 font-medium ${
-                        pathname === item.href ? 'bg-white/10 text-orange-300' : ''
+                      className={`block p-3 text-white hover:bg-white/10 hover:text-mustard-300 rounded-lg transition-colors duration-300 font-medium ${
+                        pathname === item.href ? 'bg-white/10 text-mustard-300' : ''
                       }`}
                       onClick={() => setIsMenuOpen(false)}
                     >

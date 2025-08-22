@@ -42,33 +42,33 @@ export default function Footer() {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <Link href="/" className="flex items-center space-x-3 mb-6 group">
-                <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                  <Globe className="w-7 h-7 text-white" />
+                <div className="w-12 h-12 bg-gradient-to-r from-mustard-500 to-mustard-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                  <Globe className="w-7 h-7 text-charcoal-900" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold">VFS Portal</h3>
-                  <p className="text-sky-200 text-sm">Professional Visa Services</p>
+                  <p className="text-gray-200 text-sm">Professional Visa Services</p>
                 </div>
               </Link>
               
-              <p className="text-blue-100 mb-6 leading-relaxed">
-                Your trusted partner for professional visa appointment booking services. 
+              <p className="text-gray-200 mb-6 leading-relaxed">
+                Your trusted partner for professional visa appointment booking services.
                 Expert guidance, minimal cost, and guaranteed results for 35+ countries worldwide.
               </p>
 
               {/* Trust Indicators */}
               <div className="space-y-3 mb-6">
                 <div className="flex items-center space-x-2">
-                  <Star className="w-5 h-5 text-orange-400 fill-current" />
-                  <span className="text-sky-100">98% Success Rate</span>
+                  <Star className="w-5 h-5 text-mustard-400 fill-current" />
+                  <span className="text-gray-200">98% Success Rate</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Clock className="w-5 h-5 text-green-400" />
-                  <span className="text-sky-100">24/7 Support</span>
+                  <span className="text-gray-200">24/7 Support</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Globe className="w-5 h-5 text-sky-400" />
-                  <span className="text-sky-100">35+ Countries</span>
+                  <Globe className="w-5 h-5 text-mustard-400" />
+                  <span className="text-gray-200">35+ Countries</span>
                 </div>
               </div>
 
@@ -81,9 +81,9 @@ export default function Footer() {
                 >
                   <Phone className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                 </a>
-                <a 
-                  href="mailto:support@vfsportal.com" 
-                  className="w-10 h-10 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors duration-300 group"
+                <a
+                  href="mailto:support@vfsportal.com"
+                  className="w-10 h-10 bg-mustard-500 hover:bg-mustard-600 rounded-full flex items-center justify-center transition-colors duration-300 group"
                   aria-label="Email"
                 >
                   <Mail className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
