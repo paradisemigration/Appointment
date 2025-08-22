@@ -273,7 +273,7 @@ export default function ServicesPage() {
               </div>
             </div>
             
-            <div className="bg-primary-50 rounded-2xl p-8">
+            <div className="bg-mustard-50 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Ready to Get Started?</h3>
               <div className="space-y-4 text-center">
                 <p className="text-gray-700">Join thousands of satisfied customers who trust us with their visa appointments.</p>
