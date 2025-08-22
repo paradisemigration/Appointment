@@ -57,12 +57,12 @@ export default function AboutPage() {
       </div>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20">
+      <section className="bg-gradient-charcoal text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             About VFS Portal
           </h1>
-          <p className="text-xl md:text-2xl text-primary-100 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
             Your trusted partner for professional visa appointment booking services worldwide
           </p>
         </div>
@@ -96,23 +96,23 @@ export default function AboutPage() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Why Choose Us?</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <div className="w-2 h-2 bg-primary-600 rounded-full mt-2 mr-3"></div>
+                  <div className="w-2 h-2 bg-mustard-600 rounded-full mt-2 mr-3"></div>
                   <span className="text-gray-700">Professional team with 5+ years experience</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-2 h-2 bg-primary-600 rounded-full mt-2 mr-3"></div>
+                  <div className="w-2 h-2 bg-mustard-600 rounded-full mt-2 mr-3"></div>
                   <span className="text-gray-700">98% success rate in appointment booking</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-2 h-2 bg-primary-600 rounded-full mt-2 mr-3"></div>
+                  <div className="w-2 h-2 bg-mustard-600 rounded-full mt-2 mr-3"></div>
                   <span className="text-gray-700">24/7 customer support via WhatsApp</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-2 h-2 bg-primary-600 rounded-full mt-2 mr-3"></div>
+                  <div className="w-2 h-2 bg-mustard-600 rounded-full mt-2 mr-3"></div>
                   <span className="text-gray-700">Transparent pricing with no hidden fees</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-2 h-2 bg-primary-600 rounded-full mt-2 mr-3"></div>
+                  <div className="w-2 h-2 bg-mustard-600 rounded-full mt-2 mr-3"></div>
                   <span className="text-gray-700">Fast booking within 24 hours</span>
                 </li>
               </ul>
@@ -131,7 +131,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 text-primary-600 rounded-full mb-4">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-mustard-100 text-mustard-600 rounded-full mb-4">
                   <stat.icon className="h-8 w-8" />
                 </div>
                 <div className="text-3xl font-bold text-gray-900 mb-2">{stat.value}</div>
@@ -154,7 +154,7 @@ export default function AboutPage() {
               <div key={index} className="bg-white rounded-xl shadow-sm p-6 text-center">
                 <div className="text-6xl mb-4">{member.image}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h3>
-                <p className="text-primary-600 font-medium mb-3">{member.role}</p>
+                <p className="text-mustard-600 font-medium mb-3">{member.role}</p>
                 <p className="text-gray-600 text-sm">{member.description}</p>
               </div>
             ))}
@@ -163,17 +163,17 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary-600">
+      <section className="py-20 bg-gradient-charcoal">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Ready to Book Your Visa Appointment?
           </h2>
-          <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             Join thousands of satisfied customers who trust us with their visa appointment needs.
           </p>
           <Link 
             href="/"
-            className="inline-flex items-center bg-white text-primary-600 font-medium py-3 px-8 rounded-lg hover:bg-gray-50 transition-colors"
+            className="inline-flex items-center bg-white text-charcoal-600 font-medium py-3 px-8 rounded-lg hover:bg-gray-50 transition-colors"
           >
             Get Started Today
           </Link>

@@ -116,12 +116,12 @@ export default function ServicesPage() {
       </div>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20">
+      <section className="bg-gradient-charcoal text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Our Services
           </h1>
-          <p className="text-xl md:text-2xl text-primary-100 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
             Comprehensive visa appointment booking services for all your travel needs
           </p>
         </div>
@@ -155,7 +155,7 @@ export default function ServicesPage() {
                   <div className="flex justify-between items-center mb-4">
                     <div>
                       <div className="text-sm text-gray-500">Starting from</div>
-                      <div className="text-2xl font-bold text-primary-600">{service.price}</div>
+                      <div className="text-2xl font-bold text-mustard-600">{service.price}</div>
                     </div>
                     <div className="text-right">
                       <div className="text-sm text-gray-500">Processing</div>
@@ -164,7 +164,7 @@ export default function ServicesPage() {
                   </div>
                   <Link 
                     href="/"
-                    className="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center"
+                    className="w-full bg-mustard-600 hover:bg-mustard-700 text-charcoal-900 font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center"
                   >
                     Book Appointment
                     <ArrowRight className="h-5 w-5 ml-2" />
@@ -186,7 +186,7 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {additionalServices.map((service, index) => (
-              <div key={index} className="text-center p-6 rounded-xl border border-gray-200 hover:border-primary-300 hover:shadow-md transition-all">
+              <div key={index} className="text-center p-6 rounded-xl border border-gray-200 hover:border-mustard-300 hover:shadow-md transition-all">
                 <div className="text-4xl mb-4">{service.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
                 <p className="text-gray-600">{service.description}</p>
@@ -212,7 +212,7 @@ export default function ServicesPage() {
                 className="bg-white rounded-xl p-4 text-center hover:shadow-md transition-shadow group"
               >
                 <div className="text-3xl mb-2">{country.flag}</div>
-                <div className="text-sm font-medium text-gray-900 group-hover:text-primary-600 transition-colors">
+                <div className="text-sm font-medium text-gray-900 group-hover:text-mustard-600 transition-colors">
                   {country.name}
                 </div>
                 {country.isSchengen && (
@@ -225,7 +225,7 @@ export default function ServicesPage() {
           <div className="text-center mt-12">
             <Link 
               href="/countries"
-              className="inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-8 rounded-lg transition-colors"
+              className="inline-flex items-center bg-mustard-600 hover:bg-mustard-700 text-charcoal-900 font-medium py-3 px-8 rounded-lg transition-colors"
             >
               <Globe className="h-5 w-5 mr-2" />
               View All Countries
@@ -242,7 +242,7 @@ export default function ServicesPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Choose Our Services?</h2>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-primary-100 text-primary-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 bg-mustard-100 text-mustard-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                     <Clock className="h-6 w-6" />
                   </div>
                   <div>
@@ -273,15 +273,15 @@ export default function ServicesPage() {
               </div>
             </div>
             
-            <div className="bg-primary-50 rounded-2xl p-8">
+            <div className="bg-mustard-50 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Ready to Get Started?</h3>
               <div className="space-y-4 text-center">
                 <p className="text-gray-700">Join thousands of satisfied customers who trust us with their visa appointments.</p>
-                <div className="text-3xl font-bold text-primary-600">98% Success Rate</div>
+                <div className="text-3xl font-bold text-mustard-600">98% Success Rate</div>
                 <p className="text-sm text-gray-600">Based on 10,000+ successful bookings</p>
                 <Link 
                   href="/"
-                  className="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors inline-block"
+                  className="w-full bg-mustard-600 hover:bg-mustard-700 text-charcoal-900 font-medium py-3 px-6 rounded-lg transition-colors inline-block"
                 >
                   Book Your Appointment Now
                 </Link>

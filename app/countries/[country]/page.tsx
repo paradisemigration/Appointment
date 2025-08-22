@@ -60,7 +60,7 @@ export default function CountryPage({ params }: PageProps) {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-16">
+      <section className="bg-gradient-charcoal text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-4 mb-6">
             <div className="text-6xl">{country.flag}</div>
@@ -68,7 +68,7 @@ export default function CountryPage({ params }: PageProps) {
               <h1 className="text-4xl md:text-6xl font-bold mb-2">
                 {country.name} Visa Appointments
               </h1>
-              <p className="text-xl text-primary-100">
+              <p className="text-xl text-gray-200">
                 Book your {country.name} visa appointment from any major city
               </p>
             </div>
@@ -103,7 +103,7 @@ export default function CountryPage({ params }: PageProps) {
                     <Clock className="h-4 w-4" />
                     <span>{visaType.processingTime}</span>
                   </div>
-                  <div className="font-medium text-primary-600">
+                  <div className="font-medium text-mustard-600">
                     {visaType.fee}
                   </div>
                 </div>
@@ -140,7 +140,7 @@ export default function CountryPage({ params }: PageProps) {
                         </h3>
                         <p className="text-sm text-gray-600">{city.region}</p>
                       </div>
-                      <MapPin className="h-5 w-5 text-primary-500" />
+                      <MapPin className="h-5 w-5 text-mustard-500" />
                     </div>
                     
                     <div className="space-y-2 text-sm text-gray-600">
@@ -162,7 +162,7 @@ export default function CountryPage({ params }: PageProps) {
                     </div>
                     
                     <div className="mt-4 pt-4 border-t border-gray-200">
-                      <div className="text-primary-600 font-medium group-hover:text-primary-700">
+                      <div className="text-mustard-600 font-medium group-hover:text-mustard-700">
                         Book {visaType.name} Appointment →
                       </div>
                     </div>

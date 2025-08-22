@@ -59,6 +59,7 @@
     font-family: var(--font-inter), 'Inter', system-ui, sans-serif;
     font-feature-settings: "rlig" 1, "calt" 1;
     line-height: 1.6;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -84,16 +85,26 @@
 
   /* Custom scrollbar */
   ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-gray-100 rounded-full;
+    @apply bg-gray-100;
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-green-500 hover:bg-green-600 rounded-full;
+    @apply bg-mustard-500 hover:bg-mustard-600 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-mustard-600;
+  }
+
+  /* Firefox scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #F1C40F #f1f5f9;
   }
 
   /* Focus styles */

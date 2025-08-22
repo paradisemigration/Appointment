@@ -109,12 +109,12 @@ export default function CountriesPage() {
       </div>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20">
+      <section className="bg-gradient-charcoal text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             35+ Countries Covered
           </h1>
-          <p className="text-xl md:text-2xl text-primary-100 max-w-3xl mx-auto mb-8">
+          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-8">
             Professional visa appointment booking services for European countries and global destinations
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
@@ -136,7 +136,7 @@ export default function CountriesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-primary-600">35+</div>
+              <div className="text-3xl font-bold text-mustard-600">35+</div>
               <div className="text-gray-600">Countries</div>
             </div>
             <div>
@@ -180,7 +180,7 @@ export default function CountriesPage() {
                         className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     ) : (
-                      <div className="w-full h-48 bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center">
+                      <div className="w-full h-48 bg-gradient-to-br from-mustard-400 to-mustard-600 flex items-center justify-center">
                         <span className="text-6xl">{country.flag}</span>
                       </div>
                     )}
@@ -205,8 +205,8 @@ export default function CountriesPage() {
                       <span>15-20 days</span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-primary-600 font-medium">View Appointments</span>
-                      <ArrowRight className="h-4 w-4 text-primary-600 group-hover:translate-x-1 transition-transform" />
+                      <span className="text-mustard-600 font-medium">View Appointments</span>
+                      <ArrowRight className="h-4 w-4 text-mustard-600 group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
                 </Link>
@@ -231,10 +231,10 @@ export default function CountriesPage() {
               <Link
                 key={country.code || country.name}
                 href={`/${country.name.toLowerCase().replace(/\s+/g, '-')}-visit-visa-appointment-delhi`}
-                className="group bg-white border border-gray-200 rounded-xl p-4 text-center hover:border-primary-300 hover:shadow-md transition-all"
+                className="group bg-white border border-gray-200 rounded-xl p-4 text-center hover:border-mustard-300 hover:shadow-md transition-all"
               >
                 <div className="text-4xl mb-3">{country.flag}</div>
-                <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
+                <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-mustard-600 transition-colors">
                   {country.name}
                 </h3>
                 {country.isSchengen && (
@@ -273,7 +273,7 @@ export default function CountriesPage() {
                   <div className="flex items-center space-x-4 mb-4">
                     <div className="text-5xl">{country.flag}</div>
                     <div>
-                      <h3 className="text-xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors">
+                      <h3 className="text-xl font-bold text-gray-900 group-hover:text-mustard-600 transition-colors">
                         {country.name}
                       </h3>
                       <p className="text-gray-500">{details?.region || 'Global Destination'}</p>
@@ -322,7 +322,7 @@ export default function CountriesPage() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-500">Starting Fee:</span>
-                    <span className="font-medium text-primary-600">{visa.fee}</span>
+                    <span className="font-medium text-mustard-600">{visa.fee}</span>
                   </div>
                 </div>
               </div>
@@ -351,17 +351,17 @@ export default function CountriesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary-600">
+      <section className="py-20 bg-gradient-charcoal">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Ready to Book Your Visa Appointment?
           </h2>
-          <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             Join thousands of satisfied customers who trust us with their visa appointment needs.
           </p>
           <Link 
             href="/"
-            className="inline-flex items-center bg-white text-primary-600 font-medium py-3 px-8 rounded-lg hover:bg-gray-50 transition-colors"
+            className="inline-flex items-center bg-white text-charcoal-600 font-medium py-3 px-8 rounded-lg hover:bg-gray-50 transition-colors"
           >
             <Globe className="h-5 w-5 mr-2" />
             Start Booking Now
