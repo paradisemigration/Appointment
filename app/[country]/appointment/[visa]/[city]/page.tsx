@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import VisaAppointmentPage from '@/components/VisaAppointmentPage';
+import { generateSEOContent } from '@/lib/contentGenerator';
 import { ALL_COUNTRIES, ALL_CITIES, VISA_TYPES } from '@/data/constants';
 
 interface PageProps {
@@ -54,11 +55,15 @@ export default function CityAppointmentPage({ params }: PageProps) {
     notFound();
   }
 
+  // Generate content for the page
+  const content = generateSEOContent(country, city, visaType);
+
   return (
-    <VisaAppointmentPage 
+    <VisaAppointmentPage
       country={country}
       city={city}
       visaType={visaType}
+      content={content}
     />
   );
 }
