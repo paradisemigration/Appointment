@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Search, MapPin, Calendar, Globe, Clock, Users, Star, ArrowRight, CheckCircle, Phone, Play, Shield, Award, Zap, TrendingUp } from 'lucide-react';
+import { Search, MapPin, Calendar, Globe, Clock, Users, Star, ArrowRight, CheckCircle, Phone, Play, Shield, Award, Zap, TrendingUp, ChevronDown } from 'lucide-react';
 import { ALL_COUNTRIES, ALL_CITIES, VISA_TYPES } from '@/data/constants';
 
 export default function Home() {
@@ -21,7 +21,6 @@ export default function Home() {
   };
 
   const popularCountries = ALL_COUNTRIES.slice(0, 8);
-  const featuredCities = ALL_CITIES.slice(0, 6);
 
   return (
     <div className="min-h-screen overflow-x-hidden">
@@ -58,7 +57,7 @@ export default function Home() {
             {/* Main Headline */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 animate-slide-up">
               <span className="block">Professional</span>
-              <span className="block text-gradient bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent animate-gradient">
+              <span className="block text-gradient bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
                 Visa Services
               </span>
             </h1>
@@ -72,19 +71,25 @@ export default function Home() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-slide-up" style={{animationDelay: '0.6s'}}>
-              <button className="group relative overflow-hidden bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-2xl shadow-2xl transform hover:-translate-y-1 transition-all duration-300 hover:shadow-glow-lg">
+              <Link 
+                href="#search"
+                className="group relative overflow-hidden bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-2xl shadow-2xl transform hover:-translate-y-1 transition-all duration-300 hover:shadow-glow-lg inline-flex items-center justify-center"
+              >
                 <span className="relative z-10 flex items-center justify-center">
                   <Calendar className="w-6 h-6 mr-3" />
                   Book Appointment Now
                   <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform duration-300" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </button>
+              </Link>
               
-              <button className="group flex items-center justify-center bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white/20 text-white font-semibold py-4 px-8 rounded-2xl transition-all duration-300 hover:shadow-xl">
+              <Link
+                href="/services"
+                className="group flex items-center justify-center bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white/20 text-white font-semibold py-4 px-8 rounded-2xl transition-all duration-300 hover:shadow-xl"
+              >
                 <Play className="w-6 h-6 mr-3" />
-                Watch How It Works
-              </button>
+                Learn How It Works
+              </Link>
             </div>
 
             {/* Trust Indicators */}
@@ -109,7 +114,7 @@ export default function Home() {
           </div>
 
           {/* Advanced Search Form */}
-          <div className="max-w-5xl mx-auto animate-slide-up" style={{animationDelay: '1.2s'}}>
+          <div id="search" className="max-w-5xl mx-auto animate-slide-up" style={{animationDelay: '1.2s'}}>
             <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 shadow-2xl">
               <h3 className="text-2xl font-bold text-white mb-6 text-center">
                 Find Your Perfect Appointment
@@ -244,7 +249,7 @@ export default function Home() {
                 className="group text-center animate-fade-in" 
                 style={{animationDelay: feature.delay}}
               >
-                <div className={`feature-icon bg-gradient-to-br ${feature.gradient} mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w-16 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br ${feature.gradient} text-white shadow-lg mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -279,16 +284,16 @@ export default function Home() {
                 className="group animate-scale-in"
                 style={{animationDelay: `${index * 0.1}s`}}
               >
-                <div className="country-card group-hover:shadow-glow">
+                <div className="bg-white rounded-2xl shadow-soft border border-gray-100 p-6 hover:shadow-medium transition-all duration-300 transform hover:-translate-y-2 hover:border-blue-200">
                   <div className="text-center">
-                    <div className="text-5xl mb-4 country-flag group-hover:scale-110 transition-transform duration-300">
+                    <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform duration-300">
                       {country.flag}
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">
                       {country.name}
                     </h3>
                     {country.isSchengen && (
-                      <span className="badge-schengen mb-4">
+                      <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mb-4">
                         Schengen
                       </span>
                     )}
@@ -314,11 +319,75 @@ export default function Home() {
           <div className="text-center mt-12 animate-fade-in">
             <Link 
               href="/countries"
-              className="btn-primary"
+              className="inline-flex items-center bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3.5 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
               <Globe className="w-5 h-5 mr-2" />
               View All Countries
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+              Simple 4-Step Process
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Getting your visa appointment has never been easier
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                step: 1,
+                title: 'Choose Destination',
+                description: 'Select your target country and visa type from our comprehensive list',
+                icon: <Globe className="w-8 h-8" />
+              },
+              {
+                step: 2,
+                title: 'Contact Our Experts',
+                description: 'Reach out via WhatsApp or our booking form with your requirements',
+                icon: <Phone className="w-8 h-8" />
+              },
+              {
+                step: 3,
+                title: 'Document Review',
+                description: 'Our experts review your documents and provide guidance for success',
+                icon: <CheckCircle className="w-8 h-8" />
+              },
+              {
+                step: 4,
+                title: 'Get Your Appointment',
+                description: 'Receive confirmed appointment slot within 24 hours guaranteed',
+                icon: <Calendar className="w-8 h-8" />
+              }
+            ].map((item, index) => (
+              <div 
+                key={item.step} 
+                className="text-center animate-fade-in" 
+                style={{animationDelay: `${index * 0.2}s`}}
+              >
+                <div className="relative mb-8">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 text-white rounded-2xl flex items-center justify-center mx-auto shadow-lg">
+                    {item.icon}
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                    {item.step}
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -340,13 +409,16 @@ export default function Home() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <button className="btn-primary bg-white text-blue-600 hover:bg-gray-100">
+              <Link
+                href="#search"
+                className="inline-flex items-center bg-white text-blue-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-xl shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              >
                 <Calendar className="w-5 h-5 mr-2" />
                 Book Your Appointment
-              </button>
+              </Link>
               <a 
                 href="https://wa.me/1234567890" 
-                className="btn-secondary bg-green-500 hover:bg-green-600 text-white border-green-400"
+                className="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-8 rounded-xl shadow-xl transition-all duration-300 transform hover:-translate-y-1"
               >
                 <Phone className="w-5 h-5 mr-2" />
                 WhatsApp Support
