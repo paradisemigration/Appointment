@@ -111,7 +111,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <div className="space-y-2">
                 <label className="block text-sm font-medium text-gray-700">
-                  <MapPin className="inline w-4 h-4 mr-2 text-royal-500" />
+                  <MapPin className="inline w-4 h-4 mr-2 text-charcoal-500" />
                   Destination Country
                 </label>
                 <select 
