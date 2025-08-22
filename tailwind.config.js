@@ -78,10 +78,12 @@ module.exports = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'gradient-hero': 'linear-gradient(135deg, #18181b 0%, #27272a 50%, #16a34a 100%)',
-        'gradient-primary': 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)',
-        'gradient-dark': 'linear-gradient(135deg, #18181b 0%, #27272a 100%)',
-        'gradient-success': 'linear-gradient(135deg, #22c55e 0%, #15803d 100%)',
+        'gradient-hero': 'linear-gradient(90deg, #1E3A8A, #60A5FA)',
+        'gradient-primary': 'linear-gradient(90deg, #F97316, #ea580c)',
+        'gradient-cta-hover': 'linear-gradient(90deg, #F97316, #22C55E)',
+        'gradient-royal': 'linear-gradient(135deg, #1E3A8A 0%, #60A5FA 100%)',
+        'gradient-navy': 'linear-gradient(135deg, #0B2545 0%, #1E3A8A 100%)',
+        'gradient-orange': 'linear-gradient(135deg, #F97316 0%, #ea580c 100%)',
       },
       boxShadow: {
         'soft': '0 2px 15px -3px rgba(0, 0, 0, 0.1), 0 10px 20px -2px rgba(0, 0, 0, 0.05)',
