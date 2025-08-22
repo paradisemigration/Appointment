@@ -309,10 +309,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="relative mb-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-2xl flex items-center justify-center mx-auto shadow-lg">
+                <div className="w-16 h-16 bg-gradient-to-br from-royal-500 to-sky-500 text-white rounded-2xl flex items-center justify-center mx-auto shadow-lg">
                   <Globe className="w-8 h-8" />
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
                   1
                 </div>
               </div>
@@ -322,10 +322,10 @@ export default function Home() {
 
             <div className="text-center">
               <div className="relative mb-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-gray-700 to-gray-800 text-white rounded-2xl flex items-center justify-center mx-auto shadow-lg">
+                <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-green-500 text-white rounded-2xl flex items-center justify-center mx-auto shadow-lg">
                   <Phone className="w-8 h-8" />
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
                   2
                 </div>
               </div>
@@ -335,10 +335,10 @@ export default function Home() {
 
             <div className="text-center">
               <div className="relative mb-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-green-600 to-green-700 text-white rounded-2xl flex items-center justify-center mx-auto shadow-lg">
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 text-white rounded-2xl flex items-center justify-center mx-auto shadow-lg">
                   <CheckCircle className="w-8 h-8" />
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
                   3
                 </div>
               </div>
@@ -348,10 +348,10 @@ export default function Home() {
 
             <div className="text-center">
               <div className="relative mb-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-gray-800 to-green-600 text-white rounded-2xl flex items-center justify-center mx-auto shadow-lg">
+                <div className="w-16 h-16 bg-gradient-to-br from-navy-500 to-royal-500 text-white rounded-2xl flex items-center justify-center mx-auto shadow-lg">
                   <Calendar className="w-8 h-8" />
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
                   4
                 </div>
               </div>
@@ -363,33 +363,33 @@ export default function Home() {
       </section>
 
       {/* Statistics Section */}
-      <section className="py-20 bg-gray-900">
+      <section className="py-20 bg-gradient-navy">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Trusted by Thousands
             </h2>
-            <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+            <p className="text-sky-200 text-lg max-w-2xl mx-auto">
               Our track record speaks for itself
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">10,000+</div>
-              <div className="text-gray-300">Happy Customers</div>
+              <div className="text-4xl md:text-5xl font-bold text-orange-400 mb-2">10,000+</div>
+              <div className="text-sky-200">Happy Customers</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">35+</div>
-              <div className="text-gray-300">Countries Covered</div>
+              <div className="text-4xl md:text-5xl font-bold text-orange-400 mb-2">35+</div>
+              <div className="text-sky-200">Countries Covered</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">98%</div>
-              <div className="text-gray-300">Success Rate</div>
+              <div className="text-4xl md:text-5xl font-bold text-orange-400 mb-2">98%</div>
+              <div className="text-sky-200">Success Rate</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-green-400 mb-2">24h</div>
-              <div className="text-gray-300">Average Response</div>
+              <div className="text-4xl md:text-5xl font-bold text-orange-400 mb-2">24h</div>
+              <div className="text-sky-200">Average Response</div>
             </div>
           </div>
         </div>
