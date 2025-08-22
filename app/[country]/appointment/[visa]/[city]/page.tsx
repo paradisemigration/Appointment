@@ -12,8 +12,23 @@ interface PageProps {
   };
 }
 
-// Disable static generation for now to ensure dynamic routing works
-export const dynamic = 'force-dynamic';
+export async function generateStaticParams() {
+  const paths: { country: string; visa: string; city: string }[] = [];
+
+  ALL_COUNTRIES.forEach(country => {
+    VISA_TYPES.forEach(visa => {
+      ALL_CITIES.forEach(city => {
+        paths.push({
+          country: country.name.toLowerCase().replace(/\s+/g, '-'),
+          visa: visa.slug,
+          city: city.slug,
+        });
+      });
+    });
+  });
+
+  return paths;
+}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const countryName = params.country.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
