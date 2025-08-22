@@ -12,24 +12,26 @@ interface PageProps {
   };
 }
 
-// Generate static paths for better SEO (disabled temporarily to fix build issues)
-// export async function generateStaticParams() {
-//   const paths: any[] = [];
-//
-//   ALL_COUNTRIES.forEach(country => {
-//     VISA_TYPES.forEach(visa => {
-//       ALL_CITIES.forEach(city => {
-//         paths.push({
-//           country: country.name.toLowerCase().replace(/\s+/g, '-'),
-//           visa: visa.slug,
-//           city: city.slug,
-//         });
-//       });
-//     });
-//   });
-//
-//   return paths.slice(0, 100); // Generate first 100 for build optimization
-// }
+// Generate static paths for better SEO
+export async function generateStaticParams() {
+  const paths: any[] = [];
+
+  // Generate paths for all combinations
+  ALL_COUNTRIES.forEach(country => {
+    VISA_TYPES.forEach(visa => {
+      ALL_CITIES.forEach(city => {
+        paths.push({
+          country: country.name.toLowerCase().replace(/\s+/g, '-'),
+          visa: visa.slug,
+          city: city.slug,
+        });
+      });
+    });
+  });
+
+  // Return all paths for complete coverage - 7,875 pages
+  return paths;
+}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const countryName = params.country.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());

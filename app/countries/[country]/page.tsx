@@ -10,11 +10,23 @@ interface PageProps {
   };
 }
 
-// export async function generateStaticParams() {
-//   return ALL_COUNTRIES.map((country) => ({
-//     country: country.name.toLowerCase().replace(/\s+/g, '-'),
-//   }));
-// }
+export async function generateStaticParams() {
+  // Generate for all countries including additional European countries
+  const additionalCountries = [
+    'Switzerland', 'Austria', 'Belgium', 'Portugal', 'Greece',
+    'Czech Republic', 'Hungary', 'Poland', 'Sweden', 'Norway',
+    'Denmark', 'Finland'
+  ];
+
+  const allCountryNames = [
+    ...ALL_COUNTRIES.map(c => c.name),
+    ...additionalCountries
+  ];
+
+  return allCountryNames.map((countryName) => ({
+    country: countryName.toLowerCase().replace(/\s+/g, '-'),
+  }));
+}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const countryName = params.country.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
