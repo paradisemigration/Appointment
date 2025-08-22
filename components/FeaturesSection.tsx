@@ -1,3 +1,5 @@
+'use client';
+
 import { Clock, Shield, Headphones, CreditCard, CheckCircle, Globe } from 'lucide-react';
 
 const features = [
