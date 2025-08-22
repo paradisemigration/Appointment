@@ -82,12 +82,12 @@ export default function Home() {
             {/* Trust Indicators */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-orange-400 mb-2">98%</div>
-                <div className="text-sky-200 text-sm">Success Rate</div>
+                <div className="text-3xl md:text-4xl font-bold text-mustard-400 mb-2">98%</div>
+                <div className="text-gray-200 text-sm">Success Rate</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-orange-400 mb-2">35+</div>
-                <div className="text-sky-200 text-sm">Countries</div>
+                <div className="text-3xl md:text-4xl font-bold text-mustard-400 mb-2">35+</div>
+                <div className="text-gray-200 text-sm">Countries</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-orange-400 mb-2">50+</div>
