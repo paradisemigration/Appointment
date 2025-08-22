@@ -225,7 +225,7 @@ export default function ServicesPage() {
           <div className="text-center mt-12">
             <Link 
               href="/countries"
-              className="inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-8 rounded-lg transition-colors"
+              className="inline-flex items-center bg-mustard-600 hover:bg-mustard-700 text-charcoal-900 font-medium py-3 px-8 rounded-lg transition-colors"
             >
               <Globe className="h-5 w-5 mr-2" />
               View All Countries
