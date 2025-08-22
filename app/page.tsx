@@ -130,7 +130,7 @@ export default function Home() {
 
               <div className="space-y-2">
                 <label className="block text-sm font-medium text-gray-700">
-                  <Calendar className="inline w-4 h-4 mr-2 text-royal-500" />
+                  <Calendar className="inline w-4 h-4 mr-2 text-charcoal-500" />
                   Visa Type
                 </label>
                 <select 
