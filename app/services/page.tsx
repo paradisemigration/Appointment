@@ -242,7 +242,7 @@ export default function ServicesPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Choose Our Services?</h2>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-primary-100 text-primary-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 bg-mustard-100 text-mustard-600 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
                     <Clock className="h-6 w-6" />
                   </div>
                   <div>
