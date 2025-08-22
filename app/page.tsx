@@ -16,8 +16,8 @@ export default function Home() {
       const visaSlug = VISA_TYPES.find(v => v.name === selectedVisa)?.slug || 'visit';
       const citySlug = ALL_CITIES.find(c => c.name === selectedCity)?.slug || 'delhi';
 
-      // Use Next.js router for better navigation
-      window.location.href = `/${countrySlug}/${visaSlug}-visa-appointment/${citySlug}`;
+      // Use new route structure: /[country]/appointment/[visa]/[city]
+      window.location.href = `/${countrySlug}/appointment/${visaSlug}/${citySlug}`;
     }
   };
 

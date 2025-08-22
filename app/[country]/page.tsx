@@ -209,7 +209,7 @@ export default function CountryPage({ params }: PageProps) {
                     {VISA_TYPES.map(visa => (
                       <Link
                         key={visa.id}
-                        href={`/${params.country}/${visa.slug}-visa-appointment/${city.slug}`}
+                        href={`/${params.country}/appointment/${visa.slug}/${city.slug}`}
                         className="block p-3 bg-gray-50 hover:bg-blue-50 rounded-lg transition-colors duration-300 group"
                       >
                         <div className="flex items-center justify-between">
@@ -306,15 +306,15 @@ export default function CountryPage({ params }: PageProps) {
             Get started with our professional visa appointment booking service today
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href={`/${params.country}/visit-visa-appointment`} className="btn-secondary">
+            <Link href={`/${params.country}/appointment/visit`} className="btn-secondary">
               <Globe className="w-5 h-5 mr-2" />
               Book Visit Visa
             </Link>
-            <Link href={`/${params.country}/work-visa-appointment`} className="btn-secondary">
+            <Link href={`/${params.country}/appointment/work`} className="btn-secondary">
               <Users className="w-5 h-5 mr-2" />
               Book Work Visa
             </Link>
-            <Link href={`/${params.country}/study-visa-appointment`} className="btn-secondary">
+            <Link href={`/${params.country}/appointment/study`} className="btn-secondary">
               <Calendar className="w-5 h-5 mr-2" />
               Book Study Visa
             </Link>
