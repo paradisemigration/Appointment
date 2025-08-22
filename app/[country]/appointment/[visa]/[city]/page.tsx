@@ -13,11 +13,16 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
+  // Generate only a subset of paths to avoid build timeouts
   const paths: { country: string; visa: string; city: string }[] = [];
 
-  ALL_COUNTRIES.forEach(country => {
+  // Only generate paths for popular countries and cities to speed up build
+  const popularCountries = ALL_COUNTRIES.slice(0, 5);
+  const popularCities = ALL_CITIES.slice(0, 10);
+
+  popularCountries.forEach(country => {
     VISA_TYPES.forEach(visa => {
-      ALL_CITIES.forEach(city => {
+      popularCities.forEach(city => {
         paths.push({
           country: country.name.toLowerCase().replace(/\s+/g, '-'),
           visa: visa.slug,
