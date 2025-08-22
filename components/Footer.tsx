@@ -217,29 +217,29 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-blue-800/50 bg-blue-950/50">
+        <div className="border-t border-charcoal-600/50 bg-charcoal-800/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <div className="text-blue-200 text-sm text-center md:text-left">
-                © {currentYear} VFS Portal. All rights reserved. 
+              <div className="text-gray-300 text-sm text-center md:text-left">
+                © {currentYear} VFS Portal. All rights reserved.
                 Professional visa appointment booking services worldwide.
               </div>
               <div className="flex items-center space-x-6 text-sm">
-                <Link 
-                  href="/terms" 
-                  className="text-blue-200 hover:text-white transition-colors duration-300"
+                <Link
+                  href="/terms"
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
                 >
                   Terms
                 </Link>
-                <Link 
-                  href="/privacy" 
-                  className="text-blue-200 hover:text-white transition-colors duration-300"
+                <Link
+                  href="/privacy"
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
                 >
                   Privacy
                 </Link>
-                <Link 
-                  href="/contact" 
-                  className="text-blue-200 hover:text-white transition-colors duration-300"
+                <Link
+                  href="/contact"
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
                 >
                   Support
                 </Link>
