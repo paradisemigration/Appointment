@@ -281,7 +281,7 @@ export default function ServicesPage() {
                 <p className="text-sm text-gray-600">Based on 10,000+ successful bookings</p>
                 <Link 
                   href="/"
-                  className="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors inline-block"
+                  className="w-full bg-mustard-600 hover:bg-mustard-700 text-charcoal-900 font-medium py-3 px-6 rounded-lg transition-colors inline-block"
                 >
                   Book Your Appointment Now
                 </Link>
