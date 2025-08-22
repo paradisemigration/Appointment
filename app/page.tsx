@@ -54,9 +54,9 @@ export default function Home() {
 
             {/* Subtitle */}
             <p className="text-xl md:text-2xl lg:text-3xl text-gray-200 max-w-4xl mx-auto mb-12 leading-relaxed">
-              Book appointments for <span className="text-green-400 font-semibold">35+ countries</span> with 
-              expert guidance, <span className="text-green-300 font-semibold">98% success rate</span>, and 
-              guaranteed slots within <span className="text-green-400 font-semibold">24 hours</span>
+              Book appointments for <span className="text-orange-400 font-semibold">35+ countries</span> with
+              expert guidance, <span className="text-sky-300 font-semibold">98% success rate</span>, and
+              guaranteed slots within <span className="text-orange-400 font-semibold">24 hours</span>
             </p>
 
             {/* CTA Buttons */}
@@ -82,20 +82,20 @@ export default function Home() {
             {/* Trust Indicators */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2">98%</div>
-                <div className="text-gray-300 text-sm">Success Rate</div>
+                <div className="text-3xl md:text-4xl font-bold text-orange-400 mb-2">98%</div>
+                <div className="text-sky-200 text-sm">Success Rate</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2">35+</div>
-                <div className="text-gray-300 text-sm">Countries</div>
+                <div className="text-3xl md:text-4xl font-bold text-orange-400 mb-2">35+</div>
+                <div className="text-sky-200 text-sm">Countries</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2">50+</div>
-                <div className="text-gray-300 text-sm">Cities</div>
+                <div className="text-3xl md:text-4xl font-bold text-orange-400 mb-2">50+</div>
+                <div className="text-sky-200 text-sm">Cities</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2">24h</div>
-                <div className="text-gray-300 text-sm">Booking Time</div>
+                <div className="text-3xl md:text-4xl font-bold text-orange-400 mb-2">24h</div>
+                <div className="text-sky-200 text-sm">Booking Time</div>
               </div>
             </div>
           </div>
