@@ -191,14 +191,14 @@ export default function Footer() {
         </div>
 
         {/* Newsletter Section */}
-        <div className="border-t border-blue-800/50 bg-blue-900/30">
+        <div className="border-t border-charcoal-600/50 bg-charcoal-700/30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
               <div className="text-center lg:text-left">
                 <h4 className="text-xl font-bold text-white mb-2">
                   Stay Updated with Visa Information
                 </h4>
-                <p className="text-blue-200">
+                <p className="text-gray-200">
                   Get the latest updates on visa requirements and appointment availability
                 </p>
               </div>
@@ -206,9 +206,9 @@ export default function Footer() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200 focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300 lg:w-80"
+                  className="px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-200 focus:border-mustard-400 focus:ring-2 focus:ring-mustard-400/20 transition-all duration-300 lg:w-80"
                 />
-                <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 whitespace-nowrap">
+                <button className="bg-gradient-to-r from-mustard-500 to-mustard-600 hover:from-mustard-600 hover:to-mustard-700 text-charcoal-900 px-6 py-3 rounded-lg font-medium transition-all duration-300 whitespace-nowrap">
                   Subscribe
                 </button>
               </div>
