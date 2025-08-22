@@ -121,7 +121,7 @@ export default function ServicesPage() {
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Our Services
           </h1>
-          <p className="text-xl md:text-2xl text-primary-100 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
             Comprehensive visa appointment booking services for all your travel needs
           </p>
         </div>
