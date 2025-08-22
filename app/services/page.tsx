@@ -155,7 +155,7 @@ export default function ServicesPage() {
                   <div className="flex justify-between items-center mb-4">
                     <div>
                       <div className="text-sm text-gray-500">Starting from</div>
-                      <div className="text-2xl font-bold text-primary-600">{service.price}</div>
+                      <div className="text-2xl font-bold text-mustard-600">{service.price}</div>
                     </div>
                     <div className="text-right">
                       <div className="text-sm text-gray-500">Processing</div>
