@@ -29,11 +29,11 @@ export default function Home() {
       <section className="relative min-h-[80vh] flex flex-col items-center justify-center overflow-hidden bg-gradient-hero pt-20">
         {/* Animated Background */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-green-600/20"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-green-900/30"></div>
-          <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-orange-400/20 to-orange-600/20 rounded-full blur-xl animate-float"></div>
-          <div className="absolute top-32 right-20 w-40 h-40 bg-gradient-to-r from-sky-500/15 to-sky-700/15 rounded-full blur-2xl animate-float"></div>
-          <div className="absolute bottom-32 left-1/4 w-48 h-48 bg-gradient-to-r from-royal-600/10 to-orange-600/10 rounded-full blur-2xl animate-float"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-charcoal-600/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-charcoal-800/30"></div>
+          <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-mustard-400/20 to-mustard-600/20 rounded-full blur-xl animate-float"></div>
+          <div className="absolute top-32 right-20 w-40 h-40 bg-gradient-to-r from-charcoal-500/15 to-charcoal-700/15 rounded-full blur-2xl animate-float"></div>
+          <div className="absolute bottom-32 left-1/4 w-48 h-48 bg-gradient-to-r from-charcoal-600/10 to-mustard-600/10 rounded-full blur-2xl animate-float"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12">
