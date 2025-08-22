@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import VisaAppointmentPage from '@/components/VisaAppointmentPage';
-import { generateSEOContent } from '@/lib/contentGenerator';
+import { generateVisaPageContent } from '@/lib/contentGenerator';
 import { ALL_COUNTRIES, ALL_CITIES, VISA_TYPES } from '@/data/constants';
 
 interface PageProps {
