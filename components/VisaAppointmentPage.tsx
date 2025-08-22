@@ -28,7 +28,7 @@ export default function VisaAppointmentPage({
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Modern Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-indigo-600 via-purple-700 to-blue-800">
+      <section className="relative overflow-hidden bg-gradient-charcoal">
         {/* Background Effects */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-black/20"></div>
@@ -42,7 +42,7 @@ export default function VisaAppointmentPage({
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           {/* Breadcrumb */}
-          <nav className="flex items-center space-x-2 text-sm text-blue-200 mb-8 animate-fade-in">
+          <nav className="flex items-center space-x-2 text-sm text-gray-300 mb-8 animate-fade-in">
             <Link href="/" className="hover:text-white transition-colors duration-300">Home</Link>
             <ChevronRight className="w-4 h-4" />
             <Link href={`/${country.name.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-white transition-colors duration-300">{country.name}</Link>
@@ -62,7 +62,7 @@ export default function VisaAppointmentPage({
                   <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
                     {content.title}
                   </h1>
-                  <p className="text-xl text-blue-100">
+                  <p className="text-xl text-gray-200">
                     Professional VFS appointment booking service
                   </p>
                 </div>
@@ -81,9 +81,9 @@ export default function VisaAppointmentPage({
                     className="flex items-center space-x-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-4 animate-scale-in"
                     style={{animationDelay: `${index * 0.1}s`}}
                   >
-                    <div className="text-blue-200">{item.icon}</div>
+                    <div className="text-mustard-400">{item.icon}</div>
                     <div>
-                      <div className="text-sm text-blue-200">{item.label}</div>
+                      <div className="text-sm text-gray-300">{item.label}</div>
                       <div className="font-semibold text-white">{item.value}</div>
                     </div>
                   </div>
@@ -92,9 +92,9 @@ export default function VisaAppointmentPage({
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <button 
+                <button
                   onClick={() => setIsModalOpen(true)}
-                  className="group bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold py-4 px-8 rounded-xl shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center"
+                  className="group bg-gradient-to-r from-mustard-500 to-mustard-600 hover:from-mustard-600 hover:to-mustard-700 text-charcoal-900 font-bold py-4 px-8 rounded-xl shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center"
                 >
                   <Calendar className="w-5 h-5 mr-3" />
                   Book Appointment Now

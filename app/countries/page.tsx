@@ -169,7 +169,7 @@ export default function CountriesPage() {
               return (
                 <Link
                   key={country.code}
-                  href={`/countries/${country.name.toLowerCase().replace(/\s+/g, '-')}`}
+                  href={`/${country.name.toLowerCase().replace(/\s+/g, '-')}`}
                   className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
                 >
                   <div className="aspect-w-16 aspect-h-9 bg-gray-200">
@@ -230,7 +230,7 @@ export default function CountriesPage() {
             {europeanCountries.map((country) => (
               <Link
                 key={country.code || country.name}
-                href={`/${country.name.toLowerCase().replace(/\s+/g, '-')}-visit-visa-appointment-delhi`}
+                href={`/${country.name.toLowerCase().replace(/\s+/g, '-')}`}
                 className="group bg-white border border-gray-200 rounded-xl p-4 text-center hover:border-mustard-300 hover:shadow-md transition-all"
               >
                 <div className="text-4xl mb-3">{country.flag}</div>
@@ -267,7 +267,7 @@ export default function CountriesPage() {
               return (
                 <Link
                   key={country.code}
-                  href={`/countries/${country.name.toLowerCase().replace(/\s+/g, '-')}`}
+                  href={`/${country.name.toLowerCase().replace(/\s+/g, '-')}`}
                   className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all p-6"
                 >
                   <div className="flex items-center space-x-4 mb-4">
@@ -359,8 +359,8 @@ export default function CountriesPage() {
           <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
             Join thousands of satisfied customers who trust us with their visa appointment needs.
           </p>
-          <Link 
-            href="/"
+          <Link
+            href="/#search"
             className="inline-flex items-center bg-white text-charcoal-600 font-medium py-3 px-8 rounded-lg hover:bg-gray-50 transition-colors"
           >
             <Globe className="h-5 w-5 mr-2" />

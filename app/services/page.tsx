@@ -162,8 +162,8 @@ export default function ServicesPage() {
                       <div className="text-sm font-medium text-gray-900">{service.processingTime}</div>
                     </div>
                   </div>
-                  <Link 
-                    href="/"
+                  <Link
+                    href="/#search"
                     className="w-full bg-mustard-600 hover:bg-mustard-700 text-charcoal-900 font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center"
                   >
                     Book Appointment
@@ -208,7 +208,7 @@ export default function ServicesPage() {
             {countries.map((country, index) => (
               <Link
                 key={index}
-                href={`/${country.name.toLowerCase().replace(/\s+/g, '-')}-visit-visa-appointment-delhi`}
+                href={`/${country.name.toLowerCase().replace(/\s+/g, '-')}`}
                 className="bg-white rounded-xl p-4 text-center hover:shadow-md transition-shadow group"
               >
                 <div className="text-3xl mb-2">{country.flag}</div>
@@ -279,8 +279,8 @@ export default function ServicesPage() {
                 <p className="text-gray-700">Join thousands of satisfied customers who trust us with their visa appointments.</p>
                 <div className="text-3xl font-bold text-mustard-600">98% Success Rate</div>
                 <p className="text-sm text-gray-600">Based on 10,000+ successful bookings</p>
-                <Link 
-                  href="/"
+                <Link
+                  href="/#search"
                   className="w-full bg-mustard-600 hover:bg-mustard-700 text-charcoal-900 font-medium py-3 px-6 rounded-lg transition-colors inline-block"
                 >
                   Book Your Appointment Now

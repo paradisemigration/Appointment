@@ -42,33 +42,33 @@ export default function Footer() {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <Link href="/" className="flex items-center space-x-3 mb-6 group">
-                <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                  <Globe className="w-7 h-7 text-white" />
+                <div className="w-12 h-12 bg-gradient-to-r from-mustard-500 to-mustard-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                  <Globe className="w-7 h-7 text-charcoal-900" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold">VFS Portal</h3>
-                  <p className="text-sky-200 text-sm">Professional Visa Services</p>
+                  <p className="text-gray-200 text-sm">Professional Visa Services</p>
                 </div>
               </Link>
               
-              <p className="text-blue-100 mb-6 leading-relaxed">
-                Your trusted partner for professional visa appointment booking services. 
+              <p className="text-gray-200 mb-6 leading-relaxed">
+                Your trusted partner for professional visa appointment booking services.
                 Expert guidance, minimal cost, and guaranteed results for 35+ countries worldwide.
               </p>
 
               {/* Trust Indicators */}
               <div className="space-y-3 mb-6">
                 <div className="flex items-center space-x-2">
-                  <Star className="w-5 h-5 text-orange-400 fill-current" />
-                  <span className="text-sky-100">98% Success Rate</span>
+                  <Star className="w-5 h-5 text-mustard-400 fill-current" />
+                  <span className="text-gray-200">98% Success Rate</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Clock className="w-5 h-5 text-green-400" />
-                  <span className="text-sky-100">24/7 Support</span>
+                  <span className="text-gray-200">24/7 Support</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Globe className="w-5 h-5 text-sky-400" />
-                  <span className="text-sky-100">35+ Countries</span>
+                  <Globe className="w-5 h-5 text-mustard-400" />
+                  <span className="text-gray-200">35+ Countries</span>
                 </div>
               </div>
 
@@ -81,9 +81,9 @@ export default function Footer() {
                 >
                   <Phone className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                 </a>
-                <a 
-                  href="mailto:support@vfsportal.com" 
-                  className="w-10 h-10 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors duration-300 group"
+                <a
+                  href="mailto:support@vfsportal.com"
+                  className="w-10 h-10 bg-mustard-500 hover:bg-mustard-600 rounded-full flex items-center justify-center transition-colors duration-300 group"
                   aria-label="Email"
                 >
                   <Mail className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
@@ -99,7 +99,7 @@ export default function Footer() {
                   <Link
                     key={link.name}
                     href={link.href}
-                    className="block text-blue-200 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group"
+                    className="block text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group"
                   >
                     <span>{link.name}</span>
                     <ArrowRight className="w-4 h-4 ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -116,14 +116,14 @@ export default function Footer() {
                   <Link
                     key={country.code}
                     href={`/${country.name.toLowerCase().replace(/\s+/g, '-')}`}
-                    className="block text-blue-200 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group"
+                    className="block text-gray-300 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group"
                   >
                     <span className="text-lg mr-2 group-hover:scale-110 transition-transform duration-300">
                       {country.flag}
                     </span>
                     <span>{country.name}</span>
                     {country.isSchengen && (
-                      <span className="ml-2 text-xs bg-blue-500/30 px-2 py-1 rounded">
+                      <span className="ml-2 text-xs bg-mustard-500/30 px-2 py-1 rounded">
                         Schengen
                       </span>
                     )}
@@ -132,7 +132,7 @@ export default function Footer() {
               </div>
               <Link
                 href="/countries"
-                className="inline-flex items-center text-blue-300 hover:text-white font-medium mt-4 group"
+                className="inline-flex items-center text-mustard-300 hover:text-white font-medium mt-4 group"
               >
                 View All Countries
                 <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
@@ -147,16 +147,16 @@ export default function Footer() {
               <div className="space-y-4 mb-6">
                 {supportInfo.map((item, index) => (
                   <div key={index} className="flex items-center space-x-3">
-                    <div className="text-blue-400">{item.icon}</div>
+                    <div className="text-mustard-400">{item.icon}</div>
                     {item.link ? (
-                      <a 
+                      <a
                         href={item.link}
-                        className="text-blue-200 hover:text-white transition-colors duration-300"
+                        className="text-gray-300 hover:text-white transition-colors duration-300"
                       >
                         {item.text}
                       </a>
                     ) : (
-                      <span className="text-blue-200">{item.text}</span>
+                      <span className="text-gray-300">{item.text}</span>
                     )}
                   </div>
                 ))}
@@ -166,16 +166,16 @@ export default function Footer() {
               <div className="space-y-2">
                 <h5 className="font-semibold text-white mb-3">Visa Services</h5>
                 {VISA_TYPES.map((visa) => (
-                  <div key={visa.id} className="text-blue-200 text-sm">
+                  <div key={visa.id} className="text-gray-300 text-sm">
                     {visa.name}
                   </div>
                 ))}
               </div>
 
               {/* CTA */}
-              <div className="mt-6 p-4 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-xl border border-blue-500/30">
+              <div className="mt-6 p-4 bg-gradient-to-r from-mustard-500/20 to-mustard-600/20 rounded-xl border border-mustard-500/30">
                 <h5 className="font-semibold text-white mb-2">Need Help?</h5>
-                <p className="text-blue-200 text-sm mb-3">
+                <p className="text-gray-200 text-sm mb-3">
                   Our experts are available 24/7 to assist you
                 </p>
                 <a 
@@ -191,14 +191,14 @@ export default function Footer() {
         </div>
 
         {/* Newsletter Section */}
-        <div className="border-t border-blue-800/50 bg-blue-900/30">
+        <div className="border-t border-charcoal-600/50 bg-charcoal-700/30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
               <div className="text-center lg:text-left">
                 <h4 className="text-xl font-bold text-white mb-2">
                   Stay Updated with Visa Information
                 </h4>
-                <p className="text-blue-200">
+                <p className="text-gray-200">
                   Get the latest updates on visa requirements and appointment availability
                 </p>
               </div>
@@ -206,9 +206,9 @@ export default function Footer() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200 focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300 lg:w-80"
+                  className="px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-200 focus:border-mustard-400 focus:ring-2 focus:ring-mustard-400/20 transition-all duration-300 lg:w-80"
                 />
-                <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 whitespace-nowrap">
+                <button className="bg-gradient-to-r from-mustard-500 to-mustard-600 hover:from-mustard-600 hover:to-mustard-700 text-charcoal-900 px-6 py-3 rounded-lg font-medium transition-all duration-300 whitespace-nowrap">
                   Subscribe
                 </button>
               </div>
@@ -217,29 +217,29 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-blue-800/50 bg-blue-950/50">
+        <div className="border-t border-charcoal-600/50 bg-charcoal-800/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <div className="text-blue-200 text-sm text-center md:text-left">
-                © {currentYear} VFS Portal. All rights reserved. 
+              <div className="text-gray-300 text-sm text-center md:text-left">
+                © {currentYear} VFS Portal. All rights reserved.
                 Professional visa appointment booking services worldwide.
               </div>
               <div className="flex items-center space-x-6 text-sm">
-                <Link 
-                  href="/terms" 
-                  className="text-blue-200 hover:text-white transition-colors duration-300"
+                <Link
+                  href="/terms"
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
                 >
                   Terms
                 </Link>
-                <Link 
-                  href="/privacy" 
-                  className="text-blue-200 hover:text-white transition-colors duration-300"
+                <Link
+                  href="/privacy"
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
                 >
                   Privacy
                 </Link>
-                <Link 
-                  href="/contact" 
-                  className="text-blue-200 hover:text-white transition-colors duration-300"
+                <Link
+                  href="/contact"
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
                 >
                   Support
                 </Link>
