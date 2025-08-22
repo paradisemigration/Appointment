@@ -7,6 +7,7 @@ import { Search, MapPin, Calendar, Globe, Clock, Users, Star, ArrowRight, CheckC
 import { ALL_COUNTRIES, ALL_CITIES, VISA_TYPES } from '@/data/constants';
 
 export default function Home() {
+  const router = useRouter();
   const [selectedCountry, setSelectedCountry] = useState('');
   const [selectedCity, setSelectedCity] = useState('');
   const [selectedVisa, setSelectedVisa] = useState('');
@@ -17,8 +18,8 @@ export default function Home() {
       const visaSlug = VISA_TYPES.find(v => v.name === selectedVisa)?.slug || 'visit';
       const citySlug = ALL_CITIES.find(c => c.name === selectedCity)?.slug || 'delhi';
 
-      // Use new route structure: /[country]/appointment/[visa]/[city]
-      window.location.href = `/${countrySlug}/appointment/${visaSlug}/${citySlug}`;
+      // Use Next.js router for navigation
+      router.push(`/${countrySlug}/appointment/${visaSlug}/${citySlug}`);
     }
   };
 
