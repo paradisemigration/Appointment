@@ -45,11 +45,11 @@ export default function Header() {
             <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-green-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
               <Globe className="w-6 h-6 text-white" />
             </div>
-            <div className="hidden sm:block">
+            <div>
               <h1 className="text-xl font-bold text-gray-900 group-hover:text-green-600 transition-colors duration-300">
                 VFS Portal
               </h1>
-              <p className="text-xs text-gray-500">Professional Visa Services</p>
+              <p className="text-xs text-gray-500 hidden sm:block">Professional Visa Services</p>
             </div>
           </Link>
 
