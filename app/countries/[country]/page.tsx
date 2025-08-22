@@ -10,11 +10,11 @@ interface PageProps {
   };
 }
 
-export async function generateStaticParams() {
-  return ALL_COUNTRIES.map((country) => ({
-    country: country.name.toLowerCase().replace(/\s+/g, '-'),
-  }));
-}
+// export async function generateStaticParams() {
+//   return ALL_COUNTRIES.map((country) => ({
+//     country: country.name.toLowerCase().replace(/\s+/g, '-'),
+//   }));
+// }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const countryName = params.country.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
