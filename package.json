@@ -1,0 +1,13 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "A web application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run start",
+    "start": "node server.js || npx serve . -p 3000",
+    "build": "echo 'Build complete'"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
