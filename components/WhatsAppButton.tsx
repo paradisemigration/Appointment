@@ -83,7 +83,7 @@ export default function WhatsAppButton() {
           {/* Content */}
           <div className="p-4">
             <div className="mb-4">
-              <div className="bg-gray-100 rounded-lg p-3 mb-3">
+              <div className="bg-gray-50 rounded-lg p-3 mb-3">
                 <p className="text-sm text-gray-700 mb-2">
                   👋 Hi there! How can we help you with your visa appointment today?
                 </p>
@@ -103,7 +103,7 @@ export default function WhatsAppButton() {
                   >
                     <div className="flex items-center justify-between">
                       <span>{message}</span>
-                      <Send className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <Send className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-green-600" />
                     </div>
                   </button>
                 ))}
@@ -147,8 +147,8 @@ export default function WhatsAppButton() {
         </div>
 
         {/* Notification Dot */}
-        <div className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-full flex items-center justify-center">
-          <span className="text-white text-xs font-bold">!</span>
+        <div className="absolute -top-1 -right-1 w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center">
+          <span className="text-gray-900 text-xs font-bold">!</span>
         </div>
       </button>
 
