@@ -42,14 +42,14 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-green-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+            <div className="w-10 h-10 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
               <Globe className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900 group-hover:text-green-600 transition-colors duration-300">
+              <h1 className="text-xl font-bold text-white group-hover:text-orange-300 transition-colors duration-300">
                 VFS Portal
               </h1>
-              <p className="text-xs text-gray-500 hidden sm:block">Professional Visa Services</p>
+              <p className="text-xs text-sky-200 hidden sm:block">Professional Visa Services</p>
             </div>
           </Link>
 
@@ -168,9 +168,9 @@ export default function Header() {
 
           {/* Desktop CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <a 
+            <a
               href="https://wa.me/1234567890"
-              className="btn-ghost text-green-600 hover:bg-green-50"
+              className="text-white hover:text-orange-300 hover:bg-white/10 font-medium py-3 px-6 rounded-xl transition-all duration-300"
             >
               <Phone className="w-4 h-4 mr-2" />
               Support
