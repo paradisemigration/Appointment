@@ -42,11 +42,11 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+            <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-green-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
               <Globe className="w-6 h-6 text-white" />
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+              <h1 className="text-xl font-bold text-gray-900 group-hover:text-green-600 transition-colors duration-300">
                 VFS Portal
               </h1>
               <p className="text-xs text-gray-500">Professional Visa Services</p>
@@ -83,7 +83,7 @@ export default function Header() {
                           {/* European Countries */}
                           <div>
                             <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
-                              <span className="text-blue-600 mr-2">🇪🇺</span>
+                              <span className="text-green-600 mr-2">🇪🇺</span>
                               European Countries
                             </h3>
                             <div className="grid grid-cols-2 gap-2">
@@ -91,14 +91,14 @@ export default function Header() {
                                 <Link
                                   key={country.code}
                                   href={`/${country.name.toLowerCase().replace(/\s+/g, '-')}`}
-                                  className="flex items-center space-x-2 p-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300 group"
+                                  className="flex items-center space-x-2 p-3 rounded-lg hover:bg-green-50 hover:text-green-600 transition-colors duration-300 group"
                                 >
                                   <span className="text-lg group-hover:scale-110 transition-transform duration-300">
                                     {country.flag}
                                   </span>
                                   <span className="text-sm font-medium">{country.name}</span>
                                   {country.isSchengen && (
-                                    <span className="text-xs bg-blue-100 text-blue-600 px-1.5 py-0.5 rounded">
+                                    <span className="text-xs bg-green-100 text-green-600 px-1.5 py-0.5 rounded">
                                       Schengen
                                     </span>
                                   )}
@@ -107,7 +107,7 @@ export default function Header() {
                             </div>
                             <Link 
                               href="/countries"
-                              className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium mt-4 group"
+                              className="inline-flex items-center text-green-600 hover:text-green-700 font-medium mt-4 group"
                             >
                               View all European countries
                               <ChevronDown className="w-4 h-4 ml-1 rotate-270 group-hover:translate-x-1 transition-transform duration-300" />
@@ -117,7 +117,7 @@ export default function Header() {
                           {/* Other Countries */}
                           <div>
                             <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
-                              <span className="text-green-600 mr-2">🌍</span>
+                              <span className="text-gray-600 mr-2">🌍</span>
                               Other Countries
                             </h3>
                             <div className="space-y-2">
@@ -125,7 +125,7 @@ export default function Header() {
                                 <Link
                                   key={country.code}
                                   href={`/${country.name.toLowerCase().replace(/\s+/g, '-')}`}
-                                  className="flex items-center space-x-3 p-3 rounded-lg hover:bg-green-50 hover:text-green-600 transition-colors duration-300 group"
+                                  className="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 hover:text-gray-700 transition-colors duration-300 group"
                                 >
                                   <span className="text-lg group-hover:scale-110 transition-transform duration-300">
                                     {country.flag}
@@ -139,7 +139,7 @@ export default function Header() {
                             <div className="mt-6 pt-6 border-t border-gray-200">
                               <h4 className="text-sm font-medium text-gray-700 mb-3">Quick Actions</h4>
                               <div className="space-y-2">
-                                <Link href="/services" className="flex items-center space-x-2 text-sm text-gray-600 hover:text-blue-600 transition-colors duration-300">
+                                <Link href="/services" className="flex items-center space-x-2 text-sm text-gray-600 hover:text-green-600 transition-colors duration-300">
                                   <Calendar className="w-4 h-4" />
                                   <span>All Services</span>
                                 </Link>
@@ -207,7 +207,7 @@ export default function Header() {
                     <div>
                       <button
                         onClick={() => setIsCountriesOpen(!isCountriesOpen)}
-                        className="w-full flex items-center justify-between p-3 text-left text-gray-700 hover:bg-gray-50 hover:text-blue-600 rounded-lg transition-colors duration-300"
+                        className="w-full flex items-center justify-between p-3 text-left text-gray-700 hover:bg-gray-50 hover:text-green-600 rounded-lg transition-colors duration-300"
                       >
                         <span className="font-medium">{item.name}</span>
                         <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${
@@ -223,7 +223,7 @@ export default function Header() {
                               <Link
                                 key={country.code}
                                 href={`/${country.name.toLowerCase().replace(/\s+/g, '-')}`}
-                                className="flex items-center space-x-2 p-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors duration-300"
+                                className="flex items-center space-x-2 p-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-600 rounded-lg transition-colors duration-300"
                                 onClick={() => setIsMenuOpen(false)}
                               >
                                 <span>{country.flag}</span>
@@ -238,7 +238,7 @@ export default function Header() {
                               <Link
                                 key={country.code}
                                 href={`/${country.name.toLowerCase().replace(/\s+/g, '-')}`}
-                                className="flex items-center space-x-2 p-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-600 rounded-lg transition-colors duration-300"
+                                className="flex items-center space-x-2 p-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-700 rounded-lg transition-colors duration-300"
                                 onClick={() => setIsMenuOpen(false)}
                               >
                                 <span>{country.flag}</span>
@@ -249,7 +249,7 @@ export default function Header() {
                           
                           <Link
                             href="/countries"
-                            className="block p-2 text-sm text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-300"
+                            className="block p-2 text-sm text-green-600 hover:bg-green-50 rounded-lg transition-colors duration-300"
                             onClick={() => setIsMenuOpen(false)}
                           >
                             View All Countries →
@@ -260,8 +260,8 @@ export default function Header() {
                   ) : (
                     <Link
                       href={item.href}
-                      className={`block p-3 text-gray-700 hover:bg-gray-50 hover:text-blue-600 rounded-lg transition-colors duration-300 font-medium ${
-                        pathname === item.href ? 'bg-blue-50 text-blue-600' : ''
+                      className={`block p-3 text-gray-700 hover:bg-gray-50 hover:text-green-600 rounded-lg transition-colors duration-300 font-medium ${
+                        pathname === item.href ? 'bg-green-50 text-green-600' : ''
                       }`}
                       onClick={() => setIsMenuOpen(false)}
                     >
