@@ -147,16 +147,16 @@ export default function Footer() {
               <div className="space-y-4 mb-6">
                 {supportInfo.map((item, index) => (
                   <div key={index} className="flex items-center space-x-3">
-                    <div className="text-blue-400">{item.icon}</div>
+                    <div className="text-mustard-400">{item.icon}</div>
                     {item.link ? (
-                      <a 
+                      <a
                         href={item.link}
-                        className="text-blue-200 hover:text-white transition-colors duration-300"
+                        className="text-gray-300 hover:text-white transition-colors duration-300"
                       >
                         {item.text}
                       </a>
                     ) : (
-                      <span className="text-blue-200">{item.text}</span>
+                      <span className="text-gray-300">{item.text}</span>
                     )}
                   </div>
                 ))}
