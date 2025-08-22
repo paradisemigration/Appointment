@@ -255,7 +255,7 @@ export default function Home() {
                     <div className="text-5xl mb-4 country-flag">
                       {country.flag}
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-300">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-mustard-600 transition-colors duration-300">
                       {country.name}
                     </h3>
                     {country.isSchengen && (
@@ -265,15 +265,15 @@ export default function Home() {
                     )}
                     <div className="space-y-2 text-sm text-gray-600 mb-6">
                       <div className="flex items-center justify-center space-x-2">
-                        <Clock className="w-4 h-4 text-green-600" />
+                        <Clock className="w-4 h-4 text-mustard-600" />
                         <span>15-20 days</span>
                       </div>
                       <div className="flex items-center justify-center space-x-2">
-                        <Star className="w-4 h-4 text-green-500 fill-current" />
+                        <Star className="w-4 h-4 text-mustard-500 fill-current" />
                         <span>98% Success</span>
                       </div>
                     </div>
-                    <div className="text-green-600 group-hover:text-green-700 font-semibold">
+                    <div className="text-mustard-600 group-hover:text-mustard-700 font-semibold">
                       View Services →
                     </div>
                   </div>
