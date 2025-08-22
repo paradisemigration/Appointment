@@ -277,7 +277,7 @@ export default function ServicesPage() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Ready to Get Started?</h3>
               <div className="space-y-4 text-center">
                 <p className="text-gray-700">Join thousands of satisfied customers who trust us with their visa appointments.</p>
-                <div className="text-3xl font-bold text-primary-600">98% Success Rate</div>
+                <div className="text-3xl font-bold text-mustard-600">98% Success Rate</div>
                 <p className="text-sm text-gray-600">Based on 10,000+ successful bookings</p>
                 <Link 
                   href="/"
