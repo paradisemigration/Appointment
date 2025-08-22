@@ -166,16 +166,16 @@ export default function Footer() {
               <div className="space-y-2">
                 <h5 className="font-semibold text-white mb-3">Visa Services</h5>
                 {VISA_TYPES.map((visa) => (
-                  <div key={visa.id} className="text-blue-200 text-sm">
+                  <div key={visa.id} className="text-gray-300 text-sm">
                     {visa.name}
                   </div>
                 ))}
               </div>
 
               {/* CTA */}
-              <div className="mt-6 p-4 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-xl border border-blue-500/30">
+              <div className="mt-6 p-4 bg-gradient-to-r from-mustard-500/20 to-mustard-600/20 rounded-xl border border-mustard-500/30">
                 <h5 className="font-semibold text-white mb-2">Need Help?</h5>
-                <p className="text-blue-200 text-sm mb-3">
+                <p className="text-gray-200 text-sm mb-3">
                   Our experts are available 24/7 to assist you
                 </p>
                 <a 
