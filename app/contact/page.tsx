@@ -216,7 +216,7 @@ Message: ${formData.message}`;
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mustard-500 focus:border-mustard-500"
                     placeholder="Tell us how we can help you..."
                   />
                 </div>
