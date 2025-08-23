@@ -11,6 +11,7 @@ export default function Home() {
   const [selectedCountry, setSelectedCountry] = useState('');
   const [selectedCity, setSelectedCity] = useState('');
   const [selectedVisa, setSelectedVisa] = useState('');
+  const [testCounter, setTestCounter] = useState(0);
 
   const handleSearch = () => {
     console.log('🔍 Search button clicked!');
