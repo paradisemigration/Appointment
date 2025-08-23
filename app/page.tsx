@@ -13,12 +13,40 @@ export default function Home() {
   const [selectedVisa, setSelectedVisa] = useState('');
 
   const handleSearch = () => {
+    console.log('🔍 Search button clicked!');
+    console.log('Current form values:', { selectedCountry, selectedVisa, selectedCity });
+
     if (selectedCountry && selectedVisa && selectedCity) {
-      const countrySlug = selectedCountry.toLowerCase().replace(/\s+/g, '-');
-      const visaSlug = VISA_TYPES.find(v => v.name === selectedVisa)?.slug || 'visit';
-      const citySlug = ALL_CITIES.find(c => c.name === selectedCity)?.slug || 'delhi';
-      const url = `/${countrySlug}/appointment/${visaSlug}/${citySlug}`;
-      router.push(url);
+      try {
+        console.log('✅ All fields selected, proceeding with navigation...');
+        const countrySlug = selectedCountry.toLowerCase().replace(/\s+/g, '-');
+        const visaSlug = VISA_TYPES.find(v => v.name === selectedVisa)?.slug || 'visit';
+        const citySlug = ALL_CITIES.find(c => c.name === selectedCity)?.slug || 'delhi';
+        const url = `/${countrySlug}/appointment/${visaSlug}/${citySlug}`;
+
+        console.log('🚀 Navigating to:', url);
+        router.push(url);
+
+        // Also try window navigation as fallback
+        setTimeout(() => {
+          console.log('🔄 Fallback navigation...');
+          window.location.href = url;
+        }, 2000);
+
+      } catch (error) {
+        console.error('❌ Navigation error:', error);
+        alert('Navigation error: ' + error.message);
+      }
+    } else {
+      console.log('⚠️ Missing form values');
+      const missing = [];
+      if (!selectedCountry) missing.push('Country');
+      if (!selectedVisa) missing.push('Visa Type');
+      if (!selectedCity) missing.push('City');
+
+      const message = `Please select: ${missing.join(', ')}`;
+      console.log(message);
+      alert(message);
     }
   };
 
