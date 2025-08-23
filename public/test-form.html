@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form Test - VFS Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+        select, input {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        .status {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .success { background-color: #d4edda; color: #155724; }
+        .warning { background-color: #fff3cd; color: #856404; }
+        .error { background-color: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>VFS Portal - Basic Form Test</h1>
+        <p>This is a pure HTML/JavaScript form test to verify basic functionality.</p>
+        
+        <div id="status" class="status warning">Ready to test - fill out the form below</div>
+
+        <form id="testForm">
+            <div class="form-group">
+                <label for="country">Select Country:</label>
+                <select id="country" name="country">
+                    <option value="">-- Choose Country --</option>
+                    <option value="france">🇫🇷 France</option>
+                    <option value="germany">🇩🇪 Germany</option>
+                    <option value="italy">🇮🇹 Italy</option>
+                    <option value="spain">🇪🇸 Spain</option>
+                    <option value="netherlands">🇳🇱 Netherlands</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="visa">Select Visa Type:</label>
+                <select id="visa" name="visa">
+                    <option value="">-- Choose Visa Type --</option>
+                    <option value="visit">Visit/Tourist Visa</option>
+                    <option value="work">Work Permit</option>
+                    <option value="study">Study Visa</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="city">Select City:</label>
+                <select id="city" name="city">
+                    <option value="">-- Choose City --</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="chennai">Chennai</option>
+                </select>
+            </div>
+
+            <button type="submit" id="submitBtn" disabled>Submit Form</button>
+        </form>
+
+        <div style="margin-top: 30px;">
+            <h3>Form Values:</h3>
+            <div id="formValues">
+                <p><strong>Country:</strong> <span id="countryValue">Not selected</span></p>
+                <p><strong>Visa:</strong> <span id="visaValue">Not selected</span></p>
+                <p><strong>City:</strong> <span id="cityValue">Not selected</span></p>
+            </div>
+        </div>
+
+        <div style="margin-top: 30px; text-align: center;">
+            <a href="/" style="color: #007bff; text-decoration: none; font-size: 18px;">← Back to Homepage</a>
+        </div>
+    </div>
+
+    <script>
+        console.log('=== VFS Portal Form Test Started ===');
+        
+        const form = document.getElementById('testForm');
+        const status = document.getElementById('status');
+        const submitBtn = document.getElementById('submitBtn');
+        
+        const countrySelect = document.getElementById('country');
+        const visaSelect = document.getElementById('visa');
+        const citySelect = document.getElementById('city');
+        
+        const countryValue = document.getElementById('countryValue');
+        const visaValue = document.getElementById('visaValue');
+        const cityValue = document.getElementById('cityValue');
+
+        function updateStatus(message, type = 'warning') {
+            status.textContent = message;
+            status.className = `status ${type}`;
+            console.log('Status:', message);
+        }
+
+        function updateFormValues() {
+            countryValue.textContent = countrySelect.value || 'Not selected';
+            visaValue.textContent = visaSelect.value || 'Not selected';
+            cityValue.textContent = citySelect.value || 'Not selected';
+            
+            // Enable submit button only if all fields are selected
+            const allSelected = countrySelect.value && visaSelect.value && citySelect.value;
+            submitBtn.disabled = !allSelected;
+            
+            if (allSelected) {
+                updateStatus('✅ All fields selected - ready to submit!', 'success');
+            } else {
+                updateStatus('⏳ Please select all fields', 'warning');
+            }
+        }
+
+        // Add event listeners
+        countrySelect.addEventListener('change', function() {
+            console.log('Country changed to:', this.value);
+            updateFormValues();
+        });
+
+        visaSelect.addEventListener('change', function() {
+            console.log('Visa changed to:', this.value);
+            updateFormValues();
+        });
+
+        citySelect.addEventListener('change', function() {
+            console.log('City changed to:', this.value);
+            updateFormValues();
+        });
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            console.log('Form submitted!');
+            
+            const formData = {
+                country: countrySelect.value,
+                visa: visaSelect.value,
+                city: citySelect.value
+            };
+            
+            console.log('Form data:', formData);
+            
+            updateStatus(`🚀 Form submitted successfully! Country: ${formData.country}, Visa: ${formData.visa}, City: ${formData.city}`, 'success');
+            
+            alert(`Form submission successful!\n\nCountry: ${formData.country}\nVisa: ${formData.visa}\nCity: ${formData.city}\n\nCheck console for detailed logs.`);
+        });
+
+        // Test JavaScript functionality on load
+        setTimeout(() => {
+            console.log('JavaScript is working correctly!');
+            updateStatus('🎉 JavaScript loaded successfully - form is ready!', 'success');
+            
+            setTimeout(() => {
+                updateStatus('⏳ Please select all fields', 'warning');
+            }, 2000);
+        }, 500);
+    </script>
+</body>
+</html>
