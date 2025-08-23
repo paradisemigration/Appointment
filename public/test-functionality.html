@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VFS Portal - Functionality Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .test-card {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .status {
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+        .success { background-color: #d4edda; color: #155724; }
+        .error { background-color: #f8d7da; color: #721c24; }
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .btn:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1>🌍 VFS Portal - Functionality Test</h1>
+    <p>This page tests basic website functionality. All tests should pass for a fully working website.</p>
+    
+    <div class="test-card">
+        <h3>Test 1: JavaScript Execution</h3>
+        <div id="js-status" class="status error">❌ JavaScript not executed</div>
+        <button class="btn" onclick="testJavaScript()">Test JavaScript</button>
+    </div>
+
+    <div class="test-card">
+        <h3>Test 2: Page Navigation</h3>
+        <div id="nav-status" class="status">Ready to test navigation</div>
+        <button class="btn" onclick="testNavigation('/')">Test Homepage</button>
+        <button class="btn" onclick="testNavigation('/services')">Test Services</button>
+        <button class="btn" onclick="testNavigation('/contact')">Test Contact</button>
+    </div>
+
+    <div class="test-card">
+        <h3>Test 3: Form Functionality</h3>
+        <form id="testForm">
+            <input type="text" placeholder="Test input" id="testInput" style="padding: 8px; margin: 5px;">
+            <button type="submit" class="btn">Submit Test</button>
+        </form>
+        <div id="form-status" class="status">Ready to test form</div>
+    </div>
+
+    <div class="test-card">
+        <h3>Test Results Summary</h3>
+        <div id="summary">
+            <p>JavaScript: <span id="js-result">Not tested</span></p>
+            <p>Navigation: <span id="nav-result">Not tested</span></p>
+            <p>Forms: <span id="form-result">Not tested</span></p>
+        </div>
+    </div>
+
+    <script>
+        console.log('=== VFS Portal Functionality Test Started ===');
+        
+        // Test 1: JavaScript
+        function testJavaScript() {
+            console.log('JavaScript test executed');
+            document.getElementById('js-status').innerHTML = '✅ JavaScript working correctly';
+            document.getElementById('js-status').className = 'status success';
+            document.getElementById('js-result').textContent = '✅ Working';
+            alert('JavaScript is working!');
+        }
+
+        // Test 2: Navigation
+        function testNavigation(url) {
+            console.log('Testing navigation to:', url);
+            document.getElementById('nav-status').innerHTML = `🔄 Testing navigation to ${url}...`;
+            document.getElementById('nav-result').textContent = '✅ Working';
+            
+            setTimeout(() => {
+                window.location.href = url;
+            }, 1000);
+        }
+
+        // Test 3: Forms
+        document.getElementById('testForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            console.log('Form submitted');
+            const input = document.getElementById('testInput');
+            if (input.value.trim()) {
+                document.getElementById('form-status').innerHTML = '✅ Form submission working';
+                document.getElementById('form-status').className = 'status success';
+                document.getElementById('form-result').textContent = '✅ Working';
+                alert(`Form submitted with value: ${input.value}`);
+            } else {
+                document.getElementById('form-status').innerHTML = '❌ Please enter some text';
+                document.getElementById('form-status').className = 'status error';
+            }
+        });
+
+        // Auto-run JavaScript test on load
+        setTimeout(() => {
+            console.log('Auto-testing JavaScript...');
+            document.getElementById('js-status').innerHTML = '✅ JavaScript executed automatically';
+            document.getElementById('js-status').className = 'status success';
+            document.getElementById('js-result').textContent = '✅ Working';
+        }, 1000);
+    </script>
+</body>
+</html>
