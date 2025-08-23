@@ -42,7 +42,6 @@ export default function RootLayout({
         </main>
         <Footer />
         <WhatsAppButton />
-        <TestInteractivity />
       </body>
     </html>
   )
