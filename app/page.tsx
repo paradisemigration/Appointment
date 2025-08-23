@@ -460,26 +460,26 @@ export default function HomePage() {
       </section>
 
       {/* Trust Section */}
-      <section style={{ padding: '4rem 0', backgroundColor: '#2c3e50', color: 'white' }}>
+      <section style={{ padding: 'clamp(2rem, 5vw, 4rem) 0', backgroundColor: 'var(--primary-color)', color: 'white' }}>
         <div className="container">
           <div className="text-center">
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem', color: 'white' }}>Trusted by Thousands</h2>
-            <div className="flex justify-center items-center" style={{ gap: '3rem', flexWrap: 'wrap' }}>
-              <div className="flex items-center" style={{ gap: '0.5rem' }}>
-                <CheckCircle size={24} style={{ color: '#27ae60' }} />
-                <span>Secure Payment</span>
+            <h2 style={{ fontSize: 'clamp(1.5rem, 4vw, 2.5rem)', marginBottom: '2rem', color: 'white' }}>Trusted by Thousands</h2>
+            <div className="grid grid-4" style={{ gap: '2rem', alignItems: 'center' }}>
+              <div className="flex items-center justify-center" style={{ gap: '0.5rem', flexDirection: 'column' }}>
+                <CheckCircle size={32} style={{ color: 'var(--accent-color)' }} />
+                <span style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)', textAlign: 'center' }}>Secure Payment</span>
               </div>
-              <div className="flex items-center" style={{ gap: '0.5rem' }}>
-                <CheckCircle size={24} style={{ color: '#27ae60' }} />
-                <span>24/7 Support</span>
+              <div className="flex items-center justify-center" style={{ gap: '0.5rem', flexDirection: 'column' }}>
+                <CheckCircle size={32} style={{ color: 'var(--accent-color)' }} />
+                <span style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)', textAlign: 'center' }}>24/7 Support</span>
               </div>
-              <div className="flex items-center" style={{ gap: '0.5rem' }}>
-                <CheckCircle size={24} style={{ color: '#27ae60' }} />
-                <span>Money Back Guarantee</span>
+              <div className="flex items-center justify-center" style={{ gap: '0.5rem', flexDirection: 'column' }}>
+                <CheckCircle size={32} style={{ color: 'var(--accent-color)' }} />
+                <span style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)', textAlign: 'center' }}>Money Back Guarantee</span>
               </div>
-              <div className="flex items-center" style={{ gap: '0.5rem' }}>
-                <CheckCircle size={24} style={{ color: '#27ae60' }} />
-                <span>Expert Guidance</span>
+              <div className="flex items-center justify-center" style={{ gap: '0.5rem', flexDirection: 'column' }}>
+                <CheckCircle size={32} style={{ color: 'var(--accent-color)' }} />
+                <span style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)', textAlign: 'center' }}>Expert Guidance</span>
               </div>
             </div>
           </div>
