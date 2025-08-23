@@ -183,7 +183,10 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={() => {
+              console.log('Mobile menu button clicked, current state:', isMenuOpen);
+              setIsMenuOpen(!isMenuOpen);
+            }}
             className="lg:hidden p-2 rounded-lg hover:bg-white/10 transition-colors duration-300"
             aria-label="Toggle menu"
           >
