@@ -130,10 +130,13 @@ export default function Home() {
                   <MapPin className="inline w-4 h-4 mr-2 text-charcoal-500" />
                   Destination Country
                 </label>
-                <select 
+                <select
                   className="input-field"
                   value={selectedCountry}
-                  onChange={(e) => setSelectedCountry(e.target.value)}
+                  onChange={(e) => {
+                    console.log('Country changed:', e.target.value);
+                    setSelectedCountry(e.target.value);
+                  }}
                 >
                   <option value="">Select Country</option>
                   {ALL_COUNTRIES.map((country) => (
