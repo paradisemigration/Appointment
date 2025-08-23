@@ -285,38 +285,38 @@ export default function HomePage() {
       </section>
 
       {/* Features Section */}
-      <section style={{ padding: '4rem 0' }}>
+      <section style={{ padding: 'clamp(2rem, 5vw, 4rem) 0' }}>
         <div className="container">
           <div className="text-center" style={{ marginBottom: '3rem' }}>
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Why Choose Our Service?</h2>
-            <p style={{ fontSize: '1.125rem', color: '#6c757d', maxWidth: '600px', margin: '0 auto' }}>
+            <h2 style={{ fontSize: 'clamp(1.5rem, 4vw, 2.5rem)', marginBottom: '1rem', color: 'var(--primary-color)' }}>Why Choose Our Service?</h2>
+            <p style={{ fontSize: 'clamp(1rem, 2vw, 1.125rem)', color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto' }}>
               We provide professional visa appointment booking services with unmatched reliability and success rates
             </p>
           </div>
 
           <div className="grid grid-4">
             <div className="card text-center">
-              <Zap size={48} style={{ color: '#3498db', margin: '0 auto 1rem' }} />
-              <h3>Fast Processing</h3>
-              <p>Get your appointment booked within 24 hours with our automated system and expert team.</p>
+              <Zap size={48} style={{ color: 'var(--accent-color)', margin: '0 auto 1rem' }} />
+              <h3 style={{ color: 'var(--primary-color)' }}>Fast Processing</h3>
+              <p style={{ color: 'var(--text-secondary)' }}>Get your appointment booked within 24 hours with our automated system and expert team.</p>
             </div>
 
             <div className="card text-center">
-              <Shield size={48} style={{ color: '#27ae60', margin: '0 auto 1rem' }} />
-              <h3>98% Success Rate</h3>
-              <p>Proven track record with expert document review, guidance, and appointment booking success.</p>
+              <Shield size={48} style={{ color: 'var(--success-color)', margin: '0 auto 1rem' }} />
+              <h3 style={{ color: 'var(--primary-color)' }}>98% Success Rate</h3>
+              <p style={{ color: 'var(--text-secondary)' }}>Proven track record with expert document review, guidance, and appointment booking success.</p>
             </div>
 
             <div className="card text-center">
-              <Users size={48} style={{ color: '#e74c3c', margin: '0 auto 1rem' }} />
-              <h3>Expert Support</h3>
-              <p>24/7 WhatsApp support from certified visa consultants and booking specialists.</p>
+              <Users size={48} style={{ color: 'var(--primary-color)', margin: '0 auto 1rem' }} />
+              <h3 style={{ color: 'var(--primary-color)' }}>Expert Support</h3>
+              <p style={{ color: 'var(--text-secondary)' }}>24/7 WhatsApp support from certified visa consultants and booking specialists.</p>
             </div>
 
             <div className="card text-center">
-              <Award size={48} style={{ color: '#f39c12', margin: '0 auto 1rem' }} />
-              <h3>Trusted Service</h3>
-              <p>Trusted by 10,000+ clients worldwide with transparent pricing and reliable service.</p>
+              <Award size={48} style={{ color: 'var(--accent-color)', margin: '0 auto 1rem' }} />
+              <h3 style={{ color: 'var(--primary-color)' }}>Trusted Service</h3>
+              <p style={{ color: 'var(--text-secondary)' }}>Trusted by 10,000+ clients worldwide with transparent pricing and reliable service.</p>
             </div>
           </div>
         </div>
