@@ -4,7 +4,6 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
-import TestInteractivity from '@/components/TestInteractivity'
 
 const inter = Inter({
   subsets: ['latin'],
