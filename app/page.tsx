@@ -521,16 +521,19 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          
+
           <div style={{ textAlign: 'center', paddingTop: '2rem', borderTop: '1px solid #34495e' }}>
             <p style={{ opacity: 0.8 }}>
-              &copy; 2024 {BUSINESS_INFO.name}. All rights reserved. | 
-              <a href="/privacy" style={{ marginLeft: '0.5rem' }}>Privacy Policy</a> | 
+              &copy; 2024 {BUSINESS_INFO.name}. All rights reserved. |
+              <a href="/privacy" style={{ marginLeft: '0.5rem' }}>Privacy Policy</a> |
               <a href="/terms" style={{ marginLeft: '0.5rem' }}>Terms of Service</a>
             </p>
           </div>
         </div>
       </footer>
+
+      {/* WhatsApp Widget */}
+      <WhatsAppWidget />
     </div>
   );
 }
