@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import { ALL_COUNTRIES, ALL_CITIES, VISA_TYPES, POPULAR_DESTINATIONS, BUSINESS_INFO } from '@/data/constants';
 import WhatsAppWidget from '@/components/WhatsAppWidget';
+import MobileHeader from '@/components/MobileHeader';
 
 export default function HomePage() {
   const router = useRouter();
