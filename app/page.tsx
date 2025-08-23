@@ -8,7 +8,6 @@ import { ALL_COUNTRIES, ALL_CITIES, VISA_TYPES } from '@/data/constants';
 import SimpleSearchForm from '@/components/SimpleSearchForm';
 
 export default function Home() {
-  const [testCounter, setTestCounter] = useState(0);
 
   const popularCountries = ALL_COUNTRIES.slice(0, 8);
 
