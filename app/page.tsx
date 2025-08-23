@@ -366,94 +366,94 @@ export default function HomePage() {
       </section>
 
       {/* Process Steps */}
-      <section style={{ padding: '4rem 0' }}>
+      <section style={{ padding: 'clamp(2rem, 5vw, 4rem) 0' }}>
         <div className="container">
           <div className="text-center" style={{ marginBottom: '3rem' }}>
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>How It Works</h2>
-            <p style={{ fontSize: '1.125rem', color: '#6c757d' }}>
+            <h2 style={{ fontSize: 'clamp(1.5rem, 4vw, 2.5rem)', marginBottom: '1rem', color: 'var(--primary-color)' }}>How It Works</h2>
+            <p style={{ fontSize: 'clamp(1rem, 2vw, 1.125rem)', color: 'var(--text-muted)' }}>
               Simple 4-step process to book your visa appointment
             </p>
           </div>
 
           <div className="grid grid-4">
             <div className="text-center">
-              <div style={{ 
-                width: '60px', 
-                height: '60px', 
-                borderRadius: '50%', 
-                backgroundColor: '#3498db', 
-                color: 'white', 
-                display: 'flex', 
-                alignItems: 'center', 
-                justifyContent: 'center', 
-                margin: '0 auto 1rem', 
-                fontSize: '1.5rem', 
-                fontWeight: 'bold' 
+              <div style={{
+                width: '60px',
+                height: '60px',
+                borderRadius: '50%',
+                backgroundColor: 'var(--accent-color)',
+                color: 'var(--primary-color)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                margin: '0 auto 1rem',
+                fontSize: '1.5rem',
+                fontWeight: 'bold'
               }}>
                 1
               </div>
-              <h3>Select Details</h3>
-              <p>Choose your country, visa type, and city from our comprehensive list of 35+ countries.</p>
+              <h3 style={{ color: 'var(--primary-color)' }}>Select Details</h3>
+              <p style={{ color: 'var(--text-secondary)' }}>Choose your country, visa type, and city from our comprehensive list of 35+ countries.</p>
             </div>
 
             <div className="text-center">
-              <div style={{ 
-                width: '60px', 
-                height: '60px', 
-                borderRadius: '50%', 
-                backgroundColor: '#27ae60', 
-                color: 'white', 
-                display: 'flex', 
-                alignItems: 'center', 
-                justifyContent: 'center', 
-                margin: '0 auto 1rem', 
-                fontSize: '1.5rem', 
-                fontWeight: 'bold' 
+              <div style={{
+                width: '60px',
+                height: '60px',
+                borderRadius: '50%',
+                backgroundColor: 'var(--primary-color)',
+                color: 'white',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                margin: '0 auto 1rem',
+                fontSize: '1.5rem',
+                fontWeight: 'bold'
               }}>
                 2
               </div>
-              <h3>Submit Form</h3>
-              <p>Fill out our secure booking form with your details and preferred appointment dates.</p>
+              <h3 style={{ color: 'var(--primary-color)' }}>Submit Form</h3>
+              <p style={{ color: 'var(--text-secondary)' }}>Fill out our secure booking form with your details and preferred appointment dates.</p>
             </div>
 
             <div className="text-center">
-              <div style={{ 
-                width: '60px', 
-                height: '60px', 
-                borderRadius: '50%', 
-                backgroundColor: '#e74c3c', 
-                color: 'white', 
-                display: 'flex', 
-                alignItems: 'center', 
-                justifyContent: 'center', 
-                margin: '0 auto 1rem', 
-                fontSize: '1.5rem', 
-                fontWeight: 'bold' 
+              <div style={{
+                width: '60px',
+                height: '60px',
+                borderRadius: '50%',
+                backgroundColor: 'var(--accent-color)',
+                color: 'var(--primary-color)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                margin: '0 auto 1rem',
+                fontSize: '1.5rem',
+                fontWeight: 'bold'
               }}>
                 3
               </div>
-              <h3>Expert Review</h3>
-              <p>Our visa experts review your application and book the best available appointment slot.</p>
+              <h3 style={{ color: 'var(--primary-color)' }}>Expert Review</h3>
+              <p style={{ color: 'var(--text-secondary)' }}>Our visa experts review your application and book the best available appointment slot.</p>
             </div>
 
             <div className="text-center">
-              <div style={{ 
-                width: '60px', 
-                height: '60px', 
-                borderRadius: '50%', 
-                backgroundColor: '#f39c12', 
-                color: 'white', 
-                display: 'flex', 
-                alignItems: 'center', 
-                justifyContent: 'center', 
-                margin: '0 auto 1rem', 
-                fontSize: '1.5rem', 
-                fontWeight: 'bold' 
+              <div style={{
+                width: '60px',
+                height: '60px',
+                borderRadius: '50%',
+                backgroundColor: 'var(--primary-color)',
+                color: 'white',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                margin: '0 auto 1rem',
+                fontSize: '1.5rem',
+                fontWeight: 'bold'
               }}>
                 4
               </div>
-              <h3>Confirmation</h3>
-              <p>Receive appointment confirmation via WhatsApp and email with all necessary details.</p>
+              <h3 style={{ color: 'var(--primary-color)' }}>Confirmation</h3>
+              <p style={{ color: 'var(--text-secondary)' }}>Receive appointment confirmation via WhatsApp and email with all necessary details.</p>
             </div>
           </div>
         </div>
