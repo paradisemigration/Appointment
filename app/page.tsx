@@ -14,12 +14,18 @@ export default function Home() {
 
   const handleSearch = () => {
     if (selectedCountry && selectedVisa && selectedCity) {
+      console.log('Search initiated:', { selectedCountry, selectedVisa, selectedCity });
       const countrySlug = selectedCountry.toLowerCase().replace(/\s+/g, '-');
       const visaSlug = VISA_TYPES.find(v => v.name === selectedVisa)?.slug || 'visit';
       const citySlug = ALL_CITIES.find(c => c.name === selectedCity)?.slug || 'delhi';
 
+      const url = `/${countrySlug}/appointment/${visaSlug}/${citySlug}`;
+      console.log('Navigating to:', url);
+
       // Use Next.js router for navigation
-      router.push(`/${countrySlug}/appointment/${visaSlug}/${citySlug}`);
+      router.push(url);
+    } else {
+      console.log('Search validation failed:', { selectedCountry, selectedVisa, selectedCity });
     }
   };
 
