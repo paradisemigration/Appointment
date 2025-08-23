@@ -186,7 +186,11 @@ export default function Home() {
                 <button
                   type="button"
                   className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
-                  onClick={handleSearch}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    console.log('Button clicked!');
+                    handleSearch();
+                  }}
                   disabled={!selectedCountry || !selectedVisa || !selectedCity}
                   aria-label="Search visa appointments"
                 >
