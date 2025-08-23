@@ -75,7 +75,7 @@ export default function HomePage() {
           <div className="flex justify-between items-center">
             <div>
               <h1 className="text-2xl font-bold" style={{ margin: 0, color: 'white' }}>
-                ��� {BUSINESS_INFO.name}
+                🌍 {BUSINESS_INFO.name}
               </h1>
               <p style={{ margin: 0, opacity: 0.9, color: 'white' }}>{BUSINESS_INFO.tagline}</p>
             </div>
@@ -125,13 +125,13 @@ export default function HomePage() {
       </section>
 
       {/* Search Form Section */}
-      <section style={{ padding: '4rem 0', backgroundColor: '#f8f9fa', position: 'relative', marginTop: '-2rem', zIndex: 3 }}>
+      <section style={{ padding: 'clamp(2rem, 5vw, 4rem) 0', backgroundColor: 'var(--light-bg)', position: 'relative', marginTop: '-2rem', zIndex: 3 }}>
         <div className="container">
-          <div className="card" style={{ maxWidth: '900px', margin: '0 auto', padding: '3rem' }}>
+          <div className="card" style={{ maxWidth: '900px', margin: '0 auto' }}>
             <div className="text-center" style={{ marginBottom: '2rem' }}>
-              <Search size={48} style={{ color: '#3498db', margin: '0 auto 1rem' }} />
-              <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Find Your Appointment</h2>
-              <p style={{ fontSize: '1.125rem', color: '#6c757d' }}>
+              <Search size={48} style={{ color: 'var(--accent-color)', margin: '0 auto 1rem' }} />
+              <h2 style={{ fontSize: 'clamp(1.5rem, 4vw, 2.5rem)', marginBottom: '1rem', color: 'var(--primary-color)' }}>Find Your Appointment</h2>
+              <p style={{ fontSize: 'clamp(1rem, 2vw, 1.125rem)', color: 'var(--text-muted)' }}>
                 Select your destination, visa type, and city to get started
               </p>
             </div>
