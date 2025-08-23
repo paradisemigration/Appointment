@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Search, MapPin, Calendar, Globe, Clock, Users, Star, ArrowRight, CheckCircle, Phone, Play, Shield, Award, Zap, TrendingUp } from 'lucide-react';
 import { ALL_COUNTRIES, ALL_CITIES, VISA_TYPES } from '@/data/constants';
+import SimpleSearchForm from '@/components/SimpleSearchForm';
 
 export default function Home() {
   const router = useRouter();
