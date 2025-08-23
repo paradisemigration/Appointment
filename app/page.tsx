@@ -14,39 +14,6 @@ export default function Home() {
 
   return (
     <div className="w-full">
-      {/* JavaScript Test Component */}
-      <div style={{
-        position: 'fixed',
-        top: '10px',
-        right: '10px',
-        backgroundColor: 'red',
-        color: 'white',
-        padding: '10px',
-        borderRadius: '5px',
-        zIndex: 9999,
-        fontSize: '12px'
-      }}>
-        <div>JS Test: {testCounter}</div>
-        <button
-          onClick={() => {
-            console.log('Test button clicked');
-            setTestCounter(testCounter + 1);
-            alert('JavaScript working!');
-          }}
-          style={{
-            backgroundColor: 'white',
-            color: 'red',
-            border: 'none',
-            padding: '5px',
-            borderRadius: '3px',
-            cursor: 'pointer',
-            fontSize: '10px'
-          }}
-        >
-          Test JS
-        </button>
-      </div>
-
       {/* Professional Hero Section */}
       <section className="relative min-h-[80vh] flex flex-col items-center justify-center overflow-hidden bg-gradient-hero pt-20">
         {/* Animated Background */}
