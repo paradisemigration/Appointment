@@ -27,14 +27,17 @@ export const VISA_TYPES: VisaType[] = [
   }
 ];
 
+// 30 Schengen + European Countries
 export const EUROPEAN_COUNTRIES: Country[] = [
+  // Major Schengen Countries
   {
     code: 'FR',
     name: 'France',
     flag: '🇫🇷',
     continent: 'Europe',
     isSchengen: true,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'france'
   },
   {
     code: 'DE',
@@ -42,7 +45,8 @@ export const EUROPEAN_COUNTRIES: Country[] = [
     flag: '🇩🇪',
     continent: 'Europe',
     isSchengen: true,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'germany'
   },
   {
     code: 'IT',
@@ -50,7 +54,8 @@ export const EUROPEAN_COUNTRIES: Country[] = [
     flag: '🇮🇹',
     continent: 'Europe',
     isSchengen: true,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'italy'
   },
   {
     code: 'ES',
@@ -58,7 +63,8 @@ export const EUROPEAN_COUNTRIES: Country[] = [
     flag: '🇪🇸',
     continent: 'Europe',
     isSchengen: true,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'spain'
   },
   {
     code: 'NL',
@@ -66,7 +72,8 @@ export const EUROPEAN_COUNTRIES: Country[] = [
     flag: '🇳🇱',
     continent: 'Europe',
     isSchengen: true,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'netherlands'
   },
   {
     code: 'CH',
@@ -74,7 +81,8 @@ export const EUROPEAN_COUNTRIES: Country[] = [
     flag: '🇨🇭',
     continent: 'Europe',
     isSchengen: true,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'switzerland'
   },
   {
     code: 'AT',
@@ -82,7 +90,8 @@ export const EUROPEAN_COUNTRIES: Country[] = [
     flag: '🇦🇹',
     continent: 'Europe',
     isSchengen: true,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'austria'
   },
   {
     code: 'BE',
@@ -90,7 +99,8 @@ export const EUROPEAN_COUNTRIES: Country[] = [
     flag: '🇧🇪',
     continent: 'Europe',
     isSchengen: true,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'belgium'
   },
   {
     code: 'PT',
@@ -98,7 +108,8 @@ export const EUROPEAN_COUNTRIES: Country[] = [
     flag: '🇵🇹',
     continent: 'Europe',
     isSchengen: true,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'portugal'
   },
   {
     code: 'GR',
@@ -106,15 +117,18 @@ export const EUROPEAN_COUNTRIES: Country[] = [
     flag: '🇬🇷',
     continent: 'Europe',
     isSchengen: true,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'greece'
   },
+  // Central & Eastern European Countries
   {
     code: 'CZ',
     name: 'Czech Republic',
     flag: '🇨🇿',
     continent: 'Europe',
     isSchengen: true,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'czech-republic'
   },
   {
     code: 'HU',
@@ -122,7 +136,8 @@ export const EUROPEAN_COUNTRIES: Country[] = [
     flag: '🇭🇺',
     continent: 'Europe',
     isSchengen: true,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'hungary'
   },
   {
     code: 'PL',
@@ -130,15 +145,81 @@ export const EUROPEAN_COUNTRIES: Country[] = [
     flag: '🇵🇱',
     continent: 'Europe',
     isSchengen: true,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'poland'
   },
+  {
+    code: 'SK',
+    name: 'Slovakia',
+    flag: '🇸🇰',
+    continent: 'Europe',
+    isSchengen: true,
+    visaTypes: VISA_TYPES,
+    slug: 'slovakia'
+  },
+  {
+    code: 'SI',
+    name: 'Slovenia',
+    flag: '🇸🇮',
+    continent: 'Europe',
+    isSchengen: true,
+    visaTypes: VISA_TYPES,
+    slug: 'slovenia'
+  },
+  {
+    code: 'HR',
+    name: 'Croatia',
+    flag: '🇭🇷',
+    continent: 'Europe',
+    isSchengen: true,
+    visaTypes: VISA_TYPES,
+    slug: 'croatia'
+  },
+  {
+    code: 'EE',
+    name: 'Estonia',
+    flag: '🇪🇪',
+    continent: 'Europe',
+    isSchengen: true,
+    visaTypes: VISA_TYPES,
+    slug: 'estonia'
+  },
+  {
+    code: 'LV',
+    name: 'Latvia',
+    flag: '🇱🇻',
+    continent: 'Europe',
+    isSchengen: true,
+    visaTypes: VISA_TYPES,
+    slug: 'latvia'
+  },
+  {
+    code: 'LT',
+    name: 'Lithuania',
+    flag: '🇱🇹',
+    continent: 'Europe',
+    isSchengen: true,
+    visaTypes: VISA_TYPES,
+    slug: 'lithuania'
+  },
+  {
+    code: 'MT',
+    name: 'Malta',
+    flag: '🇲🇹',
+    continent: 'Europe',
+    isSchengen: true,
+    visaTypes: VISA_TYPES,
+    slug: 'malta'
+  },
+  // Nordic Countries
   {
     code: 'SE',
     name: 'Sweden',
     flag: '🇸🇪',
     continent: 'Europe',
     isSchengen: true,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'sweden'
   },
   {
     code: 'NO',
@@ -146,7 +227,8 @@ export const EUROPEAN_COUNTRIES: Country[] = [
     flag: '🇳🇴',
     continent: 'Europe',
     isSchengen: true,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'norway'
   },
   {
     code: 'DK',
@@ -154,7 +236,8 @@ export const EUROPEAN_COUNTRIES: Country[] = [
     flag: '🇩🇰',
     continent: 'Europe',
     isSchengen: true,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'denmark'
   },
   {
     code: 'FI',
@@ -162,10 +245,67 @@ export const EUROPEAN_COUNTRIES: Country[] = [
     flag: '🇫🇮',
     continent: 'Europe',
     isSchengen: true,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'finland'
+  },
+  {
+    code: 'IS',
+    name: 'Iceland',
+    flag: '🇮🇸',
+    continent: 'Europe',
+    isSchengen: true,
+    visaTypes: VISA_TYPES,
+    slug: 'iceland'
+  },
+  // Other European Countries
+  {
+    code: 'LU',
+    name: 'Luxembourg',
+    flag: '🇱🇺',
+    continent: 'Europe',
+    isSchengen: true,
+    visaTypes: VISA_TYPES,
+    slug: 'luxembourg'
+  },
+  {
+    code: 'LI',
+    name: 'Liechtenstein',
+    flag: '🇱🇮',
+    continent: 'Europe',
+    isSchengen: true,
+    visaTypes: VISA_TYPES,
+    slug: 'liechtenstein'
+  },
+  {
+    code: 'CY',
+    name: 'Cyprus',
+    flag: '🇨🇾',
+    continent: 'Europe',
+    isSchengen: false,
+    visaTypes: VISA_TYPES,
+    slug: 'cyprus'
+  },
+  {
+    code: 'IE',
+    name: 'Ireland',
+    flag: '🇮🇪',
+    continent: 'Europe',
+    isSchengen: false,
+    visaTypes: VISA_TYPES,
+    slug: 'ireland'
+  },
+  {
+    code: 'RO',
+    name: 'Romania',
+    flag: '🇷🇴',
+    continent: 'Europe',
+    isSchengen: false,
+    visaTypes: VISA_TYPES,
+    slug: 'romania'
   }
 ];
 
+// 5 Other Major Destinations
 export const OTHER_COUNTRIES: Country[] = [
   {
     code: 'US',
@@ -173,7 +313,8 @@ export const OTHER_COUNTRIES: Country[] = [
     flag: '🇺🇸',
     continent: 'North America',
     isSchengen: false,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'usa'
   },
   {
     code: 'GB',
@@ -181,7 +322,8 @@ export const OTHER_COUNTRIES: Country[] = [
     flag: '🇬🇧',
     continent: 'Europe',
     isSchengen: false,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'uk'
   },
   {
     code: 'CA',
@@ -189,7 +331,8 @@ export const OTHER_COUNTRIES: Country[] = [
     flag: '🇨🇦',
     continent: 'North America',
     isSchengen: false,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'canada'
   },
   {
     code: 'AU',
@@ -197,7 +340,8 @@ export const OTHER_COUNTRIES: Country[] = [
     flag: '🇦🇺',
     continent: 'Oceania',
     isSchengen: false,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'australia'
   },
   {
     code: 'NZ',
@@ -205,114 +349,12 @@ export const OTHER_COUNTRIES: Country[] = [
     flag: '🇳🇿',
     continent: 'Oceania',
     isSchengen: false,
-    visaTypes: VISA_TYPES
-  },
-  {
-    code: 'JP',
-    name: 'Japan',
-    flag: '🇯🇵',
-    continent: 'Asia',
-    isSchengen: false,
-    visaTypes: VISA_TYPES
-  },
-  {
-    code: 'KR',
-    name: 'South Korea',
-    flag: '🇰🇷',
-    continent: 'Asia',
-    isSchengen: false,
-    visaTypes: VISA_TYPES
-  },
-  {
-    code: 'SG',
-    name: 'Singapore',
-    flag: '🇸🇬',
-    continent: 'Asia',
-    isSchengen: false,
-    visaTypes: VISA_TYPES
-  },
-  {
-    code: 'CN',
-    name: 'China',
-    flag: '🇨🇳',
-    continent: 'Asia',
-    isSchengen: false,
-    visaTypes: VISA_TYPES
-  },
-  {
-    code: 'HK',
-    name: 'Hong Kong',
-    flag: '🇭🇰',
-    continent: 'Asia',
-    isSchengen: false,
-    visaTypes: VISA_TYPES
-  },
-  {
-    code: 'TH',
-    name: 'Thailand',
-    flag: '🇹🇭',
-    continent: 'Asia',
-    isSchengen: false,
-    visaTypes: VISA_TYPES
-  },
-  {
-    code: 'MY',
-    name: 'Malaysia',
-    flag: '🇲🇾',
-    continent: 'Asia',
-    isSchengen: false,
-    visaTypes: VISA_TYPES
-  },
-  {
-    code: 'ID',
-    name: 'Indonesia',
-    flag: '🇮🇩',
-    continent: 'Asia',
-    isSchengen: false,
-    visaTypes: VISA_TYPES
-  },
-  {
-    code: 'PH',
-    name: 'Philippines',
-    flag: '🇵🇭',
-    continent: 'Asia',
-    isSchengen: false,
-    visaTypes: VISA_TYPES
-  },
-  {
-    code: 'VN',
-    name: 'Vietnam',
-    flag: '🇻🇳',
-    continent: 'Asia',
-    isSchengen: false,
-    visaTypes: VISA_TYPES
-  },
-  {
-    code: 'BR',
-    name: 'Brazil',
-    flag: '🇧🇷',
-    continent: 'South America',
-    isSchengen: false,
-    visaTypes: VISA_TYPES
-  },
-  {
-    code: 'MX',
-    name: 'Mexico',
-    flag: '🇲🇽',
-    continent: 'North America',
-    isSchengen: false,
-    visaTypes: VISA_TYPES
-  },
-  {
-    code: 'ZA',
-    name: 'South Africa',
-    flag: '🇿🇦',
-    continent: 'Africa',
-    isSchengen: false,
-    visaTypes: VISA_TYPES
+    visaTypes: VISA_TYPES,
+    slug: 'new-zealand'
   }
 ];
 
+// Top 25 Indian Cities
 export const INDIAN_CITIES: City[] = [
   { id: 'delhi', name: 'Delhi', slug: 'delhi', country: 'IN', region: 'North India', isActive: true },
   { id: 'mumbai', name: 'Mumbai', slug: 'mumbai', country: 'IN', region: 'West India', isActive: true },
@@ -341,19 +383,7 @@ export const INDIAN_CITIES: City[] = [
   { id: 'rajkot', name: 'Rajkot', slug: 'rajkot', country: 'IN', region: 'West India', isActive: true }
 ];
 
-export const GULF_CITIES: City[] = [
-  { id: 'dubai', name: 'Dubai', slug: 'dubai', country: 'AE', region: 'UAE', isActive: true },
-  { id: 'abudhabi', name: 'Abu Dhabi', slug: 'abudhabi', country: 'AE', region: 'UAE', isActive: true },
-  { id: 'sharjah', name: 'Sharjah', slug: 'sharjah', country: 'AE', region: 'UAE', isActive: true },
-  { id: 'riyadh', name: 'Riyadh', slug: 'riyadh', country: 'SA', region: 'Saudi Arabia', isActive: true },
-  { id: 'jeddah', name: 'Jeddah', slug: 'jeddah', country: 'SA', region: 'Saudi Arabia', isActive: true },
-  { id: 'dammam', name: 'Dammam', slug: 'dammam', country: 'SA', region: 'Saudi Arabia', isActive: true },
-  { id: 'doha', name: 'Doha', slug: 'doha', country: 'QA', region: 'Qatar', isActive: true },
-  { id: 'kuwait', name: 'Kuwait City', slug: 'kuwait', country: 'KW', region: 'Kuwait', isActive: true },
-  { id: 'manama', name: 'Manama', slug: 'manama', country: 'BH', region: 'Bahrain', isActive: true },
-  { id: 'muscat', name: 'Muscat', slug: 'muscat', country: 'OM', region: 'Oman', isActive: true }
-];
-
+// Top 10 Pakistani Cities
 export const PAKISTAN_CITIES: City[] = [
   { id: 'karachi', name: 'Karachi', slug: 'karachi', country: 'PK', region: 'Pakistan', isActive: true },
   { id: 'lahore', name: 'Lahore', slug: 'lahore', country: 'PK', region: 'Pakistan', isActive: true },
@@ -362,68 +392,103 @@ export const PAKISTAN_CITIES: City[] = [
   { id: 'faisalabad', name: 'Faisalabad', slug: 'faisalabad', country: 'PK', region: 'Pakistan', isActive: true },
   { id: 'multan', name: 'Multan', slug: 'multan', country: 'PK', region: 'Pakistan', isActive: true },
   { id: 'peshawar', name: 'Peshawar', slug: 'peshawar', country: 'PK', region: 'Pakistan', isActive: true },
-  { id: 'quetta', name: 'Quetta', slug: 'quetta', country: 'PK', region: 'Pakistan', isActive: true }
+  { id: 'quetta', name: 'Quetta', slug: 'quetta', country: 'PK', region: 'Pakistan', isActive: true },
+  { id: 'sialkot', name: 'Sialkot', slug: 'sialkot', country: 'PK', region: 'Pakistan', isActive: true },
+  { id: 'gujranwala', name: 'Gujranwala', slug: 'gujranwala', country: 'PK', region: 'Pakistan', isActive: true }
 ];
 
-export const SOUTH_ASIAN_CITIES: City[] = [
+// Gulf Countries - All Major Cities
+export const GULF_CITIES: City[] = [
+  // UAE
+  { id: 'dubai', name: 'Dubai', slug: 'dubai', country: 'AE', region: 'UAE', isActive: true },
+  { id: 'abudhabi', name: 'Abu Dhabi', slug: 'abudhabi', country: 'AE', region: 'UAE', isActive: true },
+  { id: 'sharjah', name: 'Sharjah', slug: 'sharjah', country: 'AE', region: 'UAE', isActive: true },
+  { id: 'ajman', name: 'Ajman', slug: 'ajman', country: 'AE', region: 'UAE', isActive: true },
+  { id: 'ras-al-khaimah', name: 'Ras Al Khaimah', slug: 'ras-al-khaimah', country: 'AE', region: 'UAE', isActive: true },
+  // Saudi Arabia
+  { id: 'riyadh', name: 'Riyadh', slug: 'riyadh', country: 'SA', region: 'Saudi Arabia', isActive: true },
+  { id: 'jeddah', name: 'Jeddah', slug: 'jeddah', country: 'SA', region: 'Saudi Arabia', isActive: true },
+  { id: 'dammam', name: 'Dammam', slug: 'dammam', country: 'SA', region: 'Saudi Arabia', isActive: true },
+  { id: 'khobar', name: 'Al Khobar', slug: 'khobar', country: 'SA', region: 'Saudi Arabia', isActive: true },
+  { id: 'medina', name: 'Medina', slug: 'medina', country: 'SA', region: 'Saudi Arabia', isActive: true },
+  // Qatar
+  { id: 'doha', name: 'Doha', slug: 'doha', country: 'QA', region: 'Qatar', isActive: true },
+  { id: 'al-rayyan', name: 'Al Rayyan', slug: 'al-rayyan', country: 'QA', region: 'Qatar', isActive: true },
+  // Kuwait
+  { id: 'kuwait', name: 'Kuwait City', slug: 'kuwait', country: 'KW', region: 'Kuwait', isActive: true },
+  { id: 'hawally', name: 'Hawally', slug: 'hawally', country: 'KW', region: 'Kuwait', isActive: true },
+  // Bahrain
+  { id: 'manama', name: 'Manama', slug: 'manama', country: 'BH', region: 'Bahrain', isActive: true },
+  { id: 'muharraq', name: 'Muharraq', slug: 'muharraq', country: 'BH', region: 'Bahrain', isActive: true },
+  // Oman
+  { id: 'muscat', name: 'Muscat', slug: 'muscat', country: 'OM', region: 'Oman', isActive: true },
+  { id: 'salalah', name: 'Salalah', slug: 'salalah', country: 'OM', region: 'Oman', isActive: true }
+];
+
+// Nepal - All Major Cities
+export const NEPAL_CITIES: City[] = [
   { id: 'kathmandu', name: 'Kathmandu', slug: 'kathmandu', country: 'NP', region: 'Nepal', isActive: true },
   { id: 'pokhara', name: 'Pokhara', slug: 'pokhara', country: 'NP', region: 'Nepal', isActive: true },
+  { id: 'lalitpur', name: 'Lalitpur', slug: 'lalitpur', country: 'NP', region: 'Nepal', isActive: true },
+  { id: 'bhaktapur', name: 'Bhaktapur', slug: 'bhaktapur', country: 'NP', region: 'Nepal', isActive: true },
+  { id: 'biratnagar', name: 'Biratnagar', slug: 'biratnagar', country: 'NP', region: 'Nepal', isActive: true }
+];
+
+// Bangladesh - All Major Cities  
+export const BANGLADESH_CITIES: City[] = [
   { id: 'dhaka', name: 'Dhaka', slug: 'dhaka', country: 'BD', region: 'Bangladesh', isActive: true },
   { id: 'chittagong', name: 'Chittagong', slug: 'chittagong', country: 'BD', region: 'Bangladesh', isActive: true },
   { id: 'sylhet', name: 'Sylhet', slug: 'sylhet', country: 'BD', region: 'Bangladesh', isActive: true },
-  { id: 'colombo', name: 'Colombo', slug: 'colombo', country: 'LK', region: 'Sri Lanka', isActive: true },
-  { id: 'kandy', name: 'Kandy', slug: 'kandy', country: 'LK', region: 'Sri Lanka', isActive: true },
-  { id: 'galle', name: 'Galle', slug: 'galle', country: 'LK', region: 'Sri Lanka', isActive: true }
+  { id: 'khulna', name: 'Khulna', slug: 'khulna', country: 'BD', region: 'Bangladesh', isActive: true },
+  { id: 'rajshahi', name: 'Rajshahi', slug: 'rajshahi', country: 'BD', region: 'Bangladesh', isActive: true },
+  { id: 'barisal', name: 'Barisal', slug: 'barisal', country: 'BD', region: 'Bangladesh', isActive: true }
 ];
 
-export const SOUTHEAST_ASIAN_CITIES: City[] = [
-  { id: 'bangkok', name: 'Bangkok', slug: 'bangkok', country: 'TH', region: 'Thailand', isActive: true },
-  { id: 'phuket', name: 'Phuket', slug: 'phuket', country: 'TH', region: 'Thailand', isActive: true },
-  { id: 'chiang-mai', name: 'Chiang Mai', slug: 'chiang-mai', country: 'TH', region: 'Thailand', isActive: true },
-  { id: 'kuala-lumpur', name: 'Kuala Lumpur', slug: 'kuala-lumpur', country: 'MY', region: 'Malaysia', isActive: true },
-  { id: 'penang', name: 'Penang', slug: 'penang', country: 'MY', region: 'Malaysia', isActive: true },
-  { id: 'johor-bahru', name: 'Johor Bahru', slug: 'johor-bahru', country: 'MY', region: 'Malaysia', isActive: true },
-  { id: 'singapore', name: 'Singapore', slug: 'singapore', country: 'SG', region: 'Singapore', isActive: true },
-  { id: 'jakarta', name: 'Jakarta', slug: 'jakarta', country: 'ID', region: 'Indonesia', isActive: true },
-  { id: 'bali', name: 'Bali', slug: 'bali', country: 'ID', region: 'Indonesia', isActive: true },
-  { id: 'surabaya', name: 'Surabaya', slug: 'surabaya', country: 'ID', region: 'Indonesia', isActive: true },
-  { id: 'manila', name: 'Manila', slug: 'manila', country: 'PH', region: 'Philippines', isActive: true },
-  { id: 'cebu', name: 'Cebu', slug: 'cebu', country: 'PH', region: 'Philippines', isActive: true },
-  { id: 'davao', name: 'Davao', slug: 'davao', country: 'PH', region: 'Philippines', isActive: true },
-  { id: 'ho-chi-minh', name: 'Ho Chi Minh City', slug: 'ho-chi-minh', country: 'VN', region: 'Vietnam', isActive: true },
-  { id: 'hanoi', name: 'Hanoi', slug: 'hanoi', country: 'VN', region: 'Vietnam', isActive: true },
-  { id: 'da-nang', name: 'Da Nang', slug: 'da-nang', country: 'VN', region: 'Vietnam', isActive: true }
+// Combined Arrays
+export const ALL_CITIES = [
+  ...INDIAN_CITIES, 
+  ...PAKISTAN_CITIES, 
+  ...GULF_CITIES, 
+  ...NEPAL_CITIES, 
+  ...BANGLADESH_CITIES
 ];
 
-export const EAST_ASIAN_CITIES: City[] = [
-  { id: 'beijing', name: 'Beijing', slug: 'beijing', country: 'CN', region: 'China', isActive: true },
-  { id: 'shanghai', name: 'Shanghai', slug: 'shanghai', country: 'CN', region: 'China', isActive: true },
-  { id: 'guangzhou', name: 'Guangzhou', slug: 'guangzhou', country: 'CN', region: 'China', isActive: true },
-  { id: 'shenzhen', name: 'Shenzhen', slug: 'shenzhen', country: 'CN', region: 'China', isActive: true },
-  { id: 'hong-kong', name: 'Hong Kong', slug: 'hong-kong', country: 'HK', region: 'Hong Kong', isActive: true },
-  { id: 'tokyo', name: 'Tokyo', slug: 'tokyo', country: 'JP', region: 'Japan', isActive: true },
-  { id: 'osaka', name: 'Osaka', slug: 'osaka', country: 'JP', region: 'Japan', isActive: true },
-  { id: 'kyoto', name: 'Kyoto', slug: 'kyoto', country: 'JP', region: 'Japan', isActive: true },
-  { id: 'seoul', name: 'Seoul', slug: 'seoul', country: 'KR', region: 'South Korea', isActive: true },
-  { id: 'busan', name: 'Busan', slug: 'busan', country: 'KR', region: 'South Korea', isActive: true },
-  { id: 'incheon', name: 'Incheon', slug: 'incheon', country: 'KR', region: 'South Korea', isActive: true }
-];
-
-export const OTHER_GLOBAL_CITIES: City[] = [
-  { id: 'new-york', name: 'New York', slug: 'new-york', country: 'US', region: 'USA', isActive: true },
-  { id: 'los-angeles', name: 'Los Angeles', slug: 'los-angeles', country: 'US', region: 'USA', isActive: true },
-  { id: 'chicago', name: 'Chicago', slug: 'chicago', country: 'US', region: 'USA', isActive: true },
-  { id: 'london', name: 'London', slug: 'london', country: 'GB', region: 'UK', isActive: true },
-  { id: 'manchester', name: 'Manchester', slug: 'manchester', country: 'GB', region: 'UK', isActive: true },
-  { id: 'birmingham', name: 'Birmingham', slug: 'birmingham', country: 'GB', region: 'UK', isActive: true },
-  { id: 'toronto', name: 'Toronto', slug: 'toronto', country: 'CA', region: 'Canada', isActive: true },
-  { id: 'vancouver', name: 'Vancouver', slug: 'vancouver', country: 'CA', region: 'Canada', isActive: true },
-  { id: 'montreal', name: 'Montreal', slug: 'montreal', country: 'CA', region: 'Canada', isActive: true },
-  { id: 'sydney', name: 'Sydney', slug: 'sydney', country: 'AU', region: 'Australia', isActive: true },
-  { id: 'melbourne', name: 'Melbourne', slug: 'melbourne', country: 'AU', region: 'Australia', isActive: true },
-  { id: 'brisbane', name: 'Brisbane', slug: 'brisbane', country: 'AU', region: 'Australia', isActive: true },
-  { id: 'auckland', name: 'Auckland', slug: 'auckland', country: 'NZ', region: 'New Zealand', isActive: true }
-];
-
-export const ALL_CITIES = [...INDIAN_CITIES, ...GULF_CITIES, ...PAKISTAN_CITIES, ...SOUTH_ASIAN_CITIES, ...SOUTHEAST_ASIAN_CITIES, ...EAST_ASIAN_CITIES, ...OTHER_GLOBAL_CITIES];
 export const ALL_COUNTRIES = [...EUROPEAN_COUNTRIES, ...OTHER_COUNTRIES];
+
+// Helper functions
+export const getCountryBySlug = (slug: string) => {
+  return ALL_COUNTRIES.find(country => country.slug === slug);
+};
+
+export const getCityBySlug = (slug: string) => {
+  return ALL_CITIES.find(city => city.slug === slug);
+};
+
+export const getVisaTypeBySlug = (slug: string) => {
+  return VISA_TYPES.find(visa => visa.slug === slug);
+};
+
+// Popular combinations for homepage
+export const POPULAR_DESTINATIONS = [
+  { country: 'france', visa: 'visit', cities: ['delhi', 'mumbai', 'bangalore'] },
+  { country: 'germany', visa: 'work', cities: ['delhi', 'bangalore', 'hyderabad'] },
+  { country: 'usa', visa: 'visit', cities: ['mumbai', 'delhi', 'chennai'] },
+  { country: 'uk', visa: 'study', cities: ['delhi', 'mumbai', 'pune'] },
+  { country: 'canada', visa: 'work', cities: ['delhi', 'bangalore', 'mumbai'] },
+  { country: 'australia', visa: 'study', cities: ['mumbai', 'delhi', 'hyderabad'] }
+];
+
+// WhatsApp Configuration
+export const WHATSAPP_CONFIG = {
+  number: '+971501234567', // UAE number for international reach
+  message: 'Hi! I need help with visa appointment booking. Can you assist me?'
+};
+
+// Business Information
+export const BUSINESS_INFO = {
+  name: 'VFS Global Appointment Services',
+  tagline: 'Professional Visa Appointment Booking',
+  email: 'info@vfsappointments.com',
+  phone: '+971-50-123-4567',
+  address: 'Dubai, UAE'
+};
