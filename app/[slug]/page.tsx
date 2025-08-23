@@ -19,15 +19,16 @@ import {
   Users,
   Award
 } from 'lucide-react';
-import { 
-  ALL_COUNTRIES, 
-  ALL_CITIES, 
-  VISA_TYPES, 
-  getCountryBySlug, 
-  getCityBySlug, 
+import {
+  ALL_COUNTRIES,
+  ALL_CITIES,
+  VISA_TYPES,
+  getCountryBySlug,
+  getCityBySlug,
   getVisaTypeBySlug,
-  BUSINESS_INFO 
+  BUSINESS_INFO
 } from '@/data/constants';
+import MobileHeader from '@/components/MobileHeader';
 
 interface PageProps {
   params: {
