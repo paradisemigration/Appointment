@@ -131,7 +131,10 @@ export default function WhatsAppButton() {
 
       {/* WhatsApp Button */}
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => {
+          console.log('WhatsApp main button clicked, current state:', isOpen);
+          setIsOpen(!isOpen);
+        }}
         className={`group relative w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 rounded-full shadow-strong hover:shadow-glow flex items-center justify-center transition-all duration-300 transform hover:scale-110 ${
           isOpen ? 'rotate-180' : 'hover:rotate-12'
         }`}
