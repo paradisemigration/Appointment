@@ -72,10 +72,7 @@ export default function WhatsAppButton() {
                 </div>
               </div>
               <button
-                onClick={() => {
-                  console.log('WhatsApp close button clicked');
-                  setIsOpen(false);
-                }}
+                onClick={() => setIsOpen(false)}
                 className="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition-colors duration-300"
               >
                 <X className="w-5 h-5" />
