@@ -491,42 +491,42 @@ export default function HomePage() {
         <div className="container">
           <div className="grid grid-4" style={{ marginBottom: '2rem' }}>
             <div>
-              <h3 style={{ color: 'white', marginBottom: '1rem' }}>🌍 VFS Appointments</h3>
-              <p style={{ opacity: 0.8 }}>Professional visa appointment booking services for 35+ countries worldwide.</p>
+              <h3 style={{ color: 'white', marginBottom: '1rem', fontSize: 'clamp(1.25rem, 3vw, 1.5rem)' }}>🌍 VFS Appointments</h3>
+              <p style={{ opacity: 0.8, fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>Professional visa appointment booking services for 35+ countries worldwide.</p>
             </div>
             <div>
-              <h4 style={{ color: 'white', marginBottom: '1rem' }}>Quick Links</h4>
+              <h4 style={{ color: 'white', marginBottom: '1rem', fontSize: 'clamp(1.125rem, 2.5vw, 1.25rem)' }}>Quick Links</h4>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                <a href="/services">Our Services</a>
-                <a href="/countries">All Countries</a>
-                <a href="/about">About Us</a>
-                <a href="/contact">Contact</a>
+                <a href="/services" style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>Our Services</a>
+                <a href="/countries" style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>All Countries</a>
+                <a href="/about" style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>About Us</a>
+                <a href="/contact" style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>Contact</a>
               </div>
             </div>
             <div>
-              <h4 style={{ color: 'white', marginBottom: '1rem' }}>Popular Visas</h4>
+              <h4 style={{ color: 'white', marginBottom: '1rem', fontSize: 'clamp(1.125rem, 2.5vw, 1.25rem)' }}>Popular Visas</h4>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                <a href="/schengen-visa">Schengen Visa</a>
-                <a href="/usa-visa">USA Visa</a>
-                <a href="/uk-visa">UK Visa</a>
-                <a href="/canada-visa">Canada Visa</a>
+                <a href="/schengen-visa" style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>Schengen Visa</a>
+                <a href="/usa-visa" style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>USA Visa</a>
+                <a href="/uk-visa" style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>UK Visa</a>
+                <a href="/canada-visa" style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>Canada Visa</a>
               </div>
             </div>
             <div>
-              <h4 style={{ color: 'white', marginBottom: '1rem' }}>Contact Info</h4>
+              <h4 style={{ color: 'white', marginBottom: '1rem', fontSize: 'clamp(1.125rem, 2.5vw, 1.25rem)' }}>Contact Info</h4>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', opacity: 0.8 }}>
-                <p>📧 {BUSINESS_INFO.email}</p>
-                <p>📞 {BUSINESS_INFO.phone}</p>
-                <p>📍 {BUSINESS_INFO.address}</p>
+                <p style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>📧 {BUSINESS_INFO.email}</p>
+                <p style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>📞 {BUSINESS_INFO.phone}</p>
+                <p style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>📍 {BUSINESS_INFO.address}</p>
               </div>
             </div>
           </div>
 
-          <div style={{ textAlign: 'center', paddingTop: '2rem', borderTop: '1px solid #34495e' }}>
-            <p style={{ opacity: 0.8 }}>
+          <div style={{ textAlign: 'center', paddingTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.2)' }}>
+            <p style={{ opacity: 0.8, fontSize: 'clamp(0.75rem, 1.5vw, 0.875rem)' }}>
               &copy; 2024 {BUSINESS_INFO.name}. All rights reserved. |
-              <a href="/privacy" style={{ marginLeft: '0.5rem' }}>Privacy Policy</a> |
-              <a href="/terms" style={{ marginLeft: '0.5rem' }}>Terms of Service</a>
+              <a href="/privacy" style={{ marginLeft: '0.5rem', color: 'var(--accent-color)' }}>Privacy Policy</a> |
+              <a href="/terms" style={{ marginLeft: '0.5rem', color: 'var(--accent-color)' }}>Terms of Service</a>
             </p>
           </div>
         </div>
