@@ -118,10 +118,7 @@ export default function Home() {
                 <select
                   className="input-field"
                   value={selectedCountry}
-                  onChange={(e) => {
-                    console.log('Country changed:', e.target.value);
-                    setSelectedCountry(e.target.value);
-                  }}
+                  onChange={(e) => setSelectedCountry(e.target.value)}
                 >
                   <option value="">Select Country</option>
                   {ALL_COUNTRIES.map((country) => (
