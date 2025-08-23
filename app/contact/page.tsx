@@ -98,24 +98,7 @@ Message: ${formData.message}`);
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <header className="header">
-        <div className="container">
-          <div className="flex justify-between items-center">
-            <div>
-              <h1 className="text-2xl font-bold" style={{ margin: 0, color: 'white' }}>
-                🌍 {BUSINESS_INFO.name}
-              </h1>
-              <p style={{ margin: 0, opacity: 0.9, color: 'white' }}>{BUSINESS_INFO.tagline}</p>
-            </div>
-            <nav className="nav">
-              <a href="/" className="nav-link">Home</a>
-              <a href="/services" className="nav-link">Services</a>
-              <a href="/countries" className="nav-link">Countries</a>
-              <a href="/contact" className="nav-link">Contact</a>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <MobileHeader currentPage="/contact" />
 
       {/* Hero Section */}
       <section className="hero">
