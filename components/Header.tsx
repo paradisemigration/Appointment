@@ -60,14 +60,8 @@ export default function Header() {
                 {item.hasDropdown ? (
                   <div
                     className="relative"
-                    onMouseEnter={() => {
-                      console.log('Mouse entered countries dropdown');
-                      setIsCountriesOpen(true);
-                    }}
-                    onMouseLeave={() => {
-                      console.log('Mouse left countries dropdown');
-                      setIsCountriesOpen(false);
-                    }}
+                    onMouseEnter={() => setIsCountriesOpen(true)}
+                    onMouseLeave={() => setIsCountriesOpen(false)}
                   >
                     <button className={`nav-link flex items-center space-x-1 ${
                       pathname === item.href || pathname.startsWith('/countries/') ? 'active' : ''
