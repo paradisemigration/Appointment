@@ -75,7 +75,7 @@ export default function HomePage() {
           <div className="flex justify-between items-center">
             <div>
               <h1 className="text-2xl font-bold" style={{ margin: 0, color: 'white' }}>
-                🌍 {BUSINESS_INFO.name}
+                ��� {BUSINESS_INFO.name}
               </h1>
               <p style={{ margin: 0, opacity: 0.9, color: 'white' }}>{BUSINESS_INFO.tagline}</p>
             </div>
@@ -93,14 +93,14 @@ export default function HomePage() {
       <section className="hero">
         <div className="container">
           <div style={{ position: 'relative', zIndex: 2 }}>
-            <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold', marginBottom: '1.5rem', color: 'white' }}>
+            <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 'bold', marginBottom: '1.5rem', color: 'white' }}>
               Professional Visa Services
             </h1>
-            <p style={{ fontSize: '1.25rem', marginBottom: '2rem', opacity: 0.95, maxWidth: '600px', margin: '0 auto 2rem' }}>
-              Book appointments for 35+ countries with expert guidance, fast processing, and 98% success rate. 
+            <p style={{ fontSize: 'clamp(1rem, 2.5vw, 1.25rem)', marginBottom: '2rem', opacity: 0.95, maxWidth: '600px', margin: '0 auto 2rem' }}>
+              Book appointments for 35+ countries with expert guidance, fast processing, and 98% success rate.
               Trusted by thousands of travelers worldwide.
             </p>
-            
+
             {/* Trust Indicators */}
             <div className="stats">
               <div className="stat-item">
