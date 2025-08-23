@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import { ALL_COUNTRIES, VISA_TYPES, ALL_CITIES, BUSINESS_INFO } from '@/data/constants';
 import WhatsAppWidget from '@/components/WhatsAppWidget';
+import MobileHeader from '@/components/MobileHeader';
 
 export default function ServicesPage() {
   const [selectedService, setSelectedService] = useState<string | null>(null);
@@ -119,17 +120,17 @@ export default function ServicesPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="hero" style={{ padding: '4rem 0' }}>
+      <section className="hero">
         <div className="container">
           <div style={{ position: 'relative', zIndex: 2, textAlign: 'center' }}>
-            <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '1.5rem', color: 'white' }}>
+            <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 'bold', marginBottom: '1.5rem', color: 'white' }}>
               Our Professional Visa Services
             </h1>
-            <p style={{ fontSize: '1.25rem', marginBottom: '2rem', opacity: 0.95, maxWidth: '800px', margin: '0 auto 2rem' }}>
-              Comprehensive visa appointment booking and application services for 35+ countries worldwide. 
+            <p style={{ fontSize: 'clamp(1rem, 2.5vw, 1.25rem)', marginBottom: '2rem', opacity: 0.95, maxWidth: '800px', margin: '0 auto 2rem' }}>
+              Comprehensive visa appointment booking and application services for 35+ countries worldwide.
               Trusted by 10,000+ travelers with 98% success rate.
             </p>
-            
+
             <div className="stats">
               <div className="stat-item">
                 <span className="stat-number">98%</span>
