@@ -137,10 +137,7 @@ export default function Home() {
                 <select
                   className="input-field"
                   value={selectedVisa}
-                  onChange={(e) => {
-                    console.log('Visa changed:', e.target.value);
-                    setSelectedVisa(e.target.value);
-                  }}
+                  onChange={(e) => setSelectedVisa(e.target.value)}
                 >
                   <option value="">Select Visa Type</option>
                   {VISA_TYPES.map((visa) => (
