@@ -174,10 +174,13 @@ export default function Home() {
                   <Search className="inline w-4 h-4 mr-2 text-charcoal-500" />
                   Your City
                 </label>
-                <select 
+                <select
                   className="input-field"
                   value={selectedCity}
-                  onChange={(e) => setSelectedCity(e.target.value)}
+                  onChange={(e) => {
+                    console.log('City changed:', e.target.value);
+                    setSelectedCity(e.target.value);
+                  }}
                 >
                   <option value="">Select City</option>
                   {ALL_CITIES.map((city) => (
