@@ -523,11 +523,32 @@ a:hover {
 .header {
   background: var(--primary-color);
   color: white;
-  padding: 1rem 0;
+  padding: 0.75rem 0;
   box-shadow: var(--shadow-medium);
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 1rem 0;
+  }
+}
+
+/* Header content responsive adjustments */
+.header .container {
+  position: relative;
+}
+
+.header h1 {
+  margin: 0 !important;
+  color: white !important;
+}
+
+.header p {
+  margin: 0 !important;
+  color: white !important;
 }
 
 /* Hero Section - Updated Gradient */
