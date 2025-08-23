@@ -13,27 +13,12 @@ export default function Home() {
   const [selectedVisa, setSelectedVisa] = useState('');
 
   const handleSearch = () => {
-    console.log('handleSearch called');
-    console.log('Current values:', { selectedCountry, selectedVisa, selectedCity });
-
     if (selectedCountry && selectedVisa && selectedCity) {
-      try {
-        console.log('Search initiated:', { selectedCountry, selectedVisa, selectedCity });
-        const countrySlug = selectedCountry.toLowerCase().replace(/\s+/g, '-');
-        const visaSlug = VISA_TYPES.find(v => v.name === selectedVisa)?.slug || 'visit';
-        const citySlug = ALL_CITIES.find(c => c.name === selectedCity)?.slug || 'delhi';
-
-        const url = `/${countrySlug}/appointment/${visaSlug}/${citySlug}`;
-        console.log('Navigating to:', url);
-
-        // Use Next.js router for navigation
-        router.push(url);
-      } catch (error) {
-        console.error('Error in handleSearch:', error);
-      }
-    } else {
-      console.log('Search validation failed. Please select all fields.');
-      alert('Please select all fields: Country, Visa Type, and City');
+      const countrySlug = selectedCountry.toLowerCase().replace(/\s+/g, '-');
+      const visaSlug = VISA_TYPES.find(v => v.name === selectedVisa)?.slug || 'visit';
+      const citySlug = ALL_CITIES.find(c => c.name === selectedCity)?.slug || 'delhi';
+      const url = `/${countrySlug}/appointment/${visaSlug}/${citySlug}`;
+      router.push(url);
     }
   };
 
