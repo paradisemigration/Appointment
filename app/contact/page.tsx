@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { BUSINESS_INFO } from '@/data/constants';
 import WhatsAppWidget from '@/components/WhatsAppWidget';
+import MobileHeader from '@/components/MobileHeader';
 
 interface ContactFormData {
   name: string;
@@ -117,14 +118,14 @@ Message: ${formData.message}`);
       </header>
 
       {/* Hero Section */}
-      <section className="hero" style={{ padding: '4rem 0' }}>
+      <section className="hero">
         <div className="container">
           <div style={{ position: 'relative', zIndex: 2, textAlign: 'center' }}>
-            <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '1.5rem', color: 'white' }}>
+            <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 'bold', marginBottom: '1.5rem', color: 'white' }}>
               Get In Touch With Us
             </h1>
-            <p style={{ fontSize: '1.25rem', marginBottom: '2rem', opacity: 0.95, maxWidth: '700px', margin: '0 auto 2rem' }}>
-              Expert visa consultation and appointment booking services available 24/7. 
+            <p style={{ fontSize: 'clamp(1rem, 2.5vw, 1.25rem)', marginBottom: '2rem', opacity: 0.95, maxWidth: '700px', margin: '0 auto 2rem' }}>
+              Expert visa consultation and appointment booking services available 24/7.
               Contact our certified visa consultants for immediate assistance.
             </p>
           </div>
