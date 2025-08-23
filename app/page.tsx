@@ -323,11 +323,11 @@ export default function HomePage() {
       </section>
 
       {/* Popular Destinations */}
-      <section style={{ padding: '4rem 0', backgroundColor: '#f8f9fa' }}>
+      <section style={{ padding: 'clamp(2rem, 5vw, 4rem) 0', backgroundColor: 'var(--light-bg)' }}>
         <div className="container">
           <div className="text-center" style={{ marginBottom: '3rem' }}>
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Popular Destinations</h2>
-            <p style={{ fontSize: '1.125rem', color: '#6c757d' }}>
+            <h2 style={{ fontSize: 'clamp(1.5rem, 4vw, 2.5rem)', marginBottom: '1rem', color: 'var(--primary-color)' }}>Popular Destinations</h2>
+            <p style={{ fontSize: 'clamp(1rem, 2vw, 1.125rem)', color: 'var(--text-muted)' }}>
               Most requested visa appointments from our clients
             </p>
           </div>
