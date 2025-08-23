@@ -58,10 +58,16 @@ export default function Header() {
             {navigation.map((item) => (
               <div key={item.name} className="relative group">
                 {item.hasDropdown ? (
-                  <div 
+                  <div
                     className="relative"
-                    onMouseEnter={() => setIsCountriesOpen(true)}
-                    onMouseLeave={() => setIsCountriesOpen(false)}
+                    onMouseEnter={() => {
+                      console.log('Mouse entered countries dropdown');
+                      setIsCountriesOpen(true);
+                    }}
+                    onMouseLeave={() => {
+                      console.log('Mouse left countries dropdown');
+                      setIsCountriesOpen(false);
+                    }}
                   >
                     <button className={`nav-link flex items-center space-x-1 ${
                       pathname === item.href || pathname.startsWith('/countries/') ? 'active' : ''
