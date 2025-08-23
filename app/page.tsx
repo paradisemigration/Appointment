@@ -190,7 +190,10 @@ export default function Home() {
                 <select
                   className="input-field"
                   value={selectedCity}
-                  onChange={(e) => setSelectedCity(e.target.value)}
+                  onChange={(e) => {
+                    console.log('🏙️ City changed to:', e.target.value);
+                    setSelectedCity(e.target.value);
+                  }}
                 >
                   <option value="">Select City</option>
                   {ALL_CITIES.map((city) => (
