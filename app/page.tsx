@@ -152,10 +152,13 @@ export default function Home() {
                   <Calendar className="inline w-4 h-4 mr-2 text-charcoal-500" />
                   Visa Type
                 </label>
-                <select 
+                <select
                   className="input-field"
                   value={selectedVisa}
-                  onChange={(e) => setSelectedVisa(e.target.value)}
+                  onChange={(e) => {
+                    console.log('Visa changed:', e.target.value);
+                    setSelectedVisa(e.target.value);
+                  }}
                 >
                   <option value="">Select Visa Type</option>
                   {VISA_TYPES.map((visa) => (
