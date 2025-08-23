@@ -2,17 +2,17 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
-import { 
-  Globe, 
-  Clock, 
-  Users, 
-  Star, 
-  ArrowRight, 
-  CheckCircle, 
-  Phone, 
-  Shield, 
-  Award, 
-  Zap, 
+import {
+  Globe,
+  Clock,
+  Users,
+  Star,
+  ArrowRight,
+  CheckCircle,
+  Phone,
+  Shield,
+  Award,
+  Zap,
   Calendar,
   Search,
   MapPin,
@@ -21,7 +21,8 @@ import {
   TrendingUp,
   Target,
   Heart,
-  Sparkles
+  Sparkles,
+  FileText
 } from 'lucide-react';
 import { ALL_COUNTRIES, ALL_CITIES, VISA_TYPES, POPULAR_DESTINATIONS, BUSINESS_INFO } from '@/data/constants';
 import { TESTIMONIALS } from '@/data/testimonials';
